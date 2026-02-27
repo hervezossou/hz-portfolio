@@ -13,7 +13,7 @@ export const ComingSoon = () => {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] selection:bg-indigo-600 selection:text-white font-sans flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden">
+        <div className="min-h-screen bg-slate-900 text-slate-100 selection:bg-indigo-600 selection:text-white font-sans flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden">
 
             {/* Background Accent Gradient - Subtle Indigo Glow */}
             <div className="absolute top-[-10%] left-[-10%] w-[45%] h-[45%] bg-indigo-600 opacity-[0.05] blur-[120px] rounded-full pointer-events-none animate-pulse"></div>
@@ -33,13 +33,13 @@ export const ComingSoon = () => {
                 </div>
 
                 {/* Updated Heading */}
-                <h1 className="text-4xl font-sora md:text-6xl lg:text-7xl font-light tracking-tight mb-8 leading-[1.1]">
+                <h1 className="text-4xl font-sora md:text-6xl lg:text-7xl font-semibold tracking-tight mb-8 leading-[1.1]">
                     I&apos;m a Frontend Engineer <br />
-                    <span className="opacity-40 italic font-rethink-sans">specialized in React & Next.js</span>
+                    <span className="opacity-40 italic font-sans font-normal leading-tight tracking-tight">specialized in React & Next.js</span>
                 </h1>
 
                 {/* Business Pitch */}
-                <p className="text-xl md:text-2xl text-[#a1a1a1] max-w-2xl mx-auto mb-10 font-sans font-light leading-relaxed">
+                <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto mb-10 font-sans font-light leading-relaxed">
                     I design and build <span className="text-white font-normal">fast</span>,
                     <span className="text-white font-normal"> scalable</span>, and
                     <span className="text-white font-normal"> conversion-focused</span> websites & applications.
