@@ -25,7 +25,7 @@ export const ComingSoon = () => {
             >
                 {/* Name / Brand */}
                 <div className="mb-12">
-                    <span className="text-primary font-sans font-medium tracking-[0.25em] uppercase text-xs sm:text-sm block mb-3">
+                    <span className="text-primary font-rethink-sans font-medium tracking-[0.25em] uppercase text-xs sm:text-sm block mb-3">
                         Hervé Zossou
                     </span>
                     <div className="w-10 h-px bg-primary/40 mx-auto"></div>
@@ -34,11 +34,11 @@ export const ComingSoon = () => {
                 {/* Heading */}
                 <h1 className="text-2xl font-sora md:text-4xl lg:text-[3.5rem] font-semibold tracking-tight mb-8 leading-[1.1]">
                     I&apos;m a Frontend Engineer <br />
-                    <span className="opacity-40 italic font-sans font-normal leading-tight tracking-tight">specialized in React & Next.js</span>
+                    <span className="opacity-40 italic font-rethink-sans font-normal leading-tight tracking-tight">specialized in React & Next.js</span>
                 </h1>
 
                 {/* Business Pitch */}
-                <p className="text-lg md:text-xl lg:text-2xl text-slate-400 max-w-2xl mx-auto mb-10 font-sans font-light leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl text-slate-400 max-w-2xl mx-auto mb-10 font-rethink-sans font-light leading-relaxed">
                     I design and build <span className="text-white font-normal">fast</span>,
                     <span className="text-white font-normal"> scalable</span>, and
                     <span className="text-white font-normal"> conversion-focused</span> websites & applications.
@@ -50,7 +50,7 @@ export const ComingSoon = () => {
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/40 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                     </span>
-                    <p className="text-xs text-primary/80 uppercase tracking-[0.2em] font-medium font-sans">
+                    <p className="text-xs text-primary/80 uppercase tracking-[0.2em] font-medium font-rethink-sans">
                         Full portfolio launching soon
                     </p>
                 </div>

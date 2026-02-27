@@ -3,13 +3,13 @@
 :root {
   --background: var(--color-slate-50);
   --foreground: var(--color-slate-900);
+  --font-sora: var(--font-sora);
+  --font-rethink-sans: var(--font-rethink-sans);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sora: var(--font-sora);
-  --font-sans: var(--font-rethink-sans);
   --color-primary: var(--color-indigo-600);
 }
 
@@ -40,8 +40,9 @@ h6 {
 p,
 span,
 a,
+li,
 button {
-  font-family: var(--font-sans);
+  font-family: var(--font-rethink-sans);
 }
 
 @keyframes pulse {
