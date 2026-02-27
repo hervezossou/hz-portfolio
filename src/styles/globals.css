@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sora: var(--font-sora);
   --font-sans: var(--font-rethink-sans);
+  --color-primary: var(--color-indigo-600);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,11 +28,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-sora);
 }
 
-p, span, a, button {
+p,
+span,
+a,
+button {
   font-family: var(--font-sans);
 }
 

@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-hidden">
+    <html lang="en" className="overflow-x-hidden overflow-y-auto">
       <body
         className={`${sora.variable} ${rethinkSans.variable} antialiased overflow-hidden`}
       >
