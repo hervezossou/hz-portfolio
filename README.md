@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hervé Zossou — Frontend Engineer Portfolio
 
-## Getting Started
+Welcome to the repository for my professional portfolio. I specialize in building fast, scalable, and conversion-focused websites and applications using React and Next.js.
 
-First, run the development server:
+## 🚀 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project serves as my digital home, showcasing my expertise in modern frontend development. It is currently in the "Coming Soon" phase as I prepare a full suite of projects and case studies for launch.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Modern Tech Stack**: Built with Next.js 16 (Turbopack) and Tailwind CSS 4.
+- **Responsive Design**: Optimized for all devices and screen sizes.
+- **Dynamic Animations**: Utilizing `tw-animate-css` for smooth, performant transitions.
+- **SEO Optimized**: Following best practices for visibility and performance.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Node.js (Latest LTS version recommended)
+- [pnpm](https://pnpm.io/) (used as the package manager)
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    git clone https://github.com/hervezossou/portfolio.git
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    pnpm install
+    ```
+
+3. Run the development server:
+    ```bash
+    pnpm dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the results.
+
+## 📬 Contact
+
+I'm always open to discussing new projects, creative ideas, or opportunities.
+
+- **Email**: [contact@hervezossou.com](mailto:contact@hervezossou.com)
+- **LinkedIn**: [Hervé Zossou](https://linkedin.com/in/hervezossou)
+
+---
+
+© 2026 Hervé Zossou — Digital Excellence
