@@ -70,7 +70,7 @@ export const ComingSoon = () => {
 
             {/* Footer - natural bottom via flex column, no fixed/absolute */}
             <footer
-                className={`w-full text-center py-4 transition-opacity duration-1000 delay-700 ${isVisible ? 'opacity-30' : 'opacity-0'}`}
+                className={`w-full text-center py-4 lg:py-8 transition-opacity duration-1000 delay-700 ${isVisible ? 'opacity-30' : 'opacity-0'}`}
             >
                 <p className="text-[10px] uppercase tracking-[0.4em] font-light font-sans">
                     © {new Date().getFullYear()} Hervé Zossou — Digital Excellence
