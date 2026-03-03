@@ -43,7 +43,7 @@ export const ContactSection = () => {
                         <div>
                             <TypographyH3 className="mb-4 leading-tight">
                                 Construisons ensemble <br />
-                                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400">
+                                <span className="text-transparent bg-clip-text bg-linear-to-r from-azure-blue-800 to-azure-blue-500">
                                     quelque chose de grand.
                                 </span>
                             </TypographyH3>
@@ -143,7 +143,7 @@ export const ContactSection = () => {
                                 +33 6 00 00 00 00
                             </TypographyBody>
                             <span className="inline-block mt-2 px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full font-medium">
-                                Le moyen le plus rapide
+                                Disponible en semaine, 9h-18h
                             </span>
                         </div>
                     </BentoCard>
@@ -154,7 +154,7 @@ export const ContactSection = () => {
                         className="flex flex-col justify-between group cursor-pointer gap-6"
                     >
                         <div className="flex justify-between items-start">
-                            <div className="p-3 bg-blue-600/10 rounded-2xl text-blue-600">
+                            <div className="p-3 bg-blue-600/10 rounded-2xl text-azure-blue-600">
                                 <HugeiconsIcon icon={Linkedin01Icon} size={24} />
                             </div>
                             <HugeiconsIcon
