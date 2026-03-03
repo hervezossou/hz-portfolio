@@ -82,8 +82,7 @@ export const ComingSoon = () => {
                 className={`w-full py-4 text-center transition-opacity delay-700 duration-1000 lg:py-8 ${isVisible ? "opacity-30" : "opacity-0"}`}
             >
                 <p className="font-sans text-[10px] font-light tracking-[0.4em] uppercase">
-                    © {new Date().getFullYear()} Hervé Zossou — Digital
-                    Excellence
+                    © {new Date().getFullYear()} Hervé Zossou. Indie Developer.
                 </p>
             </footer>
         </div>

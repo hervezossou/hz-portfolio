@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, Rethink_Sans } from "next/font/google";
 import "@/styles/globals.css";
+import { Footer } from "@/components/layout/Footer";
 
 const sora = Sora({
     variable: "--font-sora",
@@ -26,9 +27,12 @@ export default function RootLayout({
     return (
         <html lang="en" className="overflow-x-hidden overflow-y-auto">
             <body
-                className={`${sora.variable} ${rethinkSans.variable} overflow-hidden antialiased`}
+                className={`${sora.variable} ${rethinkSans.variable} overflow-hidden antialiased flex flex-col min-h-screen`}
             >
-                {children}
+                <div className="flex-1">
+                    {children}
+                </div>
+                <Footer />
             </body>
         </html>
     );

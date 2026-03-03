@@ -9,6 +9,7 @@
     --color-azure-blue-700: oklch(53.81% 0.151 252.56);
     --color-azure-blue-800: oklch(46.03% 0.127 252.43);
     --color-azure-blue-900: oklch(37.84% 0.1 251.85);
+    --color-azure-blue-950: oklch(14.8% 0.03 260);
 
     --font-sora: var(--font-sora);
     --font-rethink-sans: var(--font-rethink-sans);
