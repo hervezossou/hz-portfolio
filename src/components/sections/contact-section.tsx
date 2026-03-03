@@ -9,7 +9,7 @@ import {
     Linkedin01Icon,
     ArrowUpRight01Icon,
     Copy01Icon,
-    CheckListIcon,
+    CheckmarkBadge02Icon,
     WhatsappBusinessIcon,
     NewTwitterIcon
 } from "@hugeicons/core-free-icons";
@@ -19,11 +19,11 @@ import {
     TypographyBody,
     TypographyLabel,
 } from "@/components/ui/typography";
-import { copyToClipboard } from "@/components/lib/utils";
+import { copyToClipboard, openInNewTab } from "@/components/lib/utils";
 
 export const ContactSection = () => {
     const [copied, setCopied] = useState(false);
-    const emailAddress = "hello@indiedev.com";
+    const emailAddress = "hervezossou@outlook.com";
 
     const handleCopyEmail = async () => {
         const success = await copyToClipboard(emailAddress);
@@ -32,6 +32,10 @@ export const ContactSection = () => {
             setTimeout(() => setCopied(false), 2000);
         }
     };
+
+    const handleOpenWhatsApp = () => openInNewTab("https://wa.me/22967357646");
+    const handleOpenLinkedIn = () => openInNewTab("https://linkedin.com/in/hervezossou");
+    const handleOpenTwitter = () => openInNewTab("https://twitter.com/hervezossou");
 
     return (
         <section className="bg-azure-blue-950 py-20 md:py-32">
@@ -89,7 +93,7 @@ export const ContactSection = () => {
                                             exit={{ scale: 0.5, opacity: 0 }}
                                         >
                                             <HugeiconsIcon
-                                                icon={CheckListIcon}
+                                                icon={CheckmarkBadge02Icon}
                                                 size={20}
                                                 className="text-green-400"
                                             />
@@ -124,6 +128,7 @@ export const ContactSection = () => {
                     <BentoCard
                         delay={0.2}
                         className="flex flex-col justify-between group cursor-pointer gap-6"
+                        onClick={handleOpenWhatsApp}
                     >
                         <div className="flex justify-between items-start">
                             <div className="p-3 bg-green-500/10 rounded-2xl text-green-400">
@@ -140,7 +145,7 @@ export const ContactSection = () => {
                                 WhatsApp
                             </TypographyLabel>
                             <TypographyBody className="text-xl font-medium">
-                                +33 6 00 00 00 00
+                                +229 01 67 35 76 46
                             </TypographyBody>
                             <span className="inline-block mt-2 px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full font-medium">
                                 Disponible en semaine, 9h-18h
@@ -152,6 +157,7 @@ export const ContactSection = () => {
                     <BentoCard
                         delay={0.3}
                         className="flex flex-col justify-between group cursor-pointer gap-6"
+                        onClick={handleOpenLinkedIn}
                     >
                         <div className="flex justify-between items-start">
                             <div className="p-3 bg-blue-600/10 rounded-2xl text-azure-blue-600">
@@ -180,6 +186,7 @@ export const ContactSection = () => {
                     <BentoCard
                         delay={0.4}
                         className="flex flex-col justify-between group cursor-pointer gap-6"
+                        onClick={handleOpenTwitter}
                     >
                         <div className="flex justify-between items-start">
                             <div className="p-3 bg-gray-400/10 rounded-2xl text-gray-300">

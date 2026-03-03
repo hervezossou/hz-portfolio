@@ -14,3 +14,9 @@ export async function copyToClipboard(text: string) {
         return false;
     }
 }
+
+export function openInNewTab(url: string) {
+    if (typeof window !== "undefined") {
+        window.open(url, "_blank", "noopener,noreferrer");
+    }
+}
