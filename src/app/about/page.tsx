@@ -28,6 +28,7 @@ export default function AboutPage() {
                         d&apos;applications web.
                     </>
                 }
+                variant="primary"
             />
             <AboutSection variant="secondary" />
             <StackBentoSection variant="primary" />

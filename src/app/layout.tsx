@@ -35,7 +35,7 @@ export default function RootLayout({
             >
                 <Header />
                 <PageWrapper>{children}</PageWrapper>
-                <Footer />
+                <Footer variant="secondary" />
                 <SpeedInsights />
                 <Analytics />
             </body>

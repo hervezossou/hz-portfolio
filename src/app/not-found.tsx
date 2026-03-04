@@ -16,11 +16,11 @@ import {
 
 export default function NotFound() {
     return (
-        <PageWrapper className="bg-slate-950">
+        <PageWrapper className="bg-slate-900">
             {/* Hero 404 */}
             <section className="relative flex min-h-[70vh] flex-1 flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-20">
                 {/* Large Background Number */}
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-white/3 select-none">
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-slate-200/15 select-none">
                     404
                 </div>
 
@@ -83,7 +83,7 @@ export default function NotFound() {
             <ConversionSection
                 title="Prêt à transformer votre idée en réalité ?"
                 description="Chaque projet commence par une conversation. Parlons de votre vision, de vos objectifs et de la manière dont nous pouvons collaborer pour créer quelque chose d'exceptionnel."
-                variant="secondary"
+                variant="primary"
             />
         </PageWrapper>
     );

@@ -16,6 +16,7 @@ export default function WorksPage() {
                 badge="Mes réalisations"
                 title="Ce que j'ai construit"
                 description="Découvrez mes projets récents, des solutions innovantes et des expériences utilisateur exceptionnelles."
+                variant="primary"
             />
             <ProjectSection variant="secondary" />
             <ConversionSection

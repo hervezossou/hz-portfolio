@@ -81,7 +81,7 @@ export const PageHeader = ({
         <div
             className={cn(
                 "relative flex min-h-[500px] flex-col items-center justify-center overflow-hidden px-6 py-28 text-center",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                variant === "primary" ? "bg-slate-900" : "bg-slate-800"
             )}
         >
             {/* Grid canvas */}

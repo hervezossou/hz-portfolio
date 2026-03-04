@@ -17,7 +17,7 @@ export default function ContactPage() {
                 title="Travaillons ensemble"
                 description="Une idée ou un projet en tête ? Décrivez-moi votre vision, je vous réponds sous 24h."
             />
-            <ContactSection variant="secondary" />
+            <ContactSection variant="primary" />
         </div>
     );
 }
