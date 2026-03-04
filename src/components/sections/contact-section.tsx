@@ -94,7 +94,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                     {/* Email Card */}
                     <BentoCard
                         delay={0.1}
-                        className="flex flex-col justify-between"
+                        className="flex flex-col gap-6 justify-between"
                     >
                         <div className="flex items-start justify-between">
                             <div className="rounded-2xl bg-blue-500/10 p-3 text-blue-400">
