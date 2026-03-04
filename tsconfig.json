@@ -25,6 +25,7 @@
             "@/app/*": ["./src/app/*"],
             "@/lib/*": ["./src/lib/*"],
             "@/types/*": ["./src/types/*"],
+            "@/constants/*": ["./src/constants/*"],
             "@/features/*": ["./src/features/*"]
         }
     },

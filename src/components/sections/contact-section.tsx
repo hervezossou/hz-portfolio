@@ -13,6 +13,7 @@ import {
     WhatsappBusinessIcon,
     NewTwitterIcon
 } from "@hugeicons/core-free-icons";
+import { cn } from "@/components/lib/utils";
 import { BentoCard } from "@/components/ui/bento-card";
 import {
     TypographyH3,
@@ -21,7 +22,11 @@ import {
 } from "@/components/ui/typography";
 import { copyToClipboard, openInNewTab } from "@/components/lib/utils";
 
-export const ContactSection = () => {
+interface ContactSectionProps {
+    variant?: "primary" | "secondary" | "accent";
+}
+
+export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
     const [copied, setCopied] = useState(false);
     const emailAddress = "hervezossou@outlook.com";
 
@@ -38,7 +43,12 @@ export const ContactSection = () => {
     const handleOpenTwitter = () => openInNewTab("https://twitter.com/hervezossou");
 
     return (
-        <section className="bg-azure-blue-950 py-20 md:py-32">
+        <section className={cn(
+            "py-20 md:py-32 outline-none",
+            variant === "primary" ? "bg-slate-950" :
+                variant === "secondary" ? "bg-slate-900" :
+                    "bg-azure-blue-950"
+        )}>
             <div className="max-w-6xl mx-auto px-6">
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

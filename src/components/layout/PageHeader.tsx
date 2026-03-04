@@ -6,17 +6,20 @@ import {
     TypographyBody,
     TypographyLabel,
 } from "@/components/ui/typography";
+import { cn } from "@/components/lib/utils";
 
 interface PageHeaderProps {
     badge?: string;
     title?: string;
     description?: string;
+    variant?: "primary" | "secondary";
 }
 
 export const PageHeader = ({
     badge = "CONTACT",
     title = "Contactez-nous",
     description = "Nous sommes à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre projet.",
+    variant = "primary",
 }: PageHeaderProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -75,7 +78,10 @@ export const PageHeader = ({
     }, []);
 
     return (
-        <div className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-900 px-6 py-28 text-center min-h-[500px]">
+        <div className={cn(
+            "relative flex flex-col items-center justify-center overflow-hidden px-6 py-28 text-center min-h-[500px]",
+            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+        )}>
             {/* Grid canvas */}
             <canvas
                 ref={canvasRef}

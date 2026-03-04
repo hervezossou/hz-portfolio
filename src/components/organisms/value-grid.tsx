@@ -1,0 +1,23 @@
+"use client";
+
+import { useState } from "react";
+import { ValueCard } from "./value-card";
+import { VALUES_DATA } from "@/constants/values";
+
+export function ValueGrid() {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+    return (
+        <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch perspective-1000">
+            {VALUES_DATA.map((value, index) => (
+                <ValueCard
+                    key={value.id}
+                    value={value}
+                    isHovered={hoveredIndex === index}
+                    onHover={() => setHoveredIndex(index)}
+                    onLeave={() => setHoveredIndex(null)}
+                />
+            ))}
+        </div>
+    );
+}
