@@ -67,11 +67,11 @@ export function AboutCard({
                     <AboutStatsGrid stats={stats} className="mb-12" />
 
                     {/* Actions */}
-                    <div className="flex flex-wrap gap-4">
+                    <div className="w-full flex flex-wrap gap-4 lg:flex-nowrap">
                         <Button
                             asChild
                             size="lg"
-                            className="bg-azure-blue-500 hover:bg-azure-blue-600 shadow-azure-blue-500/20 rounded-2xl px-10 py-7 shadow-lg"
+                            className="w-full lg:w-[50%] bg-azure-blue-500 hover:bg-azure-blue-600 shadow-azure-blue-500/20 rounded-2xl px-10 py-8 shadow-lg"
                         >
 
                             <Link href="/contact">
@@ -87,7 +87,7 @@ export function AboutCard({
                             asChild
                             variant="outline"
                             size="lg"
-                            className="rounded-2xl border-white/10 px-10 py-7 text-slate-300 hover:text-azure-blue-500 hover:border-azure-blue-500"
+                            className="w-full lg:w-[50%] rounded-2xl border-white/10 px-10 py-7 text-slate-300 hover:text-azure-blue-500 hover:border-azure-blue-500"
                         >
                             <Link href="/works">
                                 <TypographyBody>Voir mes projets</TypographyBody>

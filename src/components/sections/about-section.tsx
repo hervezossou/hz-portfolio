@@ -28,7 +28,7 @@ const ABOUT_DATA = {
         </>,
     ],
     stats: [
-        { value: "12+", label: "Projets livrés" },
+        { value: "4+", label: "Projets livrés" },
         { value: "98", label: "Score Lighthouse" },
         { value: "3+", label: "Ans d'expérience" },
     ],

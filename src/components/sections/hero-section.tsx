@@ -82,21 +82,21 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     className="flex flex-col items-center gap-4 sm:flex-row"
                 >
                     <Link href="#projets" scroll={true}>
-                        <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all">
+                        <Button className="bg-azure-blue-500 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all">
                             <span>Voir mes projets</span>
                             <HugeiconsIcon
                                 icon={ArrowRight01Icon}
-                                size={20}
+                                size={24}
                                 strokeWidth={2}
                             />
                         </Button>
                     </Link>
 
                     <Link href="mailto:hervezossou@outlook.com">
-                        <Button className="cursor-pointer gap-3 rounded-2xl border-none bg-white px-10 py-7 text-base font-medium text-slate-950 shadow-lg transition-all hover:bg-slate-100">
+                        <Button className="cursor-pointer gap-3 rounded-2xl border-none bg-white px-10 py-7 text-base font-medium text-slate-950 shadow-lg transition-all hover:bg-slate-300">
                             <HugeiconsIcon
                                 icon={Mail01Icon}
-                                size={20}
+                                size={24}
                                 strokeWidth={2}
                             />
                             <span>Me contacter</span>

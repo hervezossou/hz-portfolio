@@ -48,7 +48,7 @@ export function Header() {
                     <Logo />
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden items-center gap-8 rounded-full border border-slate-50/20 bg-slate-900/40 px-6 py-2 backdrop-blur-md md:flex">
+                    <nav className="hidden items-center gap-8 rounded-full border border-slate-50/20 bg-slate-900/40 px-6 py-2 backdrop-blur-md lg:flex">
                         {navItems.map((item) => (
                             <NavLink key={item.label} href={item.href}>
                                 {item.label}
@@ -57,9 +57,12 @@ export function Header() {
                     </nav>
 
                     {/* Desktop CTA */}
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <Link href="/contact">
-                            <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 h-auto cursor-pointer rounded-2xl px-7 py-4 text-sm font-medium text-white shadow-lg transition-all">
+                            <Button
+                                size="lg"
+                                className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 cursor-pointer rounded-2xl px-10 py-8 text-sm font-medium text-white shadow-lg transition-all"
+                            >
                                 <HugeiconsIcon
                                     icon={Mail01Icon}
                                     size={24}
@@ -73,7 +76,7 @@ export function Header() {
                     {/* Mobile Menu Toggle */}
                     <Button
                         variant="outline"
-                        className="hover:text-azure-blue-600 cursor-pointer p-2 text-slate-300 transition-colors md:hidden"
+                        className="hover:text-azure-blue-600 cursor-pointer p-2 text-slate-300 transition-colors lg:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <HugeiconsIcon
@@ -92,7 +95,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 z-40 bg-slate-950 px-8 pt-32 md:hidden"
+                        className="fixed inset-0 z-40 bg-slate-950 px-8 pt-32 lg:hidden"
                     >
                         <nav className="flex flex-col gap-6 text-center">
                             {navItems.map((item) => (
@@ -110,7 +113,7 @@ export function Header() {
                                     href="/contact"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    <Button className="bg-azure-blue-600 mx-auto w-full max-w-xs cursor-pointer rounded-2xl py-6 text-lg">
+                                    <Button className="bg-azure-blue-600 mx-auto w-full max-w-xs cursor-pointer rounded-2xl px-8 py-7 text-lg">
                                         <HugeiconsIcon
                                             icon={Mail01Icon}
                                             size={20}
