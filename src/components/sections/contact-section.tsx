@@ -21,6 +21,8 @@ import {
     TypographyLabel,
 } from "@/components/ui/typography";
 import { copyToClipboard, openInNewTab } from "@/components/lib/utils";
+import Link from "next/link";
+import { Button } from "../ui/button";
 
 interface ContactSectionProps {
     variant?: "primary" | "secondary" | "accent";
@@ -49,10 +51,10 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
             className={cn(
                 "py-20 outline-none md:py-32",
                 variant === "primary"
-                    ? "bg-slate-950"
+                    ? "bg-slate-900"
                     : variant === "secondary"
-                      ? "bg-slate-900"
-                      : "bg-azure-blue-950"
+                        ? "bg-slate-800"
+                        : "bg-azure-blue-900"
             )}
         >
             <div className="mx-auto max-w-6xl px-6">
@@ -63,11 +65,11 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                         <div>
                             <TypographyH3 className="mb-4 leading-tight text-slate-200">
                                 Construisons ensemble <br />
-                                <span className="from-azure-blue-700 to-azure-blue-400 bg-linear-to-r bg-clip-text text-transparent">
+                                <span className="from-azure-blue-600 to-azure-blue-300 bg-linear-to-r bg-clip-text text-transparent">
                                     quelque chose de grand.
                                 </span>
                             </TypographyH3>
-                            <TypographyBody className="max-w-md text-gray-400">
+                            <TypographyBody className="max-w-md text-slate-200">
                                 Disponible pour des projets ambitieux, du
                                 consulting ou simplement pour échanger sur le
                                 développement.
@@ -75,7 +77,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                         </div>
 
                         <div className="mt-8">
-                            <a
+                            <Link
                                 href={`mailto:${emailAddress}`}
                                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-black transition-colors hover:bg-gray-200"
                             >
@@ -85,7 +87,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                     strokeWidth={1.5}
                                 />
                                 <span>Envoyez-moi un email</span>
-                            </a>
+                            </Link>
                         </div>
                     </BentoCard>
 
@@ -98,9 +100,11 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             <div className="rounded-2xl bg-blue-500/10 p-3 text-blue-400">
                                 <HugeiconsIcon icon={Mail01Icon} size={24} />
                             </div>
-                            <button
+                            <Button
+                                variant="ghost"
+                                size="icon"
                                 onClick={handleCopyEmail}
-                                className="relative text-gray-500 transition-colors hover:cursor-pointer hover:text-white"
+                                className="relative flex items-center justify-center p-4 text-gray-500 transition-colors cursor-pointer hover:bg-azure-blue-300/20 hover:text-white"
                                 title="Copier l'adresse"
                             >
                                 <AnimatePresence mode="wait">
@@ -126,12 +130,13 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                         >
                                             <HugeiconsIcon
                                                 icon={Copy01Icon}
-                                                size={20}
+                                                size={24}
+                                                className="text-slate-300"
                                             />
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
-                            </button>
+                            </Button>
                         </div>
                         <div>
                             <TypographyLabel className="mb-1 block tracking-wider text-gray-500 uppercase">

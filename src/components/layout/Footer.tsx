@@ -41,7 +41,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
         <footer
             className={cn(
                 "footer-container mt-auto border-t border-white/5 px-6 py-12 md:px-12",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                variant === "primary" ? "bg-slate-900" : "bg-slate-800"
             )}
         >
             <div className="mx-auto flex max-w-6xl flex-col gap-10">
@@ -72,7 +72,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
 
                 {/* Bottom Section */}
                 <div className="text-center">
-                    <TypographyBody className="text-xs font-medium tracking-widest text-gray-500 uppercase">
+                    <TypographyBody className="text-xs font-medium tracking-widest text-gray-400 uppercase">
                         © {currentYear} HERVÉ ZOSSOU. INDIE DEVELOPER
                     </TypographyBody>
                 </div>

@@ -117,9 +117,9 @@ export const PageHeader = ({
                 <TypographyH1 className="text-slate-50">{title}</TypographyH1>
 
                 {/* Description with subtle blue gradient if it's a string */}
-                <TypographyBody className="max-w-4xl text-balance text-slate-400">
+                <TypographyBody className="max-w-4xl text-balance text-slate-200">
                     {typeof description === "string" ? (
-                        <span className="via-azure-blue-300 bg-linear-to-br from-slate-400 to-slate-400 bg-clip-text text-transparent">
+                        <span className="via-slate-200 bg-linear-to-br from-slate-400 to-slate-400 bg-clip-text">
                             {description}
                         </span>
                     ) : (

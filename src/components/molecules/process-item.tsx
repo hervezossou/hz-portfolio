@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { ProcessNumber } from "@/components/ui/process-number";
-import { TypographyBody } from "@/components/ui/typography";
+import { TypographyBody, TypographyH3 } from "@/components/ui/typography";
 import { ValueBadge } from "@/components/ui/value-badge";
 import { cn } from "@/components/lib/utils";
 
@@ -42,14 +42,14 @@ export function ProcessItem({
             >
                 <ProcessNumber number={number} isHovered={isActive} />
 
-                <h3
+                <TypographyH3
                     className={cn(
-                        "font-sora text-xl tracking-tight transition-colors duration-300 md:text-2xl lg:text-3xl",
+                        "font-light transition-colors duration-300",
                         isActive ? "text-white" : "text-slate-500"
                     )}
                 >
                     {title}
-                </h3>
+                </TypographyH3>
 
                 <div
                     className={cn(
@@ -72,8 +72,8 @@ export function ProcessItem({
                 transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                 className="overflow-hidden"
             >
-                <div className="max-w-2xl pb-8 pl-12 md:pl-[72px]">
-                    <TypographyBody className="text-[15px] leading-relaxed text-slate-400">
+                <div className="max-w-3xl pb-8 pl-12 md:pl-[72px]">
+                    <TypographyBody className="text-slate-200">
                         {description}
                     </TypographyBody>
                 </div>

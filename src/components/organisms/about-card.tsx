@@ -56,7 +56,7 @@ export function AboutCard({
                         {description.map((paragraph, index) => (
                             <TypographyBody
                                 key={index}
-                                className="text-[15px] leading-relaxed font-light text-slate-200"
+                                className="text-slate-200"
                             >
                                 {paragraph}
                             </TypographyBody>
@@ -77,10 +77,10 @@ export function AboutCard({
                             <Link href="/contact">
                                 <HugeiconsIcon
                                     icon={Mail01Icon}
-                                    size={20}
+                                    size={24}
                                     strokeWidth={2}
                                 />
-                                Me contacter
+                                <TypographyBody>Me contacter</TypographyBody>
                             </Link>
                         </Button>
                         <Button
@@ -90,10 +90,10 @@ export function AboutCard({
                             className="rounded-2xl border-white/10 px-10 py-7 text-slate-300 hover:text-azure-blue-500 hover:border-azure-blue-500"
                         >
                             <Link href="/works">
-                                Voir mes projets
+                                <TypographyBody>Voir mes projets</TypographyBody>
                                 <HugeiconsIcon
                                     icon={ArrowRight01Icon}
-                                    size={20}
+                                    size={24}
                                     strokeWidth={2}
                                 />
                             </Link>

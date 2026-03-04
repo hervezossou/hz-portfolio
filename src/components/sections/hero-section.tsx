@@ -3,7 +3,7 @@
 import { cn } from "@/components/lib/utils";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { TypographyH1, TypographyBody } from "@/components/ui/typography";
+import { TypographyH1, TypographyBody, TypographyCaption } from "@/components/ui/typography";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
@@ -36,10 +36,10 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                         <span className="bg-azure-blue-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>
                         <span className="bg-azure-blue-500 relative inline-flex h-2 w-2 rounded-full"></span>
                     </span>
-                    <p className="text-[11px] font-medium tracking-wider text-slate-400 uppercase">
+                    <TypographyCaption className="text-xs font-medium tracking-wider text-slate-200 uppercase">
                         ✦ Disponible pour missions freelance · Ouvert aux
                         opportunités CDI
-                    </p>
+                    </TypographyCaption>
                 </motion.div>
 
                 {/* Hero Content */}
@@ -51,23 +51,23 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                 >
                     <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-white">
                         Ingénieur Frontend <br />
-                        <span className="font-rethink-sans text-azure-blue-400/80 font-normal italic">
+                        <span className="font-rethink-sans text-azure-blue-400 font-normal italic">
                             Expert React & Next.js
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed font-light text-slate-400 md:text-xl lg:text-2xl">
+                    <TypographyBody className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed font-light text-slate-200 md:text-xl lg:text-2xl">
                         Je conçois et développe des produits digitaux{" "}
-                        <span className="font-normal text-white">
+                        <span className="font-normal text-azure-blue-400">
                             performants
                         </span>
                         ,
-                        <span className="font-normal text-white">
+                        <span className="font-normal text-azure-blue-400">
                             {" "}
                             scalables
                         </span>{" "}
                         et centrés sur{" "}
-                        <span className="font-normal text-white">
+                        <span className="font-normal text-azure-blue-400">
                             l&apos;expérience utilisateur
                         </span>
                         .

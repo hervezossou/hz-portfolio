@@ -6,7 +6,7 @@ const ABOUT_DATA = {
         <>
             Je suis Hervé,
             <br />
-            <em className="text-white/40 not-italic">développeur frontend</em>
+            <em className="text-azure-blue-500 not-italic">développeur frontend</em>
             <br />
             passionné par les interfaces
             <br />

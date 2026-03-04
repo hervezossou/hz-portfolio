@@ -22,7 +22,7 @@ export function Logo({ className }: LogoProps) {
             </div>
             <div className="group-hover:text-azure-blue-400 flex items-baseline text-white transition-colors">
                 <TypographyH3>herve</TypographyH3>
-                <span className="font-light text-slate-500">.dev</span>
+                <span className="font-light text-slate-400">.dev</span>
             </div>
         </Link>
     );

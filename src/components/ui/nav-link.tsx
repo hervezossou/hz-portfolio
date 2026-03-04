@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/components/lib/utils";
 import { motion } from "motion/react";
+import { TypographyBody } from "./typography";
 
 interface NavLinkProps {
     href: string;
@@ -21,10 +22,10 @@ export function NavLink({ href, children, onClick }: NavLinkProps) {
             onClick={onClick}
             className={cn(
                 "relative px-1 py-2 text-sm font-medium transition-colors duration-300",
-                isActive ? "text-white" : "text-slate-400 hover:text-slate-200"
+                isActive ? "text-azure-blue-400" : "text-slate-400 hover:text-azure-blue-400"
             )}
         >
-            {children}
+            <TypographyBody>{children}</TypographyBody>
             {isActive && (
                 <motion.div
                     layoutId="nav-underline"

@@ -13,6 +13,7 @@ import {
     Mail01Icon,
 } from "@hugeicons/core-free-icons";
 import Link from "next/link";
+import { TypographyBody } from "@/components/ui/typography";
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +40,7 @@ export function Header() {
                 className={cn(
                     "fixed top-0 right-0 left-0 z-50 transition-all duration-500",
                     isScrolled
-                        ? "border-b border-white/5 bg-slate-950/80 py-4 shadow-2xl shadow-black/20 backdrop-blur-xl"
+                        ? "border-b border-white/5 bg-slate-950/80 py-6 shadow-2xl shadow-black/20 backdrop-blur-xl"
                         : "bg-transparent py-6"
                 )}
             >
@@ -47,7 +48,7 @@ export function Header() {
                     <Logo />
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden items-center gap-8 rounded-full border border-white/5 bg-slate-900/40 px-6 py-2 backdrop-blur-md md:flex">
+                    <nav className="hidden items-center gap-8 rounded-full border border-slate-50/20 bg-slate-900/40 px-6 py-2 backdrop-blur-md md:flex">
                         {navItems.map((item) => (
                             <NavLink key={item.label} href={item.href}>
                                 {item.label}
@@ -61,10 +62,10 @@ export function Header() {
                             <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 h-auto cursor-pointer rounded-2xl px-7 py-4 text-sm font-medium text-white shadow-lg transition-all">
                                 <HugeiconsIcon
                                     icon={Mail01Icon}
-                                    size={20}
+                                    size={24}
                                     strokeWidth={2}
                                 />
-                                Prendre contact
+                                <TypographyBody>Prendre contact</TypographyBody>
                             </Button>
                         </Link>
                     </div>

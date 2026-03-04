@@ -20,11 +20,11 @@ export function ProjectHeader({
         <div className="mb-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
                 <ProjectTag accent={accent}>{tag}</ProjectTag>
-                <TypographyCaption className="font-medium text-slate-500">
+                <TypographyCaption className="font-medium text-slate-200">
                     {year}
                 </TypographyCaption>
             </div>
-            <TypographyLabel className="text-[11px] font-medium tracking-[0.14em] text-slate-500 uppercase">
+            <TypographyLabel className="text-[11px] font-medium tracking-[0.14em] text-slate-200 uppercase">
                 {category}
             </TypographyLabel>
         </div>

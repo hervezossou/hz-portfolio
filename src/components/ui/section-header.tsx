@@ -28,7 +28,7 @@ export function SectionHeader({
                     {title}
                 </TypographyH1>
                 {subtitle && (
-                    <TypographyBody className="max-w-4xl text-xl leading-relaxed font-light text-slate-500">
+                    <TypographyBody className="max-w-4xl text-slate-200">
                         {subtitle}
                     </TypographyBody>
                 )}

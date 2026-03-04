@@ -65,11 +65,11 @@ export function ProjectCard({
                         accent={project.accent}
                     />
 
-                    <TypographyH2 className="mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] font-light! tracking-[-0.03em] text-slate-100">
+                    <TypographyH2 className="mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-slate-100">
                         {project.title}
                     </TypographyH2>
 
-                    <TypographyBody className="mb-6 max-w-md leading-relaxed font-light text-slate-400">
+                    <TypographyBody className="mb-6 max-w-md leading-relaxed text-slate-200">
                         {project.description}
                     </TypographyBody>
 

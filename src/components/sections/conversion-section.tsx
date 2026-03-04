@@ -54,7 +54,7 @@ export function ConversionSection({
                                 )}
                             </TypographyH2>
 
-                            <TypographyBody className="mb-12 max-w-3xl text-lg leading-relaxed font-light text-slate-400 md:text-xl">
+                            <TypographyBody className="mb-12 max-w-3xl text-lg leading-relaxed font-light text-slate-200 md:text-xl">
                                 {description ? (
                                     description
                                 ) : (
@@ -73,7 +73,7 @@ export function ConversionSection({
                                         variant="outline"
                                         className="hover:text-azure-blue-500 hover:border-azure-blue-500 min-w-[220px] cursor-pointer gap-3 rounded-2xl border-slate-700/50 px-10 py-7 text-base font-medium text-slate-300 transition-all"
                                     >
-                                        <span>Voir mes projets</span>
+                                        <TypographyBody>Voir mes projets</TypographyBody>
                                         <HugeiconsIcon
                                             icon={ArrowRight01Icon}
                                             size={20}
@@ -86,10 +86,10 @@ export function ConversionSection({
                                     <Button className="min-w-[220px] cursor-pointer gap-3 rounded-2xl bg-white px-10 py-7 text-base font-medium text-slate-950 shadow-xl shadow-white/5 transition-all hover:bg-slate-100">
                                         <HugeiconsIcon
                                             icon={Mail01Icon}
-                                            size={20}
+                                            size={24}
                                             strokeWidth={2}
                                         />
-                                        <span>Prendre contact</span>
+                                        <TypographyBody>Prendre contact</TypographyBody>
                                     </Button>
                                 </Link>
                             </div>

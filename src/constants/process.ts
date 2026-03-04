@@ -18,13 +18,13 @@ export const PROCESS_STEPS = [
         title: "Exécution",
         tag: "Livraison",
         description:
-            "Des sprints courts, une communication régulière. Vous voyez le projet avancer en temps réel. Pas de boîte noire — vous restez maître du résultat à chaque étape.",
+            "Des sprints courts, une communication régulière. Vous voyez le projet avancer en temps réel. Pas de boîte noire, vous restez maître du résultat à chaque étape.",
     },
     {
         number: "04",
         title: "Livraison",
         tag: "Suivi",
         description:
-            "Code propre, documenté, testé. Déploiement sans stress. Et si besoin, je reste disponible après — parce qu'un bon partenaire ne disparaît pas après le merge.",
+            "Code propre, documenté, testé. Déploiement sans stress. Et si besoin, je reste disponible après, parce qu'un bon partenaire ne disparaît pas après le merge.",
     },
 ];
