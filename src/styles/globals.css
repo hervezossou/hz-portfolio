@@ -83,6 +83,10 @@
     --radius-4xl: calc(var(--radius) + 16px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -107,6 +111,7 @@ button {
 }
 
 @keyframes pulse {
+
     0%,
     100% {
         opacity: 0.05;
@@ -127,6 +132,7 @@ button {
     0% {
         background-position: 200% 0;
     }
+
     100% {
         background-position: -200% 0;
     }
@@ -137,11 +143,13 @@ button {
 }
 
 @keyframes pulse-dot {
+
     0%,
     100% {
         opacity: 1;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.4;
         transform: scale(0.75);
