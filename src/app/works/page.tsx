@@ -1,6 +1,13 @@
+import { Metadata } from "next";
+
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ProjectSection } from "@/components/sections/project-section";
 import { ConversionSection } from "@/components/sections/conversion-section";
+
+export const metadata: Metadata = {
+    title: "Mes réalisations - Hervé Zossou",
+    description: "Mes réalisations - Hervé Zossou",
+};
 
 export default function WorksPage() {
     return (

@@ -1,9 +1,16 @@
+import { Metadata } from "next";
+
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { AboutSection } from "@/components/sections/about-section";
 import { ParcoursSection } from "@/components/sections/parcours-section";
 import { ConversionSection } from "@/components/sections/conversion-section";
 import { StackBentoSection } from "@/components/sections/stack-bento-section";
+
+export const metadata: Metadata = {
+    title: "À propos - Hervé Zossou",
+    description: "À propos - Hervé Zossou",
+};
 
 export default function AboutPage() {
     return (

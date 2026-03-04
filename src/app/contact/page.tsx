@@ -1,5 +1,12 @@
+import { Metadata } from "next";
+
 import { ContactSection } from "@/components/sections/contact-section";
 import { PageHeader } from "@/components/layout/PageHeader";
+
+export const metadata: Metadata = {
+    title: "Contactez-moi - Hervé Zossou",
+    description: "Contactez-moi - Hervé Zossou",
+};
 
 export default function ContactPage() {
     return (

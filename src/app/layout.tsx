@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PageWrapper } from "@/components/layout/PageWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const sora = Sora({
     variable: "--font-sora",
@@ -31,6 +32,7 @@ export default function RootLayout({
             <body
                 className={`${sora.variable} ${rethinkSans.variable} flex min-h-screen flex-col overflow-hidden bg-slate-950 antialiased`}
             >
+                <SpeedInsights />
                 <Header />
                 <PageWrapper>{children}</PageWrapper>
                 <Footer />
