@@ -19,7 +19,7 @@ This project serves as my digital home, showcasing my expertise in modern fronte
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Components**: [Shadcn UI](https://ui.shadcn.com/) / [Radix UI](https://www.radix-ui.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
+- **Icons**: [Hugeicons](https://hugeicons.com/)
 
 ## 📦 Getting Started
 
