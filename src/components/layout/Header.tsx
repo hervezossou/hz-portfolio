@@ -54,7 +54,7 @@ export function Header() {
                     <div className="hidden md:block">
                         <Link href="/contact">
                             <Button
-                                className="bg-azure-blue-600 hover:bg-azure-blue-500 text-white rounded-2xl px-7 py-4 h-auto text-sm font-medium transition-all shadow-lg shadow-azure-blue-500/20"
+                                className="bg-azure-blue-600 hover:bg-azure-blue-500 text-white rounded-2xl px-7 py-4 h-auto text-sm font-medium transition-all shadow-lg shadow-azure-blue-500/20 cursor-pointer"
                             >
                                 <HugeiconsIcon icon={Mail01Icon} size={20} strokeWidth={2} />
                                 Prendre contact
@@ -63,12 +63,13 @@ export function Header() {
                     </div>
 
                     {/* Mobile Menu Toggle */}
-                    <button
-                        className="md:hidden p-2 text-slate-300 hover:text-white transition-colors"
+                    <Button
+                        variant="outline"
+                        className="md:hidden p-2 text-slate-300 hover:text-azure-blue-600 transition-colors cursor-pointer"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <HugeiconsIcon icon={isMobileMenuOpen ? Cancel01Icon : Menu01Icon} size={24} />
-                    </button>
+                    </Button>
                 </div>
             </header>
 
@@ -87,7 +88,7 @@ export function Header() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="text-2xl font-sora font-medium text-slate-300 hover:text-white transition-colors"
+                                    className="text-2xl font-sora font-medium text-slate-300 hover:text-azure-blue-600 transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.label}
@@ -95,7 +96,7 @@ export function Header() {
                             ))}
                             <div className="mt-10">
                                 <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                                    <Button className="w-full max-w-xs mx-auto bg-azure-blue-600 py-6 text-lg rounded-2xl">
+                                    <Button className="w-full max-w-xs mx-auto bg-azure-blue-600 py-6 text-lg rounded-2xl cursor-pointer">
                                         <HugeiconsIcon icon={Mail01Icon} size={20} strokeWidth={2} />
                                         Prendre contact
                                     </Button>
