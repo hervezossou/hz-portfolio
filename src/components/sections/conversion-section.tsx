@@ -69,7 +69,7 @@ export function ConversionSection({
 
                             <div className="mb-12 flex flex-col gap-4 sm:flex-row">
                                 <Link href="/contact">
-                                    <Button className="min-w-[220px] cursor-pointer gap-3 rounded-2xl bg-azure-blue-500 px-10 py-7 text-base font-medium text-white shadow-xl shadow-white/5 transition-all hover:bg-azure-blue-600">
+                                    <Button className="min-w-[220px] cursor-pointer gap-3 rounded-2xl bg-azure-blue-700 px-10 py-7 text-base font-medium text-white shadow-xl shadow-white/5 transition-all hover:bg-azure-blue-600">
                                         <HugeiconsIcon
                                             icon={Mail01Icon}
                                             size={24}
@@ -82,9 +82,10 @@ export function ConversionSection({
                                 <Link href="/works">
                                     <Button
                                         variant="outline"
+                                        aria-label="Voir toutes mes réalisations"
                                         className="hover:text-azure-blue-500 hover:border-azure-blue-500 min-w-[220px] cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-slate-300 transition-all"
                                     >
-                                        <TypographyBody>Voir mes projets</TypographyBody>
+                                        <TypographyBody>Toutes mes réalisations</TypographyBody>
                                         <HugeiconsIcon
                                             icon={ArrowRight01Icon}
                                             size={20}

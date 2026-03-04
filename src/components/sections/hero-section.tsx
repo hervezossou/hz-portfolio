@@ -82,8 +82,11 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     className="flex flex-col items-center gap-4 sm:flex-row"
                 >
                     <Link href="#projets" scroll={true}>
-                        <Button className="bg-azure-blue-500 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all">
-                            <span>Voir mes projets</span>
+                        <Button
+                            aria-label="Voir les projets récents sur cette page"
+                            className="bg-azure-blue-700 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all"
+                        >
+                            <span>Projets récents</span>
                             <HugeiconsIcon
                                 icon={ArrowRight01Icon}
                                 size={24}

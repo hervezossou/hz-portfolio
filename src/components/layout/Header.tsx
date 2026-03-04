@@ -61,7 +61,7 @@ export function Header() {
                         <Link href="/contact">
                             <Button
                                 size="lg"
-                                className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 cursor-pointer rounded-2xl px-10 py-8 text-sm font-medium text-white shadow-lg transition-all"
+                                className="bg-azure-blue-700 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer rounded-2xl px-10 py-8 text-sm font-medium text-white shadow-lg transition-all"
                             >
                                 <HugeiconsIcon
                                     icon={Mail01Icon}
@@ -76,6 +76,7 @@ export function Header() {
                     {/* Mobile Menu Toggle */}
                     <Button
                         variant="outline"
+                        aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
                         className="hover:text-azure-blue-600 cursor-pointer p-2 text-slate-300 transition-colors lg:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
@@ -113,7 +114,7 @@ export function Header() {
                                     href="/contact"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    <Button className="bg-azure-blue-600 mx-auto w-full max-w-xs cursor-pointer rounded-2xl px-8 py-7 text-lg">
+                                    <Button className="bg-azure-blue-700 hover:bg-azure-blue-600 mx-auto w-full max-w-xs cursor-pointer rounded-2xl px-8 py-7 text-lg">
                                         <HugeiconsIcon
                                             icon={Mail01Icon}
                                             size={20}

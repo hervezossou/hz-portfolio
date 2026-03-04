@@ -70,7 +70,7 @@ export default function NotFound() {
                                     icon={LinkSquare01Icon}
                                     size={20}
                                 />
-                                Voir mes projets
+                                Voir toutes mes réalisations
                             </Button>
                         </Link>
                     </div>

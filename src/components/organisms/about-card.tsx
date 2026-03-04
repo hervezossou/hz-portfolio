@@ -71,7 +71,7 @@ export function AboutCard({
                         <Button
                             asChild
                             size="lg"
-                            className="w-full lg:w-[50%] bg-azure-blue-500 hover:bg-azure-blue-600 shadow-azure-blue-500/20 rounded-2xl px-10 py-8 shadow-lg"
+                            className="w-full lg:w-[50%] bg-azure-blue-700 hover:bg-azure-blue-600 shadow-azure-blue-500/20 rounded-2xl px-10 py-8 shadow-lg"
                         >
 
                             <Link href="/contact">
@@ -89,8 +89,8 @@ export function AboutCard({
                             size="lg"
                             className="w-full lg:w-[50%] rounded-2xl border-white/10 px-10 py-7 text-slate-300 hover:text-azure-blue-500 hover:border-azure-blue-500"
                         >
-                            <Link href="/works">
-                                <TypographyBody>Voir mes projets</TypographyBody>
+                            <Link href="/works" aria-label="Voir toutes mes réalisations">
+                                <TypographyBody>Découvrir mon portfolio</TypographyBody>
                                 <HugeiconsIcon
                                     icon={ArrowRight01Icon}
                                     size={24}
