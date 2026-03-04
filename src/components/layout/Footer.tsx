@@ -58,7 +58,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-azure-blue-500/5 hover:border-azure-blue-400/30 rounded-2xl border border-white/5 p-3 text-gray-400 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
+                                className="bg-azure-blue-500/5 hover:border-azure-blue-400/30 rounded-2xl border border-white/5 p-3 text-slate-300 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
                                 aria-label={social.label}
                             >
                                 <HugeiconsIcon icon={social.icon} size={20} />
@@ -72,7 +72,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
 
                 {/* Bottom Section */}
                 <div className="text-center">
-                    <TypographyBody className="text-xs font-medium tracking-widest text-gray-400 uppercase">
+                    <TypographyBody className="text-xs font-medium tracking-widest text-slate-300 uppercase">
                         © {currentYear} HERVÉ ZOSSOU. INDIE DEVELOPER
                     </TypographyBody>
                 </div>

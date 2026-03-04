@@ -33,11 +33,10 @@ export default function NotFound() {
                         </TypographyLabel>
                     </div>
 
-                    <TypographyH1 className="mb-6 leading-[1.1] text-slate-50">
-                        Cette page n&apos;existe pas,
-                        <br />
-                        <span className="font-light text-slate-500 italic">
-                            ou plus.
+                    <TypographyH1 className="mb-4 text-white">
+                        404{" "}
+                        <span className="font-light text-slate-300 italic">
+                            Oups.
                         </span>
                     </TypographyH1>
 
@@ -46,7 +45,6 @@ export default function NotFound() {
                         URL incorrecte. Ne vous inquiétez pas, l&apos;accueil
                         est à un clic.
                     </TypographyBody>
-
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <Link href="/">
                             <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 group h-auto cursor-pointer rounded-2xl px-10 py-6 text-sm font-medium text-white shadow-lg transition-all">
@@ -66,7 +64,7 @@ export default function NotFound() {
                         <Link href="/works">
                             <Button
                                 variant="outline"
-                                className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto cursor-pointer rounded-2xl border-slate-700/50 px-10 py-6 text-sm font-normal text-slate-400 transition-all"
+                                className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto cursor-pointer rounded-2xl border-slate-700/50 px-10 py-6 text-sm font-normal text-slate-300 transition-all"
                             >
                                 <HugeiconsIcon
                                     icon={LinkSquare01Icon}

@@ -47,7 +47,7 @@ export function ConversionSection({
                                 ) : (
                                     <>
                                         Vous avez un projet ?<br />
-                                        <span className="font-rethink-sans border-b border-slate-800 font-normal text-slate-500 italic">
+                                        <span className="font-rethink-sans border-b border-slate-700 font-normal text-slate-300 italic">
                                             Parlons-en.
                                         </span>
                                     </>

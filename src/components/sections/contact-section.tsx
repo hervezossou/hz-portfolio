@@ -139,10 +139,10 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             </Button>
                         </div>
                         <div>
-                            <TypographyLabel className="mb-1 block tracking-wider text-gray-500 uppercase">
+                            <TypographyLabel className="mb-1 block tracking-wider text-slate-300 uppercase">
                                 Email
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium break-all text-slate-200">
+                            <TypographyBody className="text-xl font-medium break-all text-slate-100">
                                 {emailAddress}
                             </TypographyBody>
                         </div>
@@ -168,10 +168,10 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             />
                         </div>
                         <div>
-                            <TypographyLabel className="mb-1 block tracking-wider text-gray-500 uppercase">
+                            <TypographyLabel className="mb-1 block tracking-wider text-slate-300 uppercase">
                                 WhatsApp
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium text-slate-200">
+                            <TypographyBody className="text-xl font-medium text-slate-100">
                                 +229 01 67 35 76 46
                             </TypographyBody>
                             <span className="mt-2 inline-block rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-500">
@@ -200,13 +200,13 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             />
                         </div>
                         <div>
-                            <TypographyLabel className="mb-1 block tracking-wider text-gray-500 uppercase">
+                            <TypographyLabel className="mb-1 block tracking-wider text-slate-300 uppercase">
                                 LinkedIn
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium text-slate-200">
+                            <TypographyBody className="text-xl font-medium text-slate-100">
                                 Actualités Pro
                             </TypographyBody>
-                            <TypographyLabel className="mt-1 block text-gray-500">
+                            <TypographyLabel className="mt-1 block text-slate-300">
                                 Networking & réseau
                             </TypographyLabel>
                         </div>
@@ -232,13 +232,13 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             />
                         </div>
                         <div>
-                            <TypographyLabel className="mb-1 block tracking-wider text-gray-500 uppercase">
+                            <TypographyLabel className="mb-1 block tracking-wider text-slate-300 uppercase">
                                 Twitter / X
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium text-slate-200">
+                            <TypographyBody className="text-xl font-medium text-slate-100">
                                 Tech & Projets
                             </TypographyBody>
-                            <TypographyLabel className="mt-1 block text-gray-500">
+                            <TypographyLabel className="mt-1 block text-slate-300">
                                 Veille et partages
                             </TypographyLabel>
                         </div>
