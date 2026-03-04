@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { ArrowUp01Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
 
 export const ComingSoon = () => {
@@ -72,7 +73,7 @@ export const ComingSoon = () => {
                         <span className="font-medium tracking-wide">
                             Get in touch
                         </span>
-                        <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                        <HugeiconsIcon icon={ArrowUp01Icon} className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </Link>
                 </div>
             </main>
