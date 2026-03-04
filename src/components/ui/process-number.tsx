@@ -8,11 +8,15 @@ interface ProcessNumberProps {
     className?: string;
 }
 
-export function ProcessNumber({ number, isHovered, className }: ProcessNumberProps) {
+export function ProcessNumber({
+    number,
+    isHovered,
+    className,
+}: ProcessNumberProps) {
     return (
         <span
             className={cn(
-                "font-sora text-[13px] transition-colors duration-300 tracking-wider",
+                "font-sora text-[13px] tracking-wider transition-colors duration-300",
                 isHovered ? "text-slate-400" : "text-slate-800",
                 className
             )}

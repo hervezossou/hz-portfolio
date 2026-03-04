@@ -10,16 +10,21 @@ interface ProjectHeaderProps {
     accent: string;
 }
 
-export function ProjectHeader({ tag, year, category, accent }: ProjectHeaderProps) {
+export function ProjectHeader({
+    tag,
+    year,
+    category,
+    accent,
+}: ProjectHeaderProps) {
     return (
-        <div className="flex flex-col gap-4 mb-6">
+        <div className="mb-6 flex flex-col gap-4">
             <div className="flex items-center gap-3">
                 <ProjectTag accent={accent}>{tag}</ProjectTag>
-                <TypographyCaption className="text-slate-500 font-medium">
+                <TypographyCaption className="font-medium text-slate-500">
                     {year}
                 </TypographyCaption>
             </div>
-            <TypographyLabel className="text-[11px] tracking-[0.14em] uppercase text-slate-500 font-medium">
+            <TypographyLabel className="text-[11px] font-medium tracking-[0.14em] text-slate-500 uppercase">
                 {category}
             </TypographyLabel>
         </div>

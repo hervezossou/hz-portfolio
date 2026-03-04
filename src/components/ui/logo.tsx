@@ -13,15 +13,16 @@ export function Logo({ className }: LogoProps) {
         <Link
             href="/"
             className={cn(
-                "group flex items-center gap-2.5 font-sora font-bold text-xl tracking-tight transition-all duration-300",
+                "group font-sora flex items-center gap-2.5 text-xl font-bold tracking-tight transition-all duration-300",
                 className
             )}
         >
-            <div className="relative flex h-8 w-8 items-center justify-center rounded-md bg-linear-to-tr from-azure-blue-600 to-azure-blue-400 text-white shadow-lg shadow-azure-blue-500/20 group-hover:scale-105 group-hover:shadow-azure-blue-500/40 transition-all">
+            <div className="from-azure-blue-600 to-azure-blue-400 shadow-azure-blue-500/20 group-hover:shadow-azure-blue-500/40 relative flex h-8 w-8 items-center justify-center rounded-md bg-linear-to-tr text-white shadow-lg transition-all group-hover:scale-105">
                 <span className="text-sm">H</span>
             </div>
-            <div className="flex items-baseline text-white group-hover:text-azure-blue-400 transition-colors">
-                <TypographyH3>herve</TypographyH3><span className="text-slate-500 font-light">.dev</span>
+            <div className="group-hover:text-azure-blue-400 flex items-baseline text-white transition-colors">
+                <TypographyH3>herve</TypographyH3>
+                <span className="font-light text-slate-500">.dev</span>
             </div>
         </Link>
     );

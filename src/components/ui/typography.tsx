@@ -74,7 +74,7 @@ export function TypographyHighlight({ children, className }: TypographyProps) {
         <span
             className={cn(
                 "font-rethink-sans font-medium",
-                "text-[18tpx] leading-[28px] tracking-[-0.0001em]",
+                "leading-[28px] tracking-[-0.0001em] text-[18tpx]",
                 className
             )}
         >

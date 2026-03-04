@@ -5,9 +5,17 @@ import { ConversionSection } from "@/components/sections/conversion-section";
 export default function WorksPage() {
     return (
         <div className="w-full">
-            <PageHeader badge="Mes réalisations" title="Ce que j'ai construit" description="Découvrez mes projets récents, des solutions innovantes et des expériences utilisateur exceptionnelles." />
+            <PageHeader
+                badge="Mes réalisations"
+                title="Ce que j'ai construit"
+                description="Découvrez mes projets récents, des solutions innovantes et des expériences utilisateur exceptionnelles."
+            />
             <ProjectSection variant="secondary" />
-            <ConversionSection variant="primary" />
+            <ConversionSection
+                title="Prêt à transformer votre idée en réalité ?"
+                description="Chaque projet commence par une conversation. Parlons de votre vision, de vos objectifs et de la manière dont nous pouvons collaborer pour créer quelque chose d'exceptionnel."
+                variant="primary"
+            />
         </div>
     );
 }

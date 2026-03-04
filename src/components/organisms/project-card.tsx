@@ -15,7 +15,12 @@ interface ProjectCardProps {
     index: number;
 }
 
-export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardProps) {
+export function ProjectCard({
+    project,
+    isVisible,
+    isWide,
+    index,
+}: ProjectCardProps) {
     const imgRight = index % 2 === 0;
 
     return (
@@ -31,13 +36,13 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                 ease: [0.25, 0.46, 0.45, 0.94],
             }}
             className={cn(
-                "absolute top-0 left-0 w-full h-full",
-                isVisible ? "relative z-10" : "z-0 pointer-events-none"
+                "absolute top-0 left-0 h-full w-full",
+                isVisible ? "relative z-10" : "pointer-events-none z-0"
             )}
         >
             <div
                 className={cn(
-                    "bg-slate-900/60 backdrop-blur-[36px] backdrop-saturate-160 border border-slate-700/30 rounded-3xl overflow-hidden w-full flex shadow-2xl transition-all duration-500",
+                    "flex w-full overflow-hidden rounded-3xl border border-slate-700/30 bg-slate-900/60 shadow-2xl backdrop-blur-[36px] backdrop-saturate-160 transition-all duration-500",
                     isWide
                         ? imgRight
                             ? "flex-row"
@@ -49,7 +54,7 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                 {/* Content Side */}
                 <div
                     className={cn(
-                        "flex-1 flex flex-col justify-center",
+                        "flex flex-1 flex-col justify-center",
                         isWide ? "px-16 py-14" : "px-8 py-10"
                     )}
                 >
@@ -60,11 +65,11 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                         accent={project.accent}
                     />
 
-                    <TypographyH2 className="text-[clamp(30px,3.2vw,50px)] font-light! leading-[1.08] tracking-[-0.03em] mb-6 text-slate-100">
+                    <TypographyH2 className="mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] font-light! tracking-[-0.03em] text-slate-100">
                         {project.title}
                     </TypographyH2>
 
-                    <TypographyBody className="text-slate-400 font-light max-w-md leading-relaxed mb-6">
+                    <TypographyBody className="mb-6 max-w-md leading-relaxed font-light text-slate-400">
                         {project.description}
                     </TypographyBody>
 
@@ -75,18 +80,25 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                 <div
                     style={{ backgroundColor: project.bgColor }}
                     className={cn(
-                        "relative flex items-center justify-center overflow-hidden p-10 shrink-0 border-slate-700/20",
-                        isWide ? (imgRight ? "w-[42%] border-l" : "w-[42%] border-r") : "w-full border-b min-h-[220px]"
+                        "relative flex shrink-0 items-center justify-center overflow-hidden border-slate-700/20 p-10",
+                        isWide
+                            ? imgRight
+                                ? "w-[42%] border-l"
+                                : "w-[42%] border-r"
+                            : "min-h-[220px] w-full border-b"
                     )}
                 >
                     <div
-                        className="absolute inset-0 pointer-events-none"
+                        className="pointer-events-none absolute inset-0"
                         style={{
                             background: `radial-gradient(circle at center, ${project.accent}14 0%, transparent 70%)`,
                         }}
                     />
                     <div className="relative z-1 w-full max-w-[340px]">
-                        <ProjectIllustration shape={project.shape} accent={project.accent} />
+                        <ProjectIllustration
+                            shape={project.shape}
+                            accent={project.accent}
+                        />
                     </div>
                 </div>
             </div>

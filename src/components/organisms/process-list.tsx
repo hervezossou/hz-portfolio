@@ -8,7 +8,7 @@ export function ProcessList() {
     const [activeStep, setActiveStep] = useState<number | null>(null);
 
     return (
-        <ul className="w-full flex flex-col">
+        <ul className="flex w-full flex-col">
             {PROCESS_STEPS.map((step, index) => (
                 <ProcessItem
                     key={step.number}

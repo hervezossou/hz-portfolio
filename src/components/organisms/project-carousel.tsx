@@ -30,18 +30,25 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
     return (
         <div className="w-full">
             {/* Section header + nav */}
-            <div className="flex items-center justify-between mb-8">
+            <div className="mb-8 flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                    <TypographyLabel className="text-xs tracking-[0.16em] uppercase text-slate-500 font-normal">
+                    <TypographyLabel className="text-xs font-normal tracking-[0.16em] text-slate-500 uppercase">
                         Projets sélectionnés
                     </TypographyLabel>
-                    <span className="text-xs text-slate-700 font-light">
-                        {String(current + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+                    <span className="text-xs font-light text-slate-700">
+                        {String(current + 1).padStart(2, "0")} /{" "}
+                        {String(total).padStart(2, "0")}
                     </span>
                 </div>
                 <div className="flex gap-2.5">
-                    <ProjectNavButton direction="left" onClick={() => goTo(-1)} />
-                    <ProjectNavButton direction="right" onClick={() => goTo(1)} />
+                    <ProjectNavButton
+                        direction="left"
+                        onClick={() => goTo(-1)}
+                    />
+                    <ProjectNavButton
+                        direction="right"
+                        onClick={() => goTo(1)}
+                    />
                 </div>
             </div>
 

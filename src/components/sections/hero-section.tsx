@@ -14,28 +14,31 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
     return (
-        <section className={cn(
-            "relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden selection:bg-azure-blue-500/30",
-            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
-        )}>
+        <section
+            className={cn(
+                "selection:bg-azure-blue-500/30 relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
+                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+            )}
+        >
             {/* Background Accent Gradients */}
-            <div className="absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full bg-azure-blue-500/5 blur-[120px] pointer-events-none" />
-            <div className="absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full bg-azure-blue-600/5 blur-[120px] pointer-events-none" />
+            <div className="bg-azure-blue-500/5 pointer-events-none absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
+            <div className="bg-azure-blue-600/5 pointer-events-none absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
 
-            <div className="container relative z-10 mx-auto px-6 flex flex-col items-center text-center">
+            <div className="relative z-10 container mx-auto flex flex-col items-center px-6 text-center">
                 {/* Floating Status Badge */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="mb-8 flex items-center gap-3 px-4 py-2 rounded-full bg-slate-900/50 border border-slate-800 backdrop-blur-md"
+                    className="mb-8 flex items-center gap-3 rounded-full border border-slate-800 bg-slate-900/50 px-4 py-2 backdrop-blur-md"
                 >
                     <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-azure-blue-400 opacity-75"></span>
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-azure-blue-500"></span>
+                        <span className="bg-azure-blue-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>
+                        <span className="bg-azure-blue-500 relative inline-flex h-2 w-2 rounded-full"></span>
                     </span>
-                    <p className="text-[11px] font-medium tracking-wider uppercase text-slate-400">
-                        ✦ Disponible pour missions freelance · Ouvert aux opportunités CDI
+                    <p className="text-[11px] font-medium tracking-wider text-slate-400 uppercase">
+                        ✦ Disponible pour missions freelance · Ouvert aux
+                        opportunités CDI
                     </p>
                 </motion.div>
 
@@ -46,17 +49,28 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     transition={{ duration: 0.6, delay: 0.1 }}
                     className="max-w-4xl"
                 >
-                    <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] font-bold leading-[1.1] tracking-tight text-white">
+                    <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-white">
                         Ingénieur Frontend <br />
-                        <span className="font-rethink-sans font-normal italic text-azure-blue-400/80">
+                        <span className="font-rethink-sans text-azure-blue-400/80 font-normal italic">
                             Expert React & Next.js
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-2xl text-lg md:text-xl lg:text-2xl font-light text-slate-400 leading-relaxed">
-                        Je conçois et développe des produits digitaux <span className="text-white font-normal">performants</span>,
-                        <span className="text-white font-normal"> scalables</span> et
-                        centrés sur <span className="text-white font-normal">l&apos;expérience utilisateur</span>.
+                    <TypographyBody className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed font-light text-slate-400 md:text-xl lg:text-2xl">
+                        Je conçois et développe des produits digitaux{" "}
+                        <span className="font-normal text-white">
+                            performants
+                        </span>
+                        ,
+                        <span className="font-normal text-white">
+                            {" "}
+                            scalables
+                        </span>{" "}
+                        et centrés sur{" "}
+                        <span className="font-normal text-white">
+                            l&apos;expérience utilisateur
+                        </span>
+                        .
                     </TypographyBody>
                 </motion.div>
 
@@ -65,22 +79,26 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="flex flex-col sm:flex-row items-center gap-4"
+                    className="flex flex-col items-center gap-4 sm:flex-row"
                 >
                     <Link href="#projets" scroll={true}>
-                        <Button
-                            className="px-10 py-7 rounded-2xl text-base font-medium gap-3 bg-azure-blue-600 hover:bg-azure-blue-500 text-white transition-all shadow-lg shadow-azure-blue-500/20 cursor-pointer"
-                        >
+                        <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all">
                             <span>Voir mes projets</span>
-                            <HugeiconsIcon icon={ArrowRight01Icon} size={20} strokeWidth={2} />
+                            <HugeiconsIcon
+                                icon={ArrowRight01Icon}
+                                size={20}
+                                strokeWidth={2}
+                            />
                         </Button>
                     </Link>
 
                     <Link href="mailto:hervezossou@outlook.com">
-                        <Button
-                            className="px-10 py-7 rounded-2xl text-base font-medium gap-3 bg-white hover:bg-slate-100 text-slate-950 border-none transition-all shadow-lg cursor-pointer"
-                        >
-                            <HugeiconsIcon icon={Mail01Icon} size={20} strokeWidth={2} />
+                        <Button className="cursor-pointer gap-3 rounded-2xl border-none bg-white px-10 py-7 text-base font-medium text-slate-950 shadow-lg transition-all hover:bg-slate-100">
+                            <HugeiconsIcon
+                                icon={Mail01Icon}
+                                size={20}
+                                strokeWidth={2}
+                            />
                             <span>Me contacter</span>
                         </Button>
                     </Link>

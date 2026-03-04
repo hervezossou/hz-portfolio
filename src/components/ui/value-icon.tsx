@@ -10,12 +10,18 @@ interface ValueIconProps {
     className?: string;
 }
 
-export function ValueIcon({ icon: Icon, isHovered, className }: ValueIconProps) {
+export function ValueIcon({
+    icon: Icon,
+    isHovered,
+    className,
+}: ValueIconProps) {
     return (
         <div
             className={cn(
-                "w-12 h-12 flex items-center justify-center rounded-2xl transition-all duration-300",
-                isHovered ? "bg-white/20 text-white" : "bg-azure-blue-500/10 text-azure-blue-500",
+                "flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300",
+                isHovered
+                    ? "bg-white/20 text-white"
+                    : "bg-azure-blue-500/10 text-azure-blue-500",
                 className
             )}
         >

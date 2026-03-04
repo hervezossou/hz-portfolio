@@ -28,7 +28,7 @@ export function NavLink({ href, children, onClick }: NavLinkProps) {
             {isActive && (
                 <motion.div
                     layoutId="nav-underline"
-                    className="absolute bottom-0 left-0 right-0 h-px bg-azure-blue-500"
+                    className="bg-azure-blue-500 absolute right-0 bottom-0 left-0 h-px"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
             )}

@@ -10,7 +10,11 @@ interface SectionHeaderProps {
     className?: string;
 }
 
-export function SectionHeader({ title, subtitle, className }: SectionHeaderProps) {
+export function SectionHeader({
+    title,
+    subtitle,
+    className,
+}: SectionHeaderProps) {
     return (
         <div className={cn("pt-24 pb-12", className)}>
             <motion.div
@@ -20,11 +24,11 @@ export function SectionHeader({ title, subtitle, className }: SectionHeaderProps
                 transition={{ duration: 0.6 }}
                 className="flex flex-col gap-4"
             >
-                <TypographyH1 className="font-bold text-[clamp(44px,5.5vw,82px)] leading-[1.06] tracking-[-0.035em] text-white">
+                <TypographyH1 className="text-[clamp(44px,5.5vw,82px)] leading-[1.06] font-bold tracking-[-0.035em] text-white">
                     {title}
                 </TypographyH1>
                 {subtitle && (
-                    <TypographyBody className="text-xl text-slate-500 font-light max-w-4xl leading-relaxed">
+                    <TypographyBody className="max-w-4xl text-xl leading-relaxed font-light text-slate-500">
                         {subtitle}
                     </TypographyBody>
                 )}

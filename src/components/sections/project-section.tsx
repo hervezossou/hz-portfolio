@@ -21,22 +21,31 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
     }, []);
 
     return (
-        <div className={cn(
-            "relative min-h-screen font-sans overflow-x-hidden selection:bg-azure-blue-500/30",
-            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
-        )}>
+        <div
+            className={cn(
+                "selection:bg-azure-blue-500/30 relative min-h-screen overflow-x-hidden font-sans",
+                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+            )}
+        >
             {/* Ambient blobs */}
-            <div className="fixed inset-0 pointer-events-none z-0">
+            <div className="pointer-events-none fixed inset-0 z-0">
                 <motion.div
                     style={{ y: scrollY * 0.12 }}
-                    className="absolute -top-[15%] -left-[8%] w-[55vw] h-[55vw] rounded-full bg-[radial-gradient(circle,rgba(46,157,247,0.07)_0%,transparent_70%)]"
+                    className="absolute -top-[15%] -left-[8%] h-[55vw] w-[55vw] rounded-full bg-[radial-gradient(circle,rgba(46,157,247,0.07)_0%,transparent_70%)]"
                 />
-                <div className="absolute bottom-0 -right-[10%] w-[40vw] h-[40vw] rounded-full bg-[radial-gradient(circle,rgba(100,166,196,0.05)_0%,transparent_70%)]" />
+                <div className="absolute -right-[10%] bottom-0 h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle,rgba(100,166,196,0.05)_0%,transparent_70%)]" />
             </div>
 
-            <div className="relative z-10 max-w-[1440px] mx-auto px-8 pb-24">
+            <div className="relative z-10 mx-auto max-w-[1440px] px-8 pb-24">
                 <SectionHeader
-                    title={<>Donner vie à<br /><span className="text-azure-blue-500">l&apos;exceptionnel.</span></>}
+                    title={
+                        <>
+                            Donner vie à<br />
+                            <span className="text-azure-blue-500">
+                                l&apos;exceptionnel.
+                            </span>
+                        </>
+                    }
                     subtitle="Transformer vos visions les plus ambitieuses en expériences digitales de classe mondiale."
                 />
 

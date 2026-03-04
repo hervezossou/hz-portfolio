@@ -16,7 +16,7 @@ export function PageWrapper({ children, className }: PageWrapperProps) {
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className={cn(
-                "flex-1 flex flex-col min-h-screen font-sans selection:bg-azure-blue-500/30 selection:text-white",
+                "selection:bg-azure-blue-500/30 flex min-h-screen flex-1 flex-col font-sans selection:text-white",
                 className
             )}
         >

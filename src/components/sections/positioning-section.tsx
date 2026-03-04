@@ -8,15 +8,27 @@ interface PositioningSectionProps {
     variant?: "primary" | "secondary";
 }
 
-export function PositioningSection({ variant = "primary" }: PositioningSectionProps) {
+export function PositioningSection({
+    variant = "primary",
+}: PositioningSectionProps) {
     return (
-        <section className={cn(
-            "relative py-24",
-            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
-        )}>
-            <div className="max-w-[1440px] mx-auto px-8">
+        <section
+            className={cn(
+                "relative py-24",
+                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+            )}
+        >
+            <div className="mx-auto max-w-[1440px] px-8">
                 <SectionHeader
-                    title={<>Pas juste du code.<br /><span className="text-azure-blue-500">De la valeur.</span></>}
+                    title={
+                        <>
+                            Pas juste du code.
+                            <br />
+                            <span className="text-azure-blue-500">
+                                De la valeur.
+                            </span>
+                        </>
+                    }
                     subtitle="Nous nous concentrons sur ce qui apporte réellement de la valeur à vos produits numériques."
                     className="mb-16 pt-0 pb-0"
                 />

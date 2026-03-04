@@ -20,7 +20,12 @@ interface ValueCardProps {
     onLeave: () => void;
 }
 
-export function ValueCard({ value, isHovered, onHover, onLeave }: ValueCardProps) {
+export function ValueCard({
+    value,
+    isHovered,
+    onHover,
+    onLeave,
+}: ValueCardProps) {
     return (
         <motion.div
             onMouseEnter={onHover}
@@ -28,26 +33,32 @@ export function ValueCard({ value, isHovered, onHover, onLeave }: ValueCardProps
             animate={{ flex: isHovered ? 1.8 : 1 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className={cn(
-                "group relative flex flex-col min-h-[320px] p-10 rounded-[2rem] border cursor-pointer overflow-hidden transition-all duration-500",
+                "group relative flex min-h-[320px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border p-10 transition-all duration-500",
                 isHovered
-                    ? "bg-azure-blue-600 border-transparent shadow-2xl shadow-azure-blue-900/40"
-                    : "bg-slate-900/50 backdrop-blur-sm border-slate-800 hover:border-slate-700"
+                    ? "bg-azure-blue-600 shadow-azure-blue-900/40 border-transparent shadow-2xl"
+                    : "border-slate-800 bg-slate-900/50 backdrop-blur-sm hover:border-slate-700"
             )}
         >
             {/* Glow Effect */}
             <div
                 className={cn(
-                    "absolute inset-0 bg-linear-to-tr from-white/10 to-transparent transition-opacity duration-500 pointer-events-none",
+                    "pointer-events-none absolute inset-0 bg-linear-to-tr from-white/10 to-transparent transition-opacity duration-500",
                     isHovered ? "opacity-100" : "opacity-0"
                 )}
             />
 
-            <ValueIcon icon={value.icon} isHovered={isHovered} className="mb-8" />
+            <ValueIcon
+                icon={value.icon}
+                isHovered={isHovered}
+                className="mb-8"
+            />
 
-            <TypographyH3 className={cn(
-                "text-2xl font-semibold tracking-tight leading-tight mb-4 transition-colors duration-300",
-                isHovered ? "text-white" : "text-slate-100"
-            )}>
+            <TypographyH3
+                className={cn(
+                    "mb-4 text-2xl leading-tight font-semibold tracking-tight transition-colors duration-300",
+                    isHovered ? "text-white" : "text-slate-100"
+                )}
+            >
                 {value.title}
             </TypographyH3>
 

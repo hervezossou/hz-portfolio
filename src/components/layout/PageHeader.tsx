@@ -78,10 +78,12 @@ export const PageHeader = ({
     }, []);
 
     return (
-        <div className={cn(
-            "relative flex flex-col items-center justify-center overflow-hidden px-6 py-28 text-center min-h-[500px]",
-            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
-        )}>
+        <div
+            className={cn(
+                "relative flex min-h-[500px] flex-col items-center justify-center overflow-hidden px-6 py-28 text-center",
+                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+            )}
+        >
             {/* Grid canvas */}
             <canvas
                 ref={canvasRef}
@@ -98,28 +100,26 @@ export const PageHeader = ({
             {/* Bottom-edge fade for seamless blending */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute bottom-0 left-0 right-0 h-[40%] bg-linear-to-b from-transparent to-azure-blue-950/90"
+                className="to-azure-blue-950/90 pointer-events-none absolute right-0 bottom-0 left-0 h-[40%] bg-linear-to-b from-transparent"
             />
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center gap-6 max-w-6xl">
+            <div className="relative z-10 flex max-w-6xl flex-col items-center gap-6">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-azure-blue-400/30 bg-azure-blue-400/10 backdrop-blur-md">
-                    <span className="w-2 h-2 rounded-full bg-azure-blue-400 shadow-[0_0_8px_rgba(46,157,247,0.6)] animate-pulse" />
-                    <TypographyLabel className="text-azure-blue-400 tracking-widest font-medium uppercase text-[10px]">
+                <div className="border-azure-blue-400/30 bg-azure-blue-400/10 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
+                    <span className="bg-azure-blue-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
+                    <TypographyLabel className="text-azure-blue-400 text-[10px] font-medium tracking-widest uppercase">
                         {badge}
                     </TypographyLabel>
                 </div>
 
                 {/* Title */}
-                <TypographyH1 className="text-slate-50">
-                    {title}
-                </TypographyH1>
+                <TypographyH1 className="text-slate-50">{title}</TypographyH1>
 
                 {/* Description with subtle blue gradient if it's a string */}
                 <TypographyBody className="max-w-4xl text-balance text-slate-400">
                     {typeof description === "string" ? (
-                        <span className="bg-linear-to-br from-slate-400 via-azure-blue-300 to-slate-400 bg-clip-text text-transparent">
+                        <span className="via-azure-blue-300 bg-linear-to-br from-slate-400 to-slate-400 bg-clip-text text-transparent">
                             {description}
                         </span>
                     ) : (

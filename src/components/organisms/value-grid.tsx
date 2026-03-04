@@ -8,7 +8,7 @@ export function ValueGrid() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch perspective-1000">
+        <div className="perspective-1000 flex w-full flex-col items-stretch gap-6 lg:flex-row">
             {VALUES_DATA.map((value, index) => (
                 <ValueCard
                     key={value.id}

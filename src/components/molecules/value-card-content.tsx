@@ -10,9 +10,13 @@ interface ValueCardContentProps {
     badges: string[];
 }
 
-export function ValueCardContent({ isHovered, description, badges }: ValueCardContentProps) {
+export function ValueCardContent({
+    isHovered,
+    description,
+    badges,
+}: ValueCardContentProps) {
     return (
-        <div className="relative h-24 mt-auto">
+        <div className="relative mt-auto h-24">
             <AnimatePresence mode="wait">
                 {isHovered ? (
                     <motion.div
@@ -22,7 +26,7 @@ export function ValueCardContent({ isHovered, description, badges }: ValueCardCo
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
                     >
-                        <TypographyBody className="text-slate-200 text-base font-normal leading-relaxed">
+                        <TypographyBody className="text-base leading-relaxed font-normal text-slate-200">
                             {description}
                         </TypographyBody>
                     </motion.div>

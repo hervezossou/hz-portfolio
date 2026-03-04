@@ -12,7 +12,7 @@ export function ProjectTag({ children, accent, className }: ProjectTagProps) {
     return (
         <span
             className={cn(
-                "px-3.5 py-1 rounded-full text-[11px] font-medium tracking-widest uppercase border transition-colors",
+                "rounded-full border px-3.5 py-1 text-[11px] font-medium tracking-widest uppercase transition-colors",
                 className
             )}
             style={{

@@ -107,7 +107,6 @@ button {
 }
 
 @keyframes pulse {
-
     0%,
     100% {
         opacity: 0.05;
@@ -122,6 +121,35 @@ button {
 
 .animate-pulse {
     animation: pulse 8s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 2.5s infinite linear;
+}
+
+@keyframes pulse-dot {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(0.75);
+    }
+}
+
+.animate-pulse-dot {
+    animation: pulse-dot 2.4s ease-in-out infinite;
 }
 
 .dark {
