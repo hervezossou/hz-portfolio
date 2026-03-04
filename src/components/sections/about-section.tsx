@@ -33,7 +33,7 @@ const ABOUT_DATA = {
         { value: "3+", label: "Ans d'expérience" },
     ],
     image: {
-        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+        src: "/images/Profile_512x512.png",
         alt: "Hervé Zossou",
     },
 };

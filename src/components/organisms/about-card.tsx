@@ -30,9 +30,9 @@ export function AboutCard({
                 className
             )}
         >
-            <div className="flex flex-col overflow-hidden rounded-[14px] bg-slate-900/60 backdrop-blur-sm md:flex-row">
+            <div className="flex flex-col overflow-hidden rounded-[14px] bg-slate-900/60 backdrop-blur-sm xl:flex-row">
                 {/* Image Section */}
-                <div className="relative order-first min-h-[300px] w-full shrink-0 md:min-h-[500px] md:w-[42%]">
+                <div className="relative order-first min-h-[300px] w-full shrink-0 md:min-h-[512px] xl:w-[45%]">
                     <AboutImage src={image.src} alt={image.alt} />
                 </div>
 
@@ -47,7 +47,7 @@ export function AboutCard({
                     </div>
 
                     {/* Title */}
-                    <TypographyH2 className="mb-6 text-[clamp(26px,3.2vw,38px)] leading-[1.1] font-normal text-white">
+                    <TypographyH2 className="mb-6 text-[clamp(26px,3.2vw,38px)] text-white">
                         {title}
                     </TypographyH2>
 

@@ -60,11 +60,11 @@ export function AboutImage({ src, alt, className }: AboutImageProps) {
                 ref={imgRef}
                 src={src}
                 alt={alt}
-                width={800}
-                height={600}
+                width={512}
+                height={512}
                 onLoad={() => setImgLoaded(true)}
                 className={cn(
-                    "absolute inset-0 h-full w-full object-cover object-center transition-all duration-1000",
+                    "absolute inset-0 h-full w-full object-cover transition-all duration-1000",
                     imgLoaded ? "scale-100 opacity-100" : "scale-105 opacity-0"
                 )}
             />
