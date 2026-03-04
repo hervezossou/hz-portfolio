@@ -32,10 +32,10 @@ export default function RootLayout({
             <body
                 className={`${sora.variable} ${rethinkSans.variable} flex min-h-screen flex-col overflow-hidden bg-slate-950 antialiased`}
             >
-                <SpeedInsights />
                 <Header />
                 <PageWrapper>{children}</PageWrapper>
                 <Footer />
+                <SpeedInsights />
             </body>
         </html>
     );
