@@ -31,7 +31,7 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                 ease: [0.25, 0.46, 0.45, 0.94],
             }}
             className={cn(
-                "absolute top-0 left-0 w-100% h-full",
+                "absolute top-0 left-0 w-full h-full",
                 isVisible ? "relative z-10" : "z-0 pointer-events-none"
             )}
         >
@@ -42,7 +42,7 @@ export function ProjectCard({ project, isVisible, isWide, index }: ProjectCardPr
                         ? imgRight
                             ? "flex-row"
                             : "flex-row-reverse"
-                        : "flex-column-reverse",
+                        : "flex-col-reverse",
                     isWide ? "min-h-[460px]" : "auto"
                 )}
             >

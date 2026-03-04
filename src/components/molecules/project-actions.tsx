@@ -26,7 +26,11 @@ export function ProjectActions({ onViewProject, onViewCode, showCode = true }: P
                 </Button>
             </motion.div>
             {showCode && (
-                <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }}>
+                <motion.div
+                    whileHover={{ y: -1 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="hidden md:block"
+                >
                     <Button
                         variant="outline"
                         onClick={onViewCode}
