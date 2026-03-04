@@ -9,9 +9,9 @@ import {
 import { cn } from "@/components/lib/utils";
 
 interface PageHeaderProps {
-    badge?: string;
-    title?: string;
-    description?: string;
+    badge?: React.ReactNode;
+    title?: React.ReactNode;
+    description?: React.ReactNode;
     variant?: "primary" | "secondary";
 }
 
@@ -116,9 +116,15 @@ export const PageHeader = ({
                     {title}
                 </TypographyH1>
 
-                {/* Description with subtle blue gradient */}
-                <TypographyBody className="max-w-4xl text-balance bg-linear-to-br from-slate-400 via-azure-blue-300 to-slate-400 bg-clip-text text-transparent">
-                    {description}
+                {/* Description with subtle blue gradient if it's a string */}
+                <TypographyBody className="max-w-4xl text-balance text-slate-400">
+                    {typeof description === "string" ? (
+                        <span className="bg-linear-to-br from-slate-400 via-azure-blue-300 to-slate-400 bg-clip-text text-transparent">
+                            {description}
+                        </span>
+                    ) : (
+                        description
+                    )}
                 </TypographyBody>
             </div>
         </div>

@@ -29,7 +29,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="overflow-x-hidden overflow-y-auto">
             <body
-                className={`${sora.variable} ${rethinkSans.variable} overflow-hidden antialiased flex flex-col min-h-screen`}
+                className={`${sora.variable} ${rethinkSans.variable} overflow-hidden antialiased flex flex-col bg-slate-950 min-h-screen`}
             >
                 <Header />
                 <PageWrapper>
