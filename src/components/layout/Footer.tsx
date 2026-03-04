@@ -41,7 +41,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
         <footer
             className={cn(
                 "footer-container mt-auto border-t border-white/5 px-6 py-12 md:px-12",
-                variant === "primary" ? "bg-slate-900" : "bg-slate-800"
+                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
             )}
         >
             <div className="mx-auto flex max-w-6xl flex-col gap-10">

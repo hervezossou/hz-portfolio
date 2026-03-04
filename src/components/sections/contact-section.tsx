@@ -51,9 +51,9 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
             className={cn(
                 "py-20 outline-none md:py-32",
                 variant === "primary"
-                    ? "bg-slate-900"
+                    ? "bg-slate-950"
                     : variant === "secondary"
-                        ? "bg-slate-800"
+                        ? "bg-slate-900"
                         : "bg-azure-blue-900"
             )}
         >
@@ -104,7 +104,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                 variant="ghost"
                                 size="icon"
                                 onClick={handleCopyEmail}
-                                className="relative flex items-center justify-center p-4 text-gray-500 transition-colors cursor-pointer hover:bg-azure-blue-300/20 hover:text-white"
+                                className="relative flex items-center justify-center p-4 text-gray-500 transition-colors cursor-pointer hover:bg-azure-blue-500/20 hover:text-white"
                                 title="Copier l'adresse"
                             >
                                 <AnimatePresence mode="wait">
