@@ -41,7 +41,7 @@ export default function NotFound() {
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-lg text-lg leading-relaxed font-light text-slate-400">
+                    <TypographyBody className="mx-auto mb-12 max-w-lg text-slate-200">
                         Il semble que vous ayez suivi un lien brisé ou tapé une
                         URL incorrecte. Ne vous inquiétez pas, l&apos;accueil
                         est à un clic.
