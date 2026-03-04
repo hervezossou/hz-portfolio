@@ -1,16 +1,22 @@
 "use client";
 
-import React from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
     GithubIcon,
     Linkedin01Icon,
     NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
-import { TypographyBody, TypographyLabel } from "@/components/ui/typography";
+import { TypographyBody } from "@/components/ui/typography";
 import Link from "next/link";
+import { Logo } from "@/components/ui/logo";
 
-export const Footer = () => {
+import { cn } from "@/components/lib/utils";
+
+interface FooterProps {
+    variant?: "primary" | "secondary";
+}
+
+export const Footer = ({ variant = "primary" }: FooterProps) => {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
@@ -32,16 +38,15 @@ export const Footer = () => {
     ];
 
     return (
-        <footer className="footer-container py-12 px-6 md:px-12 mt-auto border-t border-white/5 bg-slate-900">
+        <footer className={cn(
+            "footer-container py-12 px-6 md:px-12 mt-auto border-t border-white/5",
+            variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+        )}>
             <div className="max-w-6xl mx-auto flex flex-col gap-10">
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     {/* Logo Side */}
-                    <Link href="/" className="group">
-                        <TypographyLabel className="text-2xl font-bold tracking-tighter text-white group-hover:text-azure-blue-400 transition-colors">
-                            LOGO
-                        </TypographyLabel>
-                    </Link>
+                    <Logo />
 
                     {/* Socials Side */}
                     <div className="flex items-center gap-4">

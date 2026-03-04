@@ -55,9 +55,9 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                     {/* Main Card (Large) */}
                     <BentoCard className="md:col-span-2 flex flex-col justify-between min-h-[320px] bg-linear-to-br from-[#111827] via-[#111827] to-[#1e293b]">
                         <div>
-                            <TypographyH3 className="mb-4 leading-tight">
+                            <TypographyH3 className="mb-4 text-slate-200 leading-tight">
                                 Construisons ensemble <br />
-                                <span className="text-transparent bg-clip-text bg-linear-to-r from-azure-blue-800 to-azure-blue-500">
+                                <span className="text-transparent bg-clip-text bg-linear-to-r from-azure-blue-700 to-azure-blue-400">
                                     quelque chose de grand.
                                 </span>
                             </TypographyH3>
@@ -128,7 +128,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             <TypographyLabel className="text-gray-500 uppercase tracking-wider mb-1 block">
                                 Email
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium break-all">
+                            <TypographyBody className="text-xl text-slate-200 font-medium break-all">
                                 {emailAddress}
                             </TypographyBody>
                         </div>
@@ -154,7 +154,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             <TypographyLabel className="text-gray-500 uppercase tracking-wider mb-1 block">
                                 WhatsApp
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium">
+                            <TypographyBody className="text-xl text-slate-200 font-medium">
                                 +229 01 67 35 76 46
                             </TypographyBody>
                             <span className="inline-block mt-2 px-3 py-1 bg-green-500/10 text-green-500 text-xs rounded-full font-medium">
@@ -183,7 +183,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             <TypographyLabel className="text-gray-500 uppercase tracking-wider mb-1 block">
                                 LinkedIn
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium">
+                            <TypographyBody className="text-xl text-slate-200 font-medium">
                                 Actualités Pro
                             </TypographyBody>
                             <TypographyLabel className="text-gray-500 mt-1 block">
@@ -212,7 +212,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                             <TypographyLabel className="text-gray-500 uppercase tracking-wider mb-1 block">
                                 Twitter / X
                             </TypographyLabel>
-                            <TypographyBody className="text-xl font-medium">
+                            <TypographyBody className="text-xl text-slate-200 font-medium">
                                 Tech & Projets
                             </TypographyBody>
                             <TypographyLabel className="text-gray-500 mt-1 block">

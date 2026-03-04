@@ -1,0 +1,37 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/components/lib/utils";
+import { motion } from "motion/react";
+
+interface NavLinkProps {
+    href: string;
+    children: React.ReactNode;
+    onClick?: () => void;
+}
+
+export function NavLink({ href, children, onClick }: NavLinkProps) {
+    const pathname = usePathname();
+    const isActive = pathname === href;
+
+    return (
+        <Link
+            href={href}
+            onClick={onClick}
+            className={cn(
+                "relative px-1 py-2 text-sm font-medium transition-colors duration-300",
+                isActive ? "text-white" : "text-slate-400 hover:text-slate-200"
+            )}
+        >
+            {children}
+            {isActive && (
+                <motion.div
+                    layoutId="nav-underline"
+                    className="absolute bottom-0 left-0 right-0 h-px bg-azure-blue-500"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                />
+            )}
+        </Link>
+    );
+}
