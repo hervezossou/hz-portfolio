@@ -48,7 +48,7 @@ export function ProjectCard({
                             ? "flex-row"
                             : "flex-row-reverse"
                         : "flex-col-reverse",
-                    isWide ? "min-h-[460px]" : "auto"
+                    isWide ? "min-h-115" : "auto"
                 )}
             >
                 {/* Content Side */}
@@ -88,7 +88,7 @@ export function ProjectCard({
                             ? imgRight
                                 ? "w-[42%] border-l"
                                 : "w-[42%] border-r"
-                            : "min-h-[220px] w-full border-b"
+                            : "min-h-55 w-full border-b"
                     )}
                 >
                     <div
@@ -97,7 +97,7 @@ export function ProjectCard({
                             background: `radial-gradient(circle at center, ${project.accent}14 0%, transparent 70%)`,
                         }}
                     />
-                    <div className="relative z-1 w-full max-w-[340px]">
+                    <div className="relative z-1 w-full max-w-85">
                         <ProjectIllustration
                             shape={project.shape}
                             accent={project.accent}
