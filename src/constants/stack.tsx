@@ -1,0 +1,68 @@
+import {
+    SiReact,
+    SiNextdotjs,
+    SiTypescript,
+    SiTailwindcss,
+    SiFigma,
+    SiGit,
+    SiNodedotjs,
+} from "@icons-pack/react-simple-icons";
+
+export const STACK_DATA = [
+    {
+        name: "React",
+        category: "Framework",
+        color: "#61DAFB",
+        bg: "rgba(97,218,251,0.08)",
+        size: "large" as const,
+        svg: <SiReact />,
+    },
+    {
+        name: "Next.js",
+        category: "Framework",
+        color: "#ffffff",
+        bg: "rgba(255,255,255,0.06)",
+        size: "normal" as const,
+        svg: <SiNextdotjs />,
+    },
+    {
+        name: "TypeScript",
+        category: "Langage",
+        color: "#3178C6",
+        bg: "rgba(49,120,198,0.1)",
+        size: "normal" as const,
+        svg: <SiTypescript />,
+    },
+    {
+        name: "Tailwind",
+        category: "Styling",
+        color: "#06B6D4",
+        bg: "rgba(6,182,212,0.08)",
+        size: "normal" as const,
+        svg: <SiTailwindcss />,
+    },
+    {
+        name: "Figma",
+        category: "UI Design",
+        color: "#F24E1E",
+        bg: "rgba(242,78,30,0.08)",
+        size: "normal" as const,
+        svg: <SiFigma />,
+    },
+    {
+        name: "Git",
+        category: "Versioning",
+        color: "#F05032",
+        bg: "rgba(240,80,50,0.08)",
+        size: "normal" as const,
+        svg: <SiGit />,
+    },
+    {
+        name: "Node.js",
+        category: "Runtime",
+        color: "#339933",
+        bg: "rgba(51,153,51,0.08)",
+        size: "normal" as const,
+        svg: <SiNodedotjs />,
+    },
+];

@@ -2,46 +2,11 @@ import { SectionHeader } from "@/components/ui/section-header";
 import { ParcoursCard } from "@/components/organisms/parcours-card";
 import { Briefcase01Icon, Mortarboard01Icon } from "@hugeicons/core-free-icons";
 import { cn } from "@/components/lib/utils";
+import { EXPERIENCES, EDUCATIONS } from "@/constants/parcours";
 
 interface ParcoursSectionProps {
     variant?: "primary" | "secondary";
 }
-
-const EXPERIENCES = [
-    {
-        period: "Octobre 2025 - Présent",
-        title: "Développeur Frontend",
-        subtitle: "The Creative Mind · À distance",
-    },
-    {
-        period: "Septembre 2024 - Décembre 2024",
-        title: "Stagiaire Développeur Web",
-        subtitle: "TechSeed Academy · Cotonou",
-    },
-    {
-        period: "Mai 2023 - Novembre 2023",
-        title: "Stagiaire Développeur Web",
-        subtitle: "COSIT BENIN · Cotonou",
-    },
-];
-
-const EDUCATIONS = [
-    {
-        period: "2020 - 2023",
-        title: "Ingénieur en Génie Mathématique et Modélisation",
-        subtitle: "UNSTIM · Abomey",
-    },
-    {
-        period: "2018 - 2020",
-        title: "Cycle Préparatoire aux Etudes d'Ingénieur",
-        subtitle: "INSPEI · Abomey",
-    },
-    {
-        period: "2015 - 2018",
-        title: "Baccalauréat Scientifique",
-        subtitle: "Cours de Soutien Scolaire · Cotonou",
-    },
-];
 
 export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
     return (
