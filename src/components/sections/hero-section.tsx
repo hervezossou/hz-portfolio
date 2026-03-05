@@ -38,7 +38,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     </span>
                     <TypographyCaption className="text-xs font-medium tracking-wider text-slate-200 uppercase">
                         ✦ Disponible pour missions freelance · Ouvert aux
-                        opportunités CDI
+                        opportunités en CDI
                     </TypographyCaption>
                 </motion.div>
 
@@ -50,7 +50,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     className="max-w-4xl"
                 >
                     <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-white">
-                        Ingénieur Frontend <br />
+                        Développeur Frontend <br />
                         <span className="font-rethink-sans text-azure-blue-400 font-normal italic">
                             Expert React & Next.js
                         </span>
@@ -81,30 +81,35 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="flex flex-col items-center gap-4 sm:flex-row"
                 >
-                    <Link href="#projets" scroll={true}>
-                        <Button
-                            aria-label="Voir les projets récents sur cette page"
-                            className="bg-azure-blue-700 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer gap-3 rounded-2xl px-10 py-7 text-base font-medium text-white shadow-lg transition-all"
-                        >
+                    <Button
+                        asChild
+                        aria-label="Voir les projets récents sur cette page"
+                        className="shadow-azure-blue-500/20 cursor-pointer gap-3"
+                    >
+                        <Link href="#projets" scroll={true}>
                             <span>Projets récents</span>
                             <HugeiconsIcon
                                 icon={ArrowRight01Icon}
                                 size={24}
                                 strokeWidth={2}
                             />
-                        </Button>
-                    </Link>
+                        </Link>
+                    </Button>
 
-                    <Link href="mailto:hervezossou@outlook.com">
-                        <Button className="cursor-pointer gap-3 rounded-2xl border-none bg-white px-10 py-7 text-base font-medium text-slate-950 shadow-lg transition-all hover:bg-slate-300">
+                    <Button
+                        asChild
+                        variant="secondary"
+                        className="bg-white text-slate-950 hover:bg-slate-300 shadow-lg"
+                    >
+                        <Link href="mailto:hervezossou@outlook.com">
                             <HugeiconsIcon
                                 icon={Mail01Icon}
                                 size={24}
                                 strokeWidth={2}
                             />
                             <span>Me contacter</span>
-                        </Button>
-                    </Link>
+                        </Link>
+                    </Button>
                 </motion.div>
             </div>
         </section>

@@ -35,7 +35,7 @@ export default function AboutPage() {
             <ParcoursSection variant="secondary" />
             <ConversionSection
                 variant="primary"
-                title="Vous cherchez ce profil ?"
+                title="Envie de collaborer sur un projet ?"
                 description="Discutons de ce que je peux apporter à votre équipe ou votre projet."
             />
         </PageWrapper>

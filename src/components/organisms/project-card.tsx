@@ -62,7 +62,6 @@ export function ProjectCard({
                         tag={project.tag}
                         year={project.year}
                         category={project.category}
-                        accent={project.accent}
                     />
 
                     <TypographyH2 className="mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-slate-100">

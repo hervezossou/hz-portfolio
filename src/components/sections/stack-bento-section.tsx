@@ -107,7 +107,7 @@ export function StackBentoSection({
                 <div className="mt-12 flex items-center gap-3 text-slate-400">
                     <span className="bg-azure-blue-500 h-1.5 w-1.5 shrink-0 rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
                     <span className="text-sm md:text-base font-normal tracking-wide italic">
-                        En exploration — Docker · CI/CD · TanStack Start
+                        En exploration — Docker · CI/CD · Vitest
                     </span>
                 </div>
             </div>

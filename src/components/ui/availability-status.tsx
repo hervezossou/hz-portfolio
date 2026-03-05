@@ -10,7 +10,7 @@ interface AvailabilityStatusProps {
 
 export function AvailabilityStatus({
     className,
-    text = "Disponible pour missions freelance · Remote friendly",
+    text = "Disponible pour missions freelance · Travail à distance",
 }: AvailabilityStatusProps) {
     return (
         <div className={cn("inline-flex items-center gap-2.5", className)}>

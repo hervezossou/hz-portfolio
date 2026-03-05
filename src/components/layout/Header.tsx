@@ -56,21 +56,19 @@ export function Header() {
                         ))}
                     </nav>
 
-                    {/* Desktop CTA */}
                     <div className="hidden lg:block">
-                        <Link href="/contact">
-                            <Button
-                                size="lg"
-                                className="bg-azure-blue-700 hover:bg-azure-blue-600 shadow-azure-blue-500/20 cursor-pointer rounded-2xl px-10 py-8 text-sm font-medium text-white shadow-lg transition-all"
-                            >
+                        <Button
+                            asChild
+                        >
+                            <Link href="/contact">
                                 <HugeiconsIcon
                                     icon={Mail01Icon}
                                     size={24}
                                     strokeWidth={2}
                                 />
                                 <TypographyBody>Prendre contact</TypographyBody>
-                            </Button>
-                        </Link>
+                            </Link>
+                        </Button>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -110,19 +108,23 @@ export function Header() {
                                 </Link>
                             ))}
                             <div className="mt-10">
-                                <Link
-                                    href="/contact"
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                <Button
+                                    asChild
+                                    size="lg"
+                                    className="mx-auto w-full max-w-xs"
                                 >
-                                    <Button className="bg-azure-blue-700 hover:bg-azure-blue-600 mx-auto w-full max-w-xs cursor-pointer rounded-2xl px-8 py-7 text-lg">
+                                    <Link
+                                        href="/contact"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                    >
                                         <HugeiconsIcon
                                             icon={Mail01Icon}
                                             size={20}
                                             strokeWidth={2}
                                         />
                                         Prendre contact
-                                    </Button>
-                                </Link>
+                                    </Link>
+                                </Button>
                             </div>
                         </nav>
                     </motion.div>

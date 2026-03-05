@@ -73,7 +73,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
                 {/* Bottom Section */}
                 <div className="text-center">
                     <TypographyBody className="text-xs font-medium tracking-widest text-slate-300 uppercase">
-                        © {currentYear} HERVÉ ZOSSOU. INDIE DEVELOPER
+                        © {currentYear} HERVÉ ZOSSOU. FRONTEND DEVELOPER
                     </TypographyBody>
                 </div>
             </div>

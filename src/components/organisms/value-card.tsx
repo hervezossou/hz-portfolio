@@ -33,9 +33,9 @@ export function ValueCard({
             animate={{ flex: isHovered ? 1.8 : 1 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className={cn(
-                "group relative flex min-h-[320px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border p-10 transition-all duration-500",
+                "group relative flex min-h-[300px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border p-10 transition-all duration-500",
                 isHovered
-                    ? "bg-azure-blue-600 shadow-azure-blue-900/40 border-transparent shadow-2xl"
+                    ? "bg-azure-blue-700 shadow-azure-blue-900/40 border-transparent shadow-2xl"
                     : "border-slate-800 bg-slate-900/50 backdrop-blur-sm hover:border-slate-700"
             )}
         >

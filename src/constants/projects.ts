@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
         year: "2025",
         description:
             "Un système de composants modulaires pour applications web à grande échelle. Chaque élément pensé pour la cohérence, la scalabilité et la beauté.",
-        tag: "Featured",
+        tag: "Projet Vedette",
         accent: "#2E9DF7",
         bgColor: "rgba(46,157,247,0.10)",
         shape: "circle",
@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
         year: "2024",
         description:
             "Visualisation de données complexes avec une approche minimaliste. Transformer la complexité en clarté, chiffre après chiffre.",
-        tag: "Design",
+        tag: "Conception",
         accent: "#64A6C4",
         bgColor: "rgba(100,166,196,0.10)",
         shape: "grid",
@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
         year: "2023",
         description:
             "Refonte complète d'une marque tech avec un positionnement premium. Du logo au système de communication, une cohérence totale.",
-        tag: "Brand",
+        tag: "Identité",
         accent: "#7DD3FC",
         bgColor: "rgba(125,211,252,0.08)",
         shape: "cross",
