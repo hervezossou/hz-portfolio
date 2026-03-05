@@ -10,12 +10,14 @@ import { Analytics } from "@vercel/analytics/next"
 const sora = Sora({
     variable: "--font-sora",
     subsets: ["latin"],
+    display: "swap",
 });
 
 const rethinkSans = Rethink_Sans({
     variable: "--font-rethink-sans",
     subsets: ["latin"],
     weight: ["400", "500", "600", "700", "800"],
+    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +31,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className="overflow-x-hidden overflow-y-auto">
+        <html lang="fr" className="overflow-x-hidden overflow-y-auto" data-scroll-behavior="smooth">
             <body
                 className={`${sora.variable} ${rethinkSans.variable} flex min-h-screen flex-col overflow-hidden bg-slate-950 antialiased`}
             >
