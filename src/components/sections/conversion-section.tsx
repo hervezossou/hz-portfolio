@@ -22,11 +22,11 @@ export function ConversionSection({
     return (
         <section
             className={cn(
-                "relative overflow-hidden py-24 md:py-32",
+                "relative overflow-hidden px-4 py-16 md:px-8 md:py-32",
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900"
             )}
         >
-            <div className="mx-auto flex max-w-[1440px] justify-center px-8">
+            <div className="mx-auto flex max-w-[1440px] justify-center">
                 {/* Card Wrapper with premium border gradient */}
                 <div className="group relative w-full">
                     {/* Subtle glow behind the card */}

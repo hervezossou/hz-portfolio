@@ -82,12 +82,12 @@ export function StackBentoSection({
     return (
         <section
             className={cn(
-                "overflow-hidden px-8 py-16",
+                "overflow-hidden px-4 md:px-8 py-16",
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900",
                 className
             )}
         >
-            <div className="mx-auto max-w-[1440px] px-8">
+            <div className="mx-auto max-w-[1440px]">
                 <SectionHeader
                     title={
                         <>

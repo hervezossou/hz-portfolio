@@ -26,13 +26,13 @@ export function AboutCard({
     return (
         <div
             className={cn(
-                "rounded-2xl bg-linear-to-br from-white/15 via-white/5 to-white/10 p-[1.5px]",
+                "rounded-2xl bg-linear-to-br from-white/15 via-white/5 to-white/10",
                 className
             )}
         >
             <div className="flex flex-col overflow-hidden rounded-[14px] bg-slate-900/60 backdrop-blur-sm xl:flex-row">
                 {/* Image Section */}
-                <div className="relative order-first h-[300px] w-full shrink-0 md:h-[512px] xl:h-auto xl:w-[45%]">
+                <div className="relative order-first h-[300px] w-full shrink-0 md:h-[800px] xl:h-auto xl:w-[45%]">
                     <AboutImage src={image.src} alt={image.alt} />
                 </div>
 
@@ -47,7 +47,7 @@ export function AboutCard({
                     </div>
 
                     {/* Title */}
-                    <TypographyH3 className="mb-6 text-justify text-[clamp(26px,3.2vw,38px)] text-white">
+                    <TypographyH3 className="mb-6 text-[clamp(26px,3.2vw,38px)] text-white">
                         {title}
                     </TypographyH3>
 

@@ -4,12 +4,9 @@ import { cn } from "@/components/lib/utils";
 const ABOUT_DATA = {
     title: (
         <>
-            Je suis Hervé,
-            <br />
-            <em className="text-azure-blue-500 not-italic">développeur frontend</em>
-            <br />
+            Je suis Hervé,{" "}
+            <em className="text-azure-blue-500 not-italic">développeur frontend</em>{" "}
             passionné par les interfaces
-            <br />
             qui ont du sens.
         </>
     ),
@@ -47,12 +44,12 @@ export function AboutSection({ className, variant = "primary" }: AboutSectionPro
     return (
         <section
             className={cn(
-                "overflow-hidden px-8 py-24",
+                "overflow-hidden px-4 py-16 md:px-8 md:py-24",
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900",
                 className
             )}
         >
-            <div className="mx-auto max-w-[1440px] px-8">
+            <div className="mx-auto max-w-[1440px]">
                 <AboutCard {...ABOUT_DATA} />
             </div>
         </section>

@@ -49,7 +49,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
     return (
         <section
             className={cn(
-                "py-20 outline-none md:py-32",
+                "py-16 outline-none md:py-32",
                 variant === "primary"
                     ? "bg-slate-950"
                     : variant === "secondary"

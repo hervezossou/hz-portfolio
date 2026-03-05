@@ -30,7 +30,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="mb-8 flex items-center gap-3 rounded-full border border-slate-800 bg-slate-900/50 px-4 py-2 backdrop-blur-md"
+                    className="my-8 flex items-center gap-3 rounded-full border border-slate-800 bg-slate-900/50 px-4 py-2 backdrop-blur-md"
                 >
                     <span className="relative flex h-2 w-2">
                         <span className="bg-azure-blue-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>

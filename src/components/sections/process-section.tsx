@@ -16,7 +16,7 @@ export function ProcessSection({ variant = "primary" }: ProcessSectionProps) {
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900"
             )}
         >
-            <div className="mx-auto max-w-[1440px] px-8">
+            <div className="mx-auto max-w-[1440px] px-4 md:px-8">
                 <SectionHeader
                     title={
                         <>

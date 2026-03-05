@@ -47,11 +47,11 @@ export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
     return (
         <section
             className={cn(
-                "overflow-hidden px-8 py-32",
+                "overflow-hidden px-4 py-16 md:px-8 md:py-32",
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900"
             )}
         >
-            <div className="mx-auto max-w-[1440px] px-8">
+            <div className="mx-auto max-w-[1440px]">
                 <SectionHeader
                     title={
                         <>

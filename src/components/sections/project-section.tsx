@@ -36,7 +36,7 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
                 <div className="absolute -right-[10%] bottom-0 h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle,rgba(100,166,196,0.05)_0%,transparent_70%)]" />
             </div>
 
-            <div className="relative z-10 mx-auto max-w-[1440px] px-8 pb-24">
+            <div className="relative z-10 mx-auto max-w-[1440px] px-4 md:px-8 pb-24">
                 <SectionHeader
                     title={
                         <>
