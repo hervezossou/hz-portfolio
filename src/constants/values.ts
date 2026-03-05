@@ -4,7 +4,7 @@ export const VALUES_DATA = [
     {
         id: 1,
         icon: FlashIcon,
-        title: "Performance First",
+        title: "Performance Avant Tout",
         badges: [
             "Core Web Vitals",
             "Lighthouse",
@@ -17,7 +17,7 @@ export const VALUES_DATA = [
     {
         id: 2,
         icon: Target02Icon,
-        title: "Conversion Focused",
+        title: "Axé sur la Conversion",
         badges: ["Stratégie UX", "CTA Clairs", "Funnels", "Analytics Ready"],
         description:
             "Chaque interface est pensée pour guider vos utilisateurs vers l'action et générer des résultats mesurables.",
@@ -25,7 +25,7 @@ export const VALUES_DATA = [
     {
         id: 3,
         icon: CodeIcon,
-        title: "Clean & Scalable Code",
+        title: "Code Propre & Évolutif",
         badges: ["TypeScript", "Modulaire", "Réutilisable", "Maintenable"],
         description:
             "J'écris un code structuré et évolutif qui grandit avec votre produit et vos ambitions techniques.",
