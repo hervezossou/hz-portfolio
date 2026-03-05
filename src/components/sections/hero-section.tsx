@@ -79,17 +79,17 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="flex flex-col items-center gap-4 sm:flex-row"
+                    className="w-full mx-auto flex flex-col items-center justify-center gap-4 md:flex-row"
                 >
                     <Button
                         asChild
                         variant="default"
                         size="lg"
                         aria-label="Voir les projets récents sur cette page"
-                        className="shadow-azure-blue-500/20 cursor-pointer gap-3"
+                        className="w-full md:w-xs shadow-azure-blue-500/20 cursor-pointer gap-3 justify-center"
                     >
                         <Link href="#projets" scroll={true}>
-                            <span>Projets récents</span>
+                            <span>Voir mes récents projets</span>
                             <HugeiconsIcon
                                 icon={ArrowRight01Icon}
                                 size={24}
@@ -102,7 +102,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                         asChild
                         variant="outline"
                         size="lg"
-                        className="text-slate-300"
+                        className="w-full md:w-xs text-slate-300"
                     >
                         <Link href="mailto:hervezossou@outlook.com">
                             <HugeiconsIcon

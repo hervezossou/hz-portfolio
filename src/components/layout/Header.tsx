@@ -77,7 +77,7 @@ export function Header() {
                     <Button
                         variant="outline"
                         aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-                        className="hover:text-azure-blue-600 cursor-pointer p-2 text-slate-300 transition-colors lg:hidden"
+                        className="hover:text-azure-blue-600 cursor-pointer p-2 text-slate-300 rounded-2xl transition-colors lg:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <HugeiconsIcon

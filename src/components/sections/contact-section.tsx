@@ -77,17 +77,24 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                         </div>
 
                         <div className="mt-8">
-                            <Link
-                                href={`mailto:${emailAddress}`}
-                                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-black transition-colors hover:bg-gray-200"
+                            <Button
+                                variant="secondary"
+                                size="lg"
+                                aria-label="Envoyez-moi un email"
+                                className="w-full md:w-xs shadow-azure-blue-500/20 cursor-pointer gap-3 justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-azure-blue-500/30"
                             >
-                                <HugeiconsIcon
-                                    icon={SentIcon}
-                                    size={18}
-                                    strokeWidth={1.5}
-                                />
-                                <span>Envoyez-moi un email</span>
-                            </Link>
+                                <Link
+                                    href={`mailto:${emailAddress}`}
+                                    className="inline-flex items-center gap-2 rounded-2xl text-slate-900 transitsion-colors"
+                                >
+                                    <HugeiconsIcon
+                                        icon={SentIcon}
+                                        size={24}
+                                        strokeWidth={2}
+                                    />
+                                    <TypographyBody>Envoyez-moi un email</TypographyBody>
+                                </Link>
+                            </Button>
                         </div>
                     </BentoCard>
 
