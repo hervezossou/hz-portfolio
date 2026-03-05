@@ -42,7 +42,7 @@ export function ProjectCard({
         >
             <div
                 className={cn(
-                    "flex w-full overflow-hidden rounded-3xl border border-slate-700/30 bg-slate-900/60 shadow-2xl backdrop-blur-[36px] backdrop-saturate-160 transition-all duration-500",
+                    "flex w-full overflow-hidden rounded-2xl border border-slate-700/30 bg-slate-900/60 shadow-2xl backdrop-blur-[36px] backdrop-saturate-160 transition-all duration-500",
                     isWide
                         ? imgRight
                             ? "flex-row"
@@ -55,7 +55,7 @@ export function ProjectCard({
                 <div
                     className={cn(
                         "flex flex-1 flex-col justify-center",
-                        isWide ? "px-16 py-14" : "px-8 py-10"
+                        isWide ? "p-10" : "p-5"
                     )}
                 >
                     <ProjectHeader
@@ -64,15 +64,19 @@ export function ProjectCard({
                         category={project.category}
                     />
 
-                    <TypographyH2 className="mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-slate-100">
+                    <TypographyH2 className="mt-2 mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-slate-100">
                         {project.title}
                     </TypographyH2>
 
-                    <TypographyBody className="mb-6 max-w-md leading-relaxed text-slate-200">
+                    <TypographyBody className="mb-2 max-w-xl leading-relaxed text-slate-200">
                         {project.description}
                     </TypographyBody>
 
-                    <ProjectActions showCode={project.showCode} />
+                    <ProjectActions
+                        showCode={project.showCode}
+                        onViewProject={() => window.open(project.liveUrl, "_blank")}
+                        onViewCode={() => window.open(project.githubUrl, "_blank")}
+                    />
                 </div>
 
                 {/* Illustration Side */}

@@ -9,37 +9,37 @@ interface ParcoursSectionProps {
 
 const EXPERIENCES = [
     {
-        period: "2023 - Présent",
-        title: "Développeur Frontend Freelance",
-        subtitle: "Indépendant · Remote",
+        period: "Octobre 2025 - Présent",
+        title: "Développeur Frontend",
+        subtitle: "The Creative Mind · À distance",
     },
     {
-        period: "2021 - 2023",
-        title: "Intégrateur Web",
-        subtitle: "Agence XYZ · Cotonou",
+        period: "Septembre 2024 - Décembre 2024",
+        title: "Stagiaire Développeur Web",
+        subtitle: "TechSeed Academy · Cotonou",
     },
     {
-        period: "2019 - 2021",
-        title: "Développeur Junior",
-        subtitle: "Startup ABC · Bénin",
+        period: "Mai 2023 - Novembre 2023",
+        title: "Stagiaire Développeur Web",
+        subtitle: "COSIT BENIN · Cotonou",
     },
 ];
 
 const EDUCATIONS = [
     {
-        period: "2018 - 2021",
-        title: "Licence en Informatique",
-        subtitle: "Université de Parakou",
+        period: "2020 - 2023",
+        title: "Ingénieur en Génie Mathématique et Modélisation",
+        subtitle: "UNSTIM · Abomey",
     },
     {
-        period: "2016 - 2018",
-        title: "BTS Développement Web",
-        subtitle: "Institut Supérieur XYZ",
+        period: "2018 - 2020",
+        title: "Cycle Préparatoire aux Etudes d'Ingénieur",
+        subtitle: "INSPEI · Abomey",
     },
     {
-        period: "2015 - 2016",
-        title: "Formation UI/UX Design",
-        subtitle: "OpenClassrooms · En ligne",
+        period: "2015 - 2018",
+        title: "Baccalauréat Scientifique",
+        subtitle: "Cours de Soutien Scolaire · Cotonou",
     },
 ];
 
@@ -47,7 +47,7 @@ export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
     return (
         <section
             className={cn(
-                "overflow-hidden px-4 py-16 md:px-8 md:py-32",
+                "overflow-hidden px-4 py-8 md:px-8 md:py-16",
                 variant === "primary" ? "bg-slate-950" : "bg-slate-900"
             )}
         >

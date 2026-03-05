@@ -4,8 +4,8 @@ import { cn } from "@/components/lib/utils";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { ProjectCarousel } from "@/components/organisms/project-carousel";
-import { PROJECTS } from "@/constants/projects";
 import { SectionHeader } from "@/components/ui/section-header";
+import { PROJECTS_DATA } from "@/constants/projects";
 
 interface ProjectSectionProps {
     variant?: "primary" | "secondary";
@@ -50,7 +50,7 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
                 />
 
                 {/* Projects Carousel Organism */}
-                <ProjectCarousel projects={PROJECTS} />
+                <ProjectCarousel projects={PROJECTS_DATA} />
             </div>
         </div>
     );

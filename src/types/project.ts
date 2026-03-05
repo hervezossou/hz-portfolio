@@ -9,4 +9,6 @@ export interface Project {
     bgColor: string;
     shape: "circle" | "grid" | "lines" | "cross";
     showCode?: boolean;
+    liveUrl?: string;
+    githubUrl?: string;
 }

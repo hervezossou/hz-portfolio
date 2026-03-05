@@ -2,10 +2,10 @@
 
 import { cn } from "@/components/lib/utils";
 import { HugeiconsIcon } from "@hugeicons/react";
+import type { HugeIcon } from "@/types/hugeicons";
 
 interface ValueIconProps {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    icon: any;
+    icon: HugeIcon;
     isHovered: boolean;
     className?: string;
 }

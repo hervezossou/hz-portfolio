@@ -51,26 +51,14 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                 >
                     <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-white">
                         Développeur Frontend <br />
-                        <span className="font-rethink-sans text-azure-blue-400 font-normal italic">
-                            Expert React & Next.js
+                        <span className="text-2xl leading-normal tracking-tight md:text-4xl font-rethink-sans text-azure-blue-400 font-normal italic">
+                            Je transforme vos idées en interfaces qui convertissent.
                         </span>
                     </TypographyH1>
 
                     <TypographyBody className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed font-light text-slate-200 md:text-xl lg:text-2xl">
-                        Je conçois et développe des produits digitaux{" "}
-                        <span className="font-normal text-azure-blue-400">
-                            performants
-                        </span>
-                        ,
-                        <span className="font-normal text-azure-blue-400">
-                            {" "}
-                            scalables
-                        </span>{" "}
-                        et centrés sur{" "}
-                        <span className="font-normal text-azure-blue-400">
-                            l&apos;expérience utilisateur
-                        </span>
-                        .
+                        Je conçois des produits digitaux où chaque détail compte,
+                        de la première maquette au déploiement en production.
                     </TypographyBody>
                 </motion.div>
 

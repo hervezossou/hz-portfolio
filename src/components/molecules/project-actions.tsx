@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { LinkSquare02Icon, LinkCircle02Icon } from "@hugeicons/core-free-icons";
 import { TypographyBody } from "@/components/ui/typography";
+import { cn } from "@/components/lib/utils";
 
 interface ProjectActionsProps {
     onViewProject?: () => void;
@@ -24,7 +25,7 @@ export function ProjectActions({
                     variant="default"
                     size="lg"
                     onClick={onViewProject}
-                    className="bg-primary h-auto w-full md:min-w-[220px] cursor-pointer gap-4 rounded-2xl px-8 py-4 text-sm font-medium tracking-wide text-slate-200 transition-opacity"
+                    className={cn("bg-primary h-auto w-full cursor-pointer gap-4 rounded-2xl px-8 py-4 text-sm font-medium tracking-wide text-slate-200 transition-opacity", !showCode ? "md:max-w-1/2" : "")}
                 >
                     <TypographyBody>Voir le projet</TypographyBody>
                     <HugeiconsIcon
@@ -44,7 +45,7 @@ export function ProjectActions({
                         variant="outline"
                         size="lg"
                         onClick={onViewCode}
-                        className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto w-full md:min-w-[220px] cursor-pointer rounded-2xl border-slate-700/50 px-8 py-4 text-sm font-normal text-slate-400 transition-all"
+                        className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto w-full cursor-pointer rounded-2xl border-slate-700/50 px-8 py-4 text-sm font-normal text-slate-400 transition-all"
                     >
                         <TypographyBody>Voir le code</TypographyBody>
                         <HugeiconsIcon

@@ -29,7 +29,7 @@ export function PositioningSection({
                             </span>
                         </>
                     }
-                    subtitle="Nous nous concentrons sur ce qui apporte réellement de la valeur à vos produits numériques."
+                    subtitle="Je me concentre sur ce qui apporte réellement de la valeur à vos produits numériques."
                     className="mb-16 pt-0 pb-0"
                 />
                 <ValueGrid />

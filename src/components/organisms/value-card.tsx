@@ -5,12 +5,12 @@ import { ValueIcon } from "@/components/ui/value-icon";
 import { ValueCardContent } from "@/components/molecules/value-card-content";
 import { TypographyH3 } from "@/components/ui/typography";
 import { cn } from "@/components/lib/utils";
+import type { HugeIcon } from "@/types/hugeicons";
 
 interface ValueCardProps {
     value: {
         id: number;
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        icon: any;
+        icon: HugeIcon;
         title: string;
         description: string;
         badges: string[];
