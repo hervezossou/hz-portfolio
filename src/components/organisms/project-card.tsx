@@ -68,7 +68,7 @@ export function ProjectCard({
                         {project.title}
                     </TypographyH2>
 
-                    <TypographyBody className="mb-2 max-w-xl leading-relaxed text-slate-200">
+                    <TypographyBody className="mb-2 max-w-xl leading-relaxed text-slate-200 text-justify">
                         {project.description}
                     </TypographyBody>
 
