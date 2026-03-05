@@ -1,7 +1,7 @@
 import { AboutImage } from "@/components/molecules/about-image";
 import { AboutStatsGrid } from "@/components/molecules/about-stats-grid";
 import { AvailabilityStatus } from "@/components/ui/availability-status";
-import { TypographyH2, TypographyBody } from "@/components/ui/typography";
+import { TypographyH3, TypographyBody } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/components/lib/utils";
@@ -32,7 +32,7 @@ export function AboutCard({
         >
             <div className="flex flex-col overflow-hidden rounded-[14px] bg-slate-900/60 backdrop-blur-sm xl:flex-row">
                 {/* Image Section */}
-                <div className="relative order-first min-h-[300px] w-full shrink-0 md:min-h-[512px] xl:w-[45%]">
+                <div className="relative order-first h-[300px] w-full shrink-0 md:h-[512px] xl:h-auto xl:w-[45%]">
                     <AboutImage src={image.src} alt={image.alt} />
                 </div>
 
@@ -47,16 +47,16 @@ export function AboutCard({
                     </div>
 
                     {/* Title */}
-                    <TypographyH2 className="mb-6 text-[clamp(26px,3.2vw,38px)] text-white">
+                    <TypographyH3 className="mb-6 text-justify text-[clamp(26px,3.2vw,38px)] text-white">
                         {title}
-                    </TypographyH2>
+                    </TypographyH3>
 
                     {/* Description */}
                     <div className="mb-10 space-y-4">
                         {description.map((paragraph, index) => (
                             <TypographyBody
                                 key={index}
-                                className="text-slate-200"
+                                className="text-slate-200 text-left md:text-justify"
                             >
                                 {paragraph}
                             </TypographyBody>
