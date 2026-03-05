@@ -59,6 +59,8 @@ export function Header() {
                     <div className="hidden lg:block">
                         <Button
                             asChild
+                            variant="default"
+                            size="lg"
                         >
                             <Link href="/contact">
                                 <HugeiconsIcon

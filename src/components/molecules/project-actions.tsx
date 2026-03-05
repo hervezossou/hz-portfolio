@@ -22,6 +22,7 @@ export function ProjectActions({
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }}>
                 <Button
                     variant="default"
+                    size="lg"
                     onClick={onViewProject}
                     className="bg-primary h-auto w-auto min-w-[220px] cursor-pointer gap-4 rounded-2xl px-8 py-4 text-sm font-medium tracking-wide text-slate-200 transition-opacity"
                 >
@@ -41,6 +42,7 @@ export function ProjectActions({
                 >
                     <Button
                         variant="outline"
+                        size="lg"
                         onClick={onViewCode}
                         className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto min-w-[220px] cursor-pointer rounded-2xl border-slate-700/50 px-8 py-4 text-sm font-normal text-slate-400 transition-all"
                     >

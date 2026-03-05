@@ -70,6 +70,7 @@ export function ConversionSection({
                             <div className="mb-12 flex flex-col gap-4 sm:flex-row">
                                 <Button
                                     asChild
+                                    size="lg"
                                     className="min-w-[220px]"
                                 >
                                     <Link href="/contact">
@@ -85,8 +86,9 @@ export function ConversionSection({
                                 <Button
                                     asChild
                                     variant="outline"
+                                    size="lg"
                                     aria-label="Voir toutes mes réalisations"
-                                    className="min-w-[220px]"
+                                    className="min-w-[220px] text-slate-300"
                                 >
                                     <Link href="/works">
                                         <TypographyBody>Toutes mes réalisations</TypographyBody>

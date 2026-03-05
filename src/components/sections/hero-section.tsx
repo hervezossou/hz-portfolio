@@ -83,6 +83,8 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                 >
                     <Button
                         asChild
+                        variant="default"
+                        size="lg"
                         aria-label="Voir les projets récents sur cette page"
                         className="shadow-azure-blue-500/20 cursor-pointer gap-3"
                     >
@@ -98,8 +100,9 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
 
                     <Button
                         asChild
-                        variant="secondary"
-                        className="bg-white text-slate-950 hover:bg-slate-300 shadow-lg"
+                        variant="outline"
+                        size="lg"
+                        className="text-slate-300"
                     >
                         <Link href="mailto:hervezossou@outlook.com">
                             <HugeiconsIcon
