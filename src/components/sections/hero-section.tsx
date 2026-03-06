@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { TypographyH1, TypographyBody, TypographyCaption } from "@/components/ui/typography";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowRight01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
+import { ArrowDown01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
 
 interface HeroSectionProps {
@@ -79,7 +79,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                         <Link href="#projets" scroll={true}>
                             <span>Voir mes récents projets</span>
                             <HugeiconsIcon
-                                icon={ArrowRight01Icon}
+                                icon={ArrowDown01Icon}
                                 size={24}
                                 strokeWidth={2}
                             />

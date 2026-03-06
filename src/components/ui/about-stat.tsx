@@ -1,4 +1,5 @@
 import { cn } from "@/components/lib/utils";
+import { TypographyH3, TypographyLabel } from "./typography";
 
 interface AboutStatProps {
     value: string;
@@ -9,12 +10,12 @@ interface AboutStatProps {
 export function AboutStat({ value, label, className }: AboutStatProps) {
     return (
         <div className={cn("flex flex-col gap-1", className)}>
-            <p className="font-sora text-[clamp(22px,2.5vw,28px)] leading-none font-semibold text-white">
+            <TypographyH3 className="text-[clamp(22px,2.5vw,28px)] leading-none font-semibold text-white">
                 {value}
-            </p>
-            <p className="font-rethink-sans text-[12px] font-light tracking-wider text-slate-300 uppercase">
+            </TypographyH3>
+            <TypographyLabel className="text-[12px] font-light tracking-wider text-slate-300 uppercase">
                 {label}
-            </p>
+            </TypographyLabel>
         </div>
     );
 }

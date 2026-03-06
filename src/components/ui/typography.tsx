@@ -58,7 +58,7 @@ export function TypographyBody({ children, className }: TypographyProps) {
     return (
         <p
             className={cn(
-                "font-rethink-sans font-normal",
+                "font-outfit font-normal",
                 "text-[16px] leading-[24px] tracking-[-0.0001em]", // Mobile & Tablet
                 "lg:text-[18px] lg:leading-[28px]", // Desktop
                 className
@@ -73,7 +73,7 @@ export function TypographyHighlight({ children, className }: TypographyProps) {
     return (
         <span
             className={cn(
-                "font-rethink-sans font-medium",
+                "font-outfit font-medium",
                 "leading-[28px] tracking-[-0.0001em] text-[18px]",
                 className
             )}
@@ -87,7 +87,7 @@ export function TypographyLabel({ children, className }: TypographyProps) {
     return (
         <span
             className={cn(
-                "font-rethink-sans font-medium",
+                "font-outfit font-medium",
                 "text-[14px] leading-[20px] tracking-[-0.0001em]",
                 className
             )}
@@ -101,7 +101,7 @@ export function TypographyCaption({ children, className }: TypographyProps) {
     return (
         <span
             className={cn(
-                "font-rethink-sans font-normal",
+                "font-outfit font-normal",
                 "text-[12px] leading-[18px] tracking-[-0.0001em]",
                 className
             )}

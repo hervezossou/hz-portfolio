@@ -10,13 +10,13 @@ export const ABOUT_DATA = {
     description: [
         <>
             Je ne me contente pas de faire fonctionner les choses, je les fais
-            fonctionner <span className="text-white/70">bien</span>. Depuis
+            fonctionner <span className="text-azure-blue-500">bien</span>. Depuis
             plusieurs années, je conçois des interfaces web qui allient
             esthétique, performance et accessibilité.
         </>,
         <>
             Ce qui me différencie ? Je pense{" "}
-            <span className="text-white/70">produit</span> autant que code. Vos
+            <span className="text-azure-blue-500">produit</span> autant que code. Vos
             utilisateurs, votre conversion, votre marque, j&apos;y pense avant
             d&apos;écrire la première ligne.
         </>,
