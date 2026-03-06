@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Outfit } from "next/font/google";
+import { Sora, Rethink_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -13,7 +13,7 @@ const sora = Sora({
     display: "swap",
 });
 
-const outfit = Outfit({
+const rethinkSans = Rethink_Sans({
     variable: "--font-rethink-sans",
     subsets: ["latin"],
     weight: ["400", "500", "600", "700", "800"],
@@ -33,7 +33,7 @@ export default function RootLayout({
     return (
         <html lang="fr" className="overflow-x-hidden overflow-y-auto" data-scroll-behavior="smooth">
             <body
-                className={`${sora.variable} ${outfit.variable} flex min-h-screen flex-col overflow-hidden bg-slate-950 antialiased`}
+                className={`${sora.variable} ${rethinkSans.variable} flex min-h-screen flex-col overflow-hidden bg-slate-950 antialiased`}
             >
                 <Header />
                 <PageWrapper>{children}</PageWrapper>
