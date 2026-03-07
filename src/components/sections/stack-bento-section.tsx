@@ -16,7 +16,7 @@ export function StackBentoSection({
         <section
             className={cn(
                 "overflow-hidden px-4 md:px-8 py-16",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900",
+                variant === "primary" ? "bg-background" : "bg-muted",
                 className
             )}
         >
@@ -37,7 +37,7 @@ export function StackBentoSection({
                 <StackBentoGrid items={STACK_DATA} />
 
                 {/* Exploration Footer */}
-                <div className="mt-12 flex items-center gap-3 text-slate-400">
+                <div className="mt-12 flex items-center gap-3 text-muted-foreground">
                     <span className="bg-azure-blue-500 h-1.5 w-1.5 shrink-0 rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
                     <span className="text-sm md:text-base font-normal tracking-wide italic">
                         En exploration — Docker · CI/CD · Vitest

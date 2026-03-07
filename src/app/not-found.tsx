@@ -16,11 +16,11 @@ import {
 
 export default function NotFound() {
     return (
-        <PageWrapper className="bg-slate-900">
+        <PageWrapper className="bg-muted">
             {/* Hero 404 */}
             <section className="relative flex min-h-[70vh] flex-1 flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-20">
                 {/* Large Background Number */}
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-slate-200/15 select-none">
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-foreground/10 select-none">
                     404
                 </div>
 
@@ -33,14 +33,14 @@ export default function NotFound() {
                         </TypographyLabel>
                     </div>
 
-                    <TypographyH1 className="mb-4 text-white">
+                    <TypographyH1 className="mb-4 text-foreground">
                         404{" "}
-                        <span className="font-light text-slate-300 italic">
+                        <span className="font-light text-muted-foreground italic">
                             Oups.
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-lg text-slate-200">
+                    <TypographyBody className="mx-auto mb-12 max-w-lg text-muted-foreground">
                         Il semble que vous ayez suivi un lien brisé ou tapé une
                         URL incorrecte. Ne vous inquiétez pas, l&apos;accueil
                         est à un clic.
@@ -64,7 +64,7 @@ export default function NotFound() {
                         <Link href="/works">
                             <Button
                                 variant="outline"
-                                className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto cursor-pointer rounded-2xl border-slate-700/50 px-10 py-6 text-sm font-normal text-slate-300 transition-all"
+                                className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto cursor-pointer rounded-2xl border-border px-10 py-6 text-sm font-normal text-foreground transition-all"
                             >
                                 <HugeiconsIcon
                                     icon={LinkSquare01Icon}

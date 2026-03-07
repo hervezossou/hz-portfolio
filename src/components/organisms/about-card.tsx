@@ -26,11 +26,11 @@ export function AboutCard({
     return (
         <div
             className={cn(
-                "rounded-2xl bg-linear-to-br from-white/15 via-white/5 to-white/10",
+                "rounded-2xl border border-border bg-muted/30",
                 className
             )}
         >
-            <div className="flex flex-col overflow-hidden rounded-[14px] bg-slate-900/60 backdrop-blur-sm xl:flex-row">
+            <div className="flex flex-col overflow-hidden rounded-[14px] bg-muted/50 backdrop-blur-sm xl:flex-row">
                 {/* Image Section */}
                 <div className="relative order-first h-[300px] w-full shrink-0 md:h-[800px] xl:h-auto xl:w-[45%]">
                     <AboutImage src={image.src} alt={image.alt} />
@@ -47,7 +47,7 @@ export function AboutCard({
                     </div>
 
                     {/* Title */}
-                    <TypographyH3 className="mb-6 text-[clamp(26px,3.2vw,38px)] text-white">
+                    <TypographyH3 className="mb-6 text-[clamp(26px,3.2vw,38px)] text-foreground">
                         {title}
                     </TypographyH3>
 
@@ -56,7 +56,7 @@ export function AboutCard({
                         {description.map((paragraph, index) => (
                             <TypographyBody
                                 key={index}
-                                className="text-slate-200 text-left md:text-justify"
+                                className="text-secondary-foreground text-left md:text-justify"
                             >
                                 {paragraph}
                             </TypographyBody>
@@ -86,7 +86,7 @@ export function AboutCard({
                             asChild
                             variant="outline"
                             size="lg"
-                            className="w-full md:w-[50%] text-slate-300"
+                            className="w-full md:w-[50%] text-foreground"
                         >
                             <Link href="/works" aria-label="Voir toutes mes réalisations">
                                 <TypographyBody>Découvrir mon portfolio</TypographyBody>

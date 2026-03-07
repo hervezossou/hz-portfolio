@@ -15,7 +15,7 @@ export function PositioningSection({
         <section
             className={cn(
                 "relative py-24",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
             <div className="mx-auto max-w-[1440px] px-4 md:px-8">

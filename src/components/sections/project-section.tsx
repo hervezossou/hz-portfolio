@@ -24,7 +24,7 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
         <div
             className={cn(
                 "selection:bg-azure-blue-500/30 relative min-h-screen overflow-x-hidden font-sans",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
             {/* Ambient blobs */}

@@ -22,19 +22,19 @@ export function ParcoursItem({
         <div
             className={cn(
                 "group flex items-start gap-4 py-7 transition-all",
-                !isLast && "border-b border-white/5"
+                !isLast && "border-b border-border"
             )}
         >
             <ParcoursIcon icon={icon} />
             <div className="min-w-0 flex-1">
-                <TypographyLabel className="mb-1.5 block text-[11px] tracking-wider text-slate-500 uppercase">
+                <TypographyLabel className="mb-1.5 block text-[11px] tracking-wider text-muted-foreground/60 uppercase">
                     {period}
                 </TypographyLabel>
                 <div className="flex flex-col gap-0.5">
-                    <h4 className="group-hover:text-azure-blue-400 truncate text-base font-medium text-slate-100 transition-colors">
+                    <h4 className="group-hover:text-azure-blue-400 truncate text-base font-medium text-foreground transition-colors">
                         {title}
                     </h4>
-                    <TypographyBody className="text-sm font-light text-slate-500">
+                    <TypographyBody className="text-sm font-light text-muted-foreground/70">
                         {subtitle}
                     </TypographyBody>
                 </div>

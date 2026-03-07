@@ -22,7 +22,7 @@ export function NavLink({ href, children, onClick }: NavLinkProps) {
             onClick={onClick}
             className={cn(
                 "relative px-1 py-2 text-sm font-medium transition-colors duration-300",
-                isActive ? "text-azure-blue-400" : "text-slate-400 hover:text-azure-blue-400"
+                isActive ? "text-azure-blue-400" : "text-muted-foreground hover:text-azure-blue-400"
             )}
         >
             <TypographyBody>{children}</TypographyBody>

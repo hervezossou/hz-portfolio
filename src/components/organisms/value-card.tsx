@@ -35,8 +35,8 @@ export function ValueCard({
             className={cn(
                 "group relative flex min-h-[300px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border p-10 transition-all duration-500",
                 isHovered
-                    ? "bg-azure-blue-700 shadow-azure-blue-900/40 border-transparent shadow-2xl"
-                    : "border-slate-800 bg-slate-900/50 backdrop-blur-sm hover:border-slate-700"
+                    ? "bg-azure-blue-700 shadow-azure-blue-900/40 border-transparent shadow-xl"
+                    : "border-border bg-muted/50 backdrop-blur-sm hover:border-border/80"
             )}
         >
             {/* Glow Effect */}
@@ -56,7 +56,7 @@ export function ValueCard({
             <TypographyH3
                 className={cn(
                     "mb-4 text-2xl leading-tight font-semibold tracking-tight transition-colors duration-300",
-                    isHovered ? "text-white" : "text-slate-100"
+                    isHovered ? "text-white" : "text-foreground"
                 )}
             >
                 {value.title}

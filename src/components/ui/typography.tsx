@@ -102,7 +102,7 @@ export function TypographyCaption({ children, className }: TypographyProps) {
         <span
             className={cn(
                 "font-rethink-sans font-normal",
-                "text-[12px] leading-[18px] tracking-[-0.0001em]",
+                "text-xs leading-5 tracking-[-0.0001em]",
                 className
             )}
         >

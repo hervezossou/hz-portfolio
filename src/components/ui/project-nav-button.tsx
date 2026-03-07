@@ -34,7 +34,7 @@ export function ProjectNavButton({
             onClick={onClick}
             className={cn(
                 "flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border text-lg transition-all",
-                "hover:text-azure-blue-500 hover:bg-azure-blue-500/10 hover:border-azure-blue-500/40 border-slate-700/50 bg-slate-800/70 text-slate-400 backdrop-blur-xl",
+                "hover:text-azure-blue-500 hover:bg-azure-blue-500/10 hover:border-azure-blue-500/40 border-border bg-muted/70 text-muted-foreground backdrop-blur-xl",
                 className
             )}
         >

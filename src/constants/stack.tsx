@@ -16,6 +16,7 @@ export const STACK_DATA = [
         bg: "rgba(97,218,251,0.08)",
         size: "large" as const,
         svg: <SiReact />,
+        isBrandColor: true,
     },
     {
         name: "Next.js",
@@ -24,6 +25,7 @@ export const STACK_DATA = [
         bg: "rgba(255,255,255,0.06)",
         size: "normal" as const,
         svg: <SiNextdotjs />,
+        isBrandColor: false,
     },
     {
         name: "TypeScript",
@@ -32,6 +34,7 @@ export const STACK_DATA = [
         bg: "rgba(49,120,198,0.1)",
         size: "normal" as const,
         svg: <SiTypescript />,
+        isBrandColor: true,
     },
     {
         name: "Tailwind",
@@ -40,6 +43,7 @@ export const STACK_DATA = [
         bg: "rgba(6,182,212,0.08)",
         size: "normal" as const,
         svg: <SiTailwindcss />,
+        isBrandColor: true,
     },
     {
         name: "Figma",
@@ -48,6 +52,7 @@ export const STACK_DATA = [
         bg: "rgba(242,78,30,0.08)",
         size: "normal" as const,
         svg: <SiFigma />,
+        isBrandColor: true,
     },
     {
         name: "Git",
@@ -56,6 +61,7 @@ export const STACK_DATA = [
         bg: "rgba(240,80,50,0.08)",
         size: "normal" as const,
         svg: <SiGit />,
+        isBrandColor: true,
     },
     {
         name: "Node.js",
@@ -64,5 +70,6 @@ export const STACK_DATA = [
         bg: "rgba(51,153,51,0.08)",
         size: "normal" as const,
         svg: <SiNodedotjs />,
+        isBrandColor: true,
     },
 ];

@@ -18,7 +18,7 @@ export function ProcessNumber({
         <TypographyLabel
             className={cn(
                 "font-sora text-[13px] tracking-wider transition-colors duration-300",
-                isHovered ? "text-slate-400" : "text-slate-400",
+                isHovered ? "text-muted-foreground" : "text-muted-foreground/70",
                 className
             )}
         >
