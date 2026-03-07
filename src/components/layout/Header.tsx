@@ -103,7 +103,7 @@ export function Header() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="font-sora hover:text-azure-blue-600 text-2xl font-medium text-foreground transition-colors"
+                                    className="font-rethink-sans hover:text-azure-blue-600 text-2xl font-medium text-foreground transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.label}
@@ -111,6 +111,7 @@ export function Header() {
                             ))}
                             <div className="mt-8 flex items-center justify-center gap-4">
                                 <ThemeToggle />
+                                <span className="font-rethink-sans hover:text-azure-blue-600 text-2xl font-medium text-foreground transition-colors lg:hidden">Changer le thème</span>
                             </div>
                             <div className="mt-4">
                                 <Button
