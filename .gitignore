@@ -43,3 +43,4 @@ next-env.d.ts
 # editors
 .vscode/
 src/components/sections/ComingSoon.tsx.bak
+public/images/Profile_512x512.png:Zone.Identifier
