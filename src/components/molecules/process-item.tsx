@@ -45,7 +45,7 @@ export function ProcessItem({
                 <TypographyH3
                     className={cn(
                         "font-light transition-colors duration-300",
-                        isActive ? "text-azure-blue-500" : "text-foreground"
+                        isActive ? "text-primary-500" : "text-foreground"
                     )}
                 >
                     {title}

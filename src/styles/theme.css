@@ -1,16 +1,48 @@
-@theme {
-    --color-azure-blue-50: oklch(97.24% 0.014 247.97);
-    --color-azure-blue-100: oklch(94.09% 0.03 246.59);
-    --color-azure-blue-200: oklch(88.49% 0.06 245.47);
-    --color-azure-blue-300: oklch(80.71% 0.104 245.56);
-    --color-azure-blue-400: oklch(74.06% 0.142 246.56);
-    --color-azure-blue-500: oklch(67.85% 0.164 248.19);
-    --color-azure-blue-600: oklch(61.04% 0.163 250.62);
-    --color-azure-blue-700: oklch(53.81% 0.151 252.56);
-    --color-azure-blue-800: oklch(46.03% 0.127 252.43);
-    --color-azure-blue-900: oklch(37.84% 0.1 251.85);
-    --color-azure-blue-950: oklch(14.8% 0.03 260);
+/*
+  PALETTE PRIMAIRE — Guide d'utilisation
+  Couleur principale : #0260FE (--color-primary-600)
 
-    --font-sora: var(--font-sora);
-    --font-rethink-sans: var(--font-rethink-sans);
+  primary-600  → Boutons CTA, liens actifs, tagline accent, nav link actif
+  primary-700  → Hover sur boutons CTA, état pressed
+  primary-400  → Icônes secondaires, éléments inactifs, textes de support
+  primary-200  → Borders de cards en light theme
+  primary-100  → Backgrounds subtils, hover states en light theme
+  primary-50   → Fond de badges, backgrounds très légers en light theme
+  primary-900  → Glow effects sur fond sombre, shadows colorées
+  primary-950  → Backgrounds d'accent sur dark theme
+
+  BOUTON OUTLINE
+  Light : border-slate-300 bg-slate-50 text-slate-900
+  Dark  : border-white/30 bg-transparent text-white
+
+  DARK THEME — glow example :
+  shadow-[0_0_40px_theme(colors.primary.900)]
+*/
+
+@theme {
+  --color-primary-50: oklch(96.5% 0.022 260);
+  /* #EEF4FF */
+  --color-primary-100: oklch(92.1% 0.044 260);
+  /* #DDEAFE */
+  --color-primary-200: oklch(84.2% 0.078 260);
+  /* #BBCFFE */
+  --color-primary-300: oklch(73.8% 0.112 260);
+  /* #8AADFD */
+  --color-primary-400: oklch(63.1% 0.148 260);
+  /* #578BFC */
+  --color-primary-500: oklch(53.4% 0.178 260);
+  /* #2B6BFB */
+  --color-primary-600: oklch(48.2% 0.215 260);
+  /* #0260FE — PRIMARY */
+  --color-primary-700: oklch(39.6% 0.182 260);
+  /* #0049CC */
+  --color-primary-800: oklch(31.2% 0.148 260);
+  /* #00369A */
+  --color-primary-900: oklch(23.1% 0.112 260);
+  /* #002470 */
+  --color-primary-950: oklch(14.8% 0.072 260);
+  /* #001345 */
+
+  --font-sora: var(--font-sora);
+  --font-rethink-sans: var(--font-rethink-sans);
 }

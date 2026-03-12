@@ -77,7 +77,7 @@ export function Header() {
                     <Button
                         variant="outline"
                         aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-                        className="hover:text-azure-blue-600 cursor-pointer p-2 text-foreground rounded-2xl transition-colors lg:hidden"
+                        className="hover:text-primary-600 cursor-pointer p-2 text-foreground rounded-2xl transition-colors lg:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     >
                         <HugeiconsIcon
@@ -103,7 +103,7 @@ export function Header() {
                                 <Link
                                     key={item.label}
                                     href={item.href}
-                                    className="font-rethink-sans hover:text-azure-blue-600 text-2xl font-medium text-foreground transition-colors"
+                                    className="font-rethink-sans hover:text-primary-600 text-2xl font-medium text-foreground transition-colors"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {item.label}
@@ -111,7 +111,7 @@ export function Header() {
                             ))}
                             <div className="mt-8 flex items-center justify-center gap-4">
                                 <ThemeToggle />
-                                <span className="font-rethink-sans hover:text-azure-blue-600 text-2xl font-medium text-foreground transition-colors lg:hidden">Changer le thème</span>
+                                <span className="font-rethink-sans hover:text-primary-600 text-2xl font-medium text-foreground transition-colors lg:hidden">Changer le thème</span>
                             </div>
                             <div className="mt-4">
                                 <Button

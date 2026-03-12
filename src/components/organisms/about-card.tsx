@@ -71,7 +71,7 @@ export function AboutCard({
                         <Button
                             asChild
                             size="lg"
-                            className="w-full md:w-[50%] shadow-azure-blue-500/20 shadow-lg"
+                            className="w-full md:w-[50%] shadow-primary-500/20 shadow-lg"
                         >
                             <Link href="/contact">
                                 <HugeiconsIcon

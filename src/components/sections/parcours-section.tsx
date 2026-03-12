@@ -22,7 +22,7 @@ export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
                         <>
                             D&apos;où je viens,
                             <br />
-                            <span className="text-azure-blue-500 font-light italic">
+                            <span className="text-primary-500 font-light italic">
                                 où je vais.
                             </span>
                         </>

@@ -58,7 +58,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-azure-blue-500/5 hover:border-azure-blue-400/30 rounded-2xl border border-border/50 p-3 text-foreground transition-all duration-300 hover:text-foreground hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
+                                className="bg-primary-500/5 hover:border-primary-400/30 rounded-2xl border border-border/50 p-3 text-foreground transition-all duration-300 hover:text-foreground hover:shadow-[0_0_20px_-5px_var(--color-primary-500)]"
                                 aria-label={social.label}
                             >
                                 <HugeiconsIcon icon={social.icon} size={20} />

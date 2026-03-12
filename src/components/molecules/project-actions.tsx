@@ -45,7 +45,7 @@ export function ProjectActions({
                         variant="outline"
                         size="lg"
                         onClick={onViewCode}
-                        className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto w-full cursor-pointer rounded-2xl border-border px-8 py-4 text-sm font-normal text-muted-foreground transition-all"
+                        className="h-auto w-full cursor-pointer rounded-2xl border-border px-8 py-4 text-sm font-normal text-muted-foreground transition-all"
                     >
                         <TypographyBody>Voir le code</TypographyBody>
                         <HugeiconsIcon

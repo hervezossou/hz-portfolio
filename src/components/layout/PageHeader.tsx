@@ -120,16 +120,16 @@ export const PageHeader = ({
                 aria-hidden="true"
                 className={cn(
                     "pointer-events-none absolute right-0 bottom-0 left-0 h-[40%] bg-linear-to-b from-transparent",
-                    isDark ? "to-azure-blue-950/90" : "to-background/90"
+                    isDark ? "to-primary-950/90" : "to-background/90"
                 )}
             />
 
             {/* Content */}
             <div className="relative z-10 flex max-w-6xl flex-col items-center gap-6">
                 {/* Badge */}
-                <div className="border-azure-blue-400/30 bg-azure-blue-400/10 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
-                    <span className="bg-azure-blue-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
-                    <TypographyLabel className="text-azure-blue-400 text-[10px] font-medium tracking-widest uppercase">
+                <div className="border-primary-400/30 bg-primary-400/10 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
+                    <span className="bg-primary-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_var(--color-primary-500)]" />
+                    <TypographyLabel className="text-primary-400 text-[10px] font-medium tracking-widest uppercase">
                         {badge}
                     </TypographyLabel>
                 </div>

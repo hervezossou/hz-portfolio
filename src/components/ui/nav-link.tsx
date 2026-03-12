@@ -22,14 +22,14 @@ export function NavLink({ href, children, onClick }: NavLinkProps) {
             onClick={onClick}
             className={cn(
                 "relative px-1 py-2 text-sm font-medium transition-colors duration-300",
-                isActive ? "text-azure-blue-400" : "text-muted-foreground hover:text-azure-blue-400"
+                isActive ? "text-primary-400" : "text-muted-foreground hover:text-primary-400"
             )}
         >
             <TypographyBody>{children}</TypographyBody>
             {isActive && (
                 <motion.div
                     layoutId="nav-underline"
-                    className="bg-azure-blue-500 absolute right-0 bottom-0 left-0 h-px"
+                    className="bg-primary-500 absolute right-0 bottom-0 left-0 h-px"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                 />
             )}

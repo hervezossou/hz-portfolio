@@ -16,13 +16,13 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
     return (
         <section
             className={cn(
-                "selection:bg-azure-blue-500/30 relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
+                "selection:bg-primary-500/30 relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
             {/* Background Accent Gradients */}
-            <div className="bg-azure-blue-500/5 pointer-events-none absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
-            <div className="bg-azure-blue-600/5 pointer-events-none absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
+            <div className="bg-primary-500/5 pointer-events-none absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
+            <div className="bg-primary-600/5 pointer-events-none absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
 
             <div className="relative z-10 container mx-auto flex flex-col items-center px-6 text-center">
                 {/* Floating Status Badge */}
@@ -33,12 +33,11 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                     className="my-8 flex items-center gap-3 rounded-full border border-border bg-muted/50 px-4 py-2 backdrop-blur-md"
                 >
                     <span className="relative flex h-2 w-2">
-                        <span className="bg-azure-blue-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>
-                        <span className="bg-azure-blue-500 relative inline-flex h-2 w-2 rounded-full"></span>
+                        <span className="bg-primary-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>
+                        <span className="bg-primary-500 relative inline-flex h-2 w-2 rounded-full"></span>
                     </span>
                     <TypographyCaption className="text-xs font-medium tracking-wider text-foreground uppercase">
-                        ✦ Disponible pour missions freelance · Ouvert aux
-                        opportunités en CDI
+                        ✦ Disponible en freelance & CDI
                     </TypographyCaption>
                 </motion.div>
 
@@ -51,7 +50,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                 >
                     <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-foreground">
                         Développeur Frontend <br />
-                        <span className="text-2xl leading-normal tracking-tight md:text-4xl font-rethink-sans text-azure-blue-400 font-normal italic">
+                        <span className="text-2xl leading-normal tracking-tight md:text-4xl font-rethink-sans text-primary-400 font-normal italic">
                             Je transforme vos idées en interfaces qui convertissent.
                         </span>
                     </TypographyH1>
@@ -74,7 +73,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                         variant="default"
                         size="lg"
                         aria-label="Voir les projets récents sur cette page"
-                        className="w-full md:w-xs shadow-azure-blue-500/20 cursor-pointer gap-3 justify-center"
+                        className="w-full md:w-xs shadow-primary-500/20 cursor-pointer gap-3 justify-center"
                     >
                         <Link href="#projets" scroll={true}>
                             <span>Voir mes récents projets</span>

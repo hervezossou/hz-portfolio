@@ -31,7 +31,7 @@ export function ParcoursItem({
                     {period}
                 </TypographyLabel>
                 <div className="flex flex-col gap-0.5">
-                    <h4 className="group-hover:text-azure-blue-400 truncate text-base font-medium text-foreground transition-colors">
+                    <h4 className="group-hover:text-primary-400 truncate text-base font-medium text-foreground transition-colors">
                         {title}
                     </h4>
                     <TypographyBody className="text-sm font-light text-muted-foreground/70">

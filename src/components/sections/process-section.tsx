@@ -22,7 +22,7 @@ export function ProcessSection({ variant = "primary" }: ProcessSectionProps) {
                         <>
                             Un process
                             <br />
-                            <span className="text-azure-blue-500">
+                            <span className="text-primary-500">
                                 sans surprise.
                             </span>
                         </>

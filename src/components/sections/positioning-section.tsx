@@ -24,7 +24,7 @@ export function PositioningSection({
                         <>
                             Pas juste du code.
                             <br />
-                            <span className="text-azure-blue-500">
+                            <span className="text-primary-500">
                                 De la valeur.
                             </span>
                         </>

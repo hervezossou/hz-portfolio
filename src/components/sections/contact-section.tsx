@@ -54,7 +54,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                     ? "bg-background"
                     : variant === "secondary"
                         ? "bg-muted"
-                        : "bg-azure-blue-900"
+                        : "bg-primary-900"
             )}
         >
             <div className="mx-auto max-w-6xl px-6">
@@ -65,7 +65,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                         <div>
                             <TypographyH3 className="mb-4 leading-tight text-foreground">
                                 Construisons ensemble <br />
-                                <span className="from-azure-blue-600 to-azure-blue-300 bg-linear-to-r bg-clip-text text-transparent">
+                                <span className="from-primary-600 to-primary-300 bg-linear-to-r bg-clip-text text-transparent">
                                     quelque chose de grand.
                                 </span>
                             </TypographyH3>
@@ -81,7 +81,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                 variant="default"
                                 size="lg"
                                 aria-label="Envoyez-moi un email"
-                                className="w-full md:w-xs shadow-azure-blue-500/20 cursor-pointer gap-3 justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-azure-blue-500/30"
+                                className="w-full md:w-xs shadow-primary-500/20 cursor-pointer text-white gap-3 justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-primary-500/30"
                             >
                                 <Link
                                     href={`mailto:${emailAddress}`}
@@ -92,7 +92,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                         size={24}
                                         strokeWidth={2}
                                     />
-                                    <TypographyBody className="text-secondary-foreground">Envoyez-moi un email</TypographyBody>
+                                    <TypographyBody className="text-white">Envoyez-moi un email</TypographyBody>
                                 </Link>
                             </Button>
                         </div>
@@ -111,7 +111,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                                 variant="ghost"
                                 size="icon"
                                 onClick={handleCopyEmail}
-                                className="relative flex items-center justify-center p-4 text-muted-foreground transition-colors cursor-pointer hover:bg-azure-blue-500/20 hover:text-foreground"
+                                className="relative flex items-center justify-center p-4 text-muted-foreground transition-colors cursor-pointer hover:bg-primary-500/20 hover:text-foreground"
                                 title="Copier l'adresse"
                             >
                                 <AnimatePresence mode="wait">
@@ -194,7 +194,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                         onClick={handleOpenLinkedIn}
                     >
                         <div className="flex items-start justify-between">
-                            <div className="text-azure-blue-600 rounded-2xl bg-blue-600/10 p-3">
+                            <div className="text-primary-600 rounded-2xl bg-blue-600/10 p-3">
                                 <HugeiconsIcon
                                     icon={Linkedin01Icon}
                                     size={24}

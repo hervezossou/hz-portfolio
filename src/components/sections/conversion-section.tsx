@@ -30,14 +30,14 @@ export function ConversionSection({
                 {/* Card Wrapper with premium border gradient */}
                 <div className="group relative w-full">
                     {/* Subtle glow behind the card */}
-                    <div className="from-azure-blue-500/10 to-azure-blue-500/10 absolute -inset-1 rounded-[32px] bg-linear-to-r via-slate-500/5 opacity-50 blur-2xl transition duration-1000 group-hover:opacity-100" />
+                    <div className="from-primary-500/10 to-primary-500/10 absolute -inset-1 rounded-[32px] bg-linear-to-r via-slate-500/5 opacity-50 blur-2xl transition duration-1000 group-hover:opacity-100" />
 
                     <div className="relative overflow-hidden rounded-[32px] border border-border bg-muted/50 backdrop-blur-3xl">
                         {/* Grain Overlay */}
                         <div className="pointer-events-none absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03]" />
 
                         <div className="relative z-10 flex flex-col items-center px-8 py-16 text-center md:px-16 md:py-24">
-                            <span className="text-azure-blue-400 border-azure-blue-500/20 bg-azure-blue-500/5 mb-8 inline-block rounded-full border px-4 py-1.5 text-[10px] font-medium tracking-[0.2em] uppercase">
+                            <span className="text-primary-400 border-primary-500/20 bg-primary-500/5 mb-8 inline-block rounded-full border px-4 py-1.5 text-[10px] font-medium tracking-[0.2em] uppercase">
                                 Travaillons ensemble
                             </span>
 

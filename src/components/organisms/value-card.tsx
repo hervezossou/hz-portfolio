@@ -35,7 +35,7 @@ export function ValueCard({
             className={cn(
                 "group relative flex min-h-[300px] cursor-pointer flex-col overflow-hidden rounded-[2rem] border p-10 transition-all duration-500",
                 isHovered
-                    ? "bg-azure-blue-700 shadow-azure-blue-900/40 border-transparent shadow-xl"
+                    ? "bg-primary-700 shadow-primary-900/40 border-transparent shadow-xl"
                     : "border-border bg-muted/50 backdrop-blur-sm hover:border-border/80"
             )}
         >

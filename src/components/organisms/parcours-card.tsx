@@ -18,7 +18,7 @@ export function ParcoursCard({ title, items, icon }: ParcoursCardProps) {
     return (
         <div className="h-full rounded-2xl border border-border bg-muted/40 p-4 shadow-lg backdrop-blur-md sm:p-10">
             <TypographyH3 className="mb-2 text-base md:text-lg lg:text-xl flex items-center gap-3 font-semibold tracking-widest text-foreground uppercase">
-                <span className="bg-azure-blue-500 h-1.5 w-1.5 rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
+                <span className="bg-primary-500 h-1.5 w-1.5 rounded-full shadow-[0_0_8px_var(--color-primary-500)]" />
                 {title}
             </TypographyH3>
             <div className="flex flex-col">

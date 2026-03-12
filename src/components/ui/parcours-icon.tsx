@@ -19,7 +19,7 @@ export function ParcoursIcon({ icon, className }: ParcoursIconProps) {
                 icon={icon}
                 size={20}
                 strokeWidth={1.5}
-                className="text-azure-blue-500"
+                className="text-primary-500"
             />
         </div>
     );
