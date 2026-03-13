@@ -20,28 +20,18 @@
 */
 
 @theme {
-  --color-primary-50: oklch(96.5% 0.022 260);
-  /* #EEF4FF */
-  --color-primary-100: oklch(92.1% 0.044 260);
-  /* #DDEAFE */
-  --color-primary-200: oklch(84.2% 0.078 260);
-  /* #BBCFFE */
-  --color-primary-300: oklch(73.8% 0.112 260);
-  /* #8AADFD */
-  --color-primary-400: oklch(63.1% 0.148 260);
-  /* #578BFC */
-  --color-primary-500: oklch(53.4% 0.178 260);
-  /* #2B6BFB */
-  --color-primary-600: oklch(48.2% 0.215 260);
-  /* #0260FE — PRIMARY */
-  --color-primary-700: oklch(39.6% 0.182 260);
-  /* #0049CC */
-  --color-primary-800: oklch(31.2% 0.148 260);
-  /* #00369A */
-  --color-primary-900: oklch(23.1% 0.112 260);
-  /* #002470 */
-  --color-primary-950: oklch(14.8% 0.072 260);
-  /* #001345 */
+  --color-primary-50: #EEF4FF;
+  --color-primary-100: #DDEAFE;
+  --color-primary-200: #BBCFFE;
+  --color-primary-300: #8AADFD;
+  --color-primary-400: #578BFC;
+  --color-primary-500: #2B6BFB;
+  --color-primary-600: #0260FE;
+  /* PRIMARY */
+  --color-primary-700: #0049CC;
+  --color-primary-800: #00369A;
+  --color-primary-900: #002470;
+  --color-primary-950: #001345;
 
   --font-sora: var(--font-sora);
   --font-rethink-sans: var(--font-rethink-sans);
