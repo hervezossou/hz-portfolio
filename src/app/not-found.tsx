@@ -16,38 +16,38 @@ import {
 
 export default function NotFound() {
     return (
-        <PageWrapper className="bg-slate-900">
+        <PageWrapper className="bg-muted">
             {/* Hero 404 */}
             <section className="relative flex min-h-[70vh] flex-1 flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-20">
                 {/* Large Background Number */}
-                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-slate-200/15 select-none">
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center font-sans text-[clamp(180px,28vw,440px)] leading-none font-bold tracking-tighter text-foreground/10 select-none">
                     404
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10 max-w-2xl px-4 text-center">
-                    <div className="border-azure-blue-400/30 bg-azure-blue-400/10 mb-8 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
-                        <span className="bg-azure-blue-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
-                        <TypographyLabel className="text-azure-blue-400 text-[10px] font-medium tracking-widest uppercase">
+                    <div className="border-primary-400/30 bg-primary-400/10 mb-8 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
+                        <span className="bg-primary-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_var(--color-primary-500)]" />
+                        <TypographyLabel className="text-primary-400 text-[10px] font-medium tracking-widest uppercase">
                             Erreur 404
                         </TypographyLabel>
                     </div>
 
-                    <TypographyH1 className="mb-4 text-white">
+                    <TypographyH1 className="mb-4 text-foreground">
                         404{" "}
-                        <span className="font-light text-slate-300 italic">
+                        <span className="font-light text-muted-foreground italic">
                             Oups.
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-lg text-slate-200">
+                    <TypographyBody className="mx-auto mb-12 max-w-lg text-muted-foreground">
                         Il semble que vous ayez suivi un lien brisé ou tapé une
                         URL incorrecte. Ne vous inquiétez pas, l&apos;accueil
                         est à un clic.
                     </TypographyBody>
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <Link href="/">
-                            <Button className="bg-azure-blue-600 hover:bg-azure-blue-500 shadow-azure-blue-500/20 group h-auto cursor-pointer rounded-2xl px-10 py-6 text-sm font-medium text-white shadow-lg transition-all">
+                            <Button className="bg-primary-600 hover:bg-primary-500 shadow-primary-500/20 group h-auto cursor-pointer rounded-2xl px-10 py-6 text-sm font-medium text-white shadow-lg transition-all">
                                 <HugeiconsIcon
                                     icon={Home01Icon}
                                     size={20}
@@ -64,7 +64,7 @@ export default function NotFound() {
                         <Link href="/works">
                             <Button
                                 variant="outline"
-                                className="hover:text-azure-blue-500 hover:border-azure-blue-500 h-auto cursor-pointer rounded-2xl border-slate-700/50 px-10 py-6 text-sm font-normal text-slate-300 transition-all"
+                                className="hover:text-primary-500 hover:border-primary-500 h-auto cursor-pointer rounded-2xl border-border px-10 py-6 text-sm font-normal text-foreground transition-all"
                             >
                                 <HugeiconsIcon
                                     icon={LinkSquare01Icon}

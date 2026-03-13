@@ -21,10 +21,11 @@ export function StackIcon({
               children as React.ReactElement<{
                   color?: string;
                   size?: number | string;
+                  className?: string;
               }>,
               {
-                  color: color || "currentColor",
                   size: size,
+                  ...(color && { color: color }),
               }
           )
         : children;

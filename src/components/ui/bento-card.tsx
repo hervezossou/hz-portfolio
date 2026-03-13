@@ -26,7 +26,7 @@ export const BentoCard = ({
             transition={{ duration: 0.5, delay, ease: "easeOut" }}
             whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             className={cn(
-                "group relative overflow-hidden rounded-[2rem] border border-white/5 bg-[#111827] p-8 transition-all duration-300 hover:shadow-[0_0_40px_-15px_rgba(59,130,246,0.15)]",
+                "group relative overflow-hidden rounded-[2rem] border border-border bg-muted/50 p-8 transition-all duration-300 hover:shadow-[0_0_40px_-15px_rgba(59,130,246,0.15)]",
                 className
             )}
         >

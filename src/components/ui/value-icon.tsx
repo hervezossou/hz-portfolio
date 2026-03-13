@@ -21,7 +21,7 @@ export function ValueIcon({
                 "flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300",
                 isHovered
                     ? "bg-white/20 text-white"
-                    : "bg-azure-blue-500/10 text-azure-blue-500",
+                    : "bg-primary-500/10 text-primary-500",
                 className
             )}
         >

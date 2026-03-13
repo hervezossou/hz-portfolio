@@ -12,7 +12,7 @@ export function AboutSection({ className, variant = "primary" }: AboutSectionPro
         <section
             className={cn(
                 "overflow-hidden px-4 py-16 md:px-8 md:py-24",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900",
+                variant === "primary" ? "bg-background" : "bg-muted",
                 className
             )}
         >

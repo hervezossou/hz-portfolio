@@ -40,7 +40,7 @@ export function AboutImage({ src, alt, className }: AboutImageProps) {
             {/* Shimmer / Placeholder */}
             <div
                 className={cn(
-                    "absolute inset-0 z-10 bg-slate-900 transition-opacity duration-1000",
+                    "absolute inset-0 z-10 bg-muted transition-opacity duration-1000",
                     imgLoaded ? "pointer-events-none opacity-0" : "opacity-100"
                 )}
             >
@@ -49,9 +49,9 @@ export function AboutImage({ src, alt, className }: AboutImageProps) {
 
                 {/* Silhouette avatar fallback */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                    <div className="h-16 w-16 rounded-full border border-white/10 bg-white/5" />
-                    <div className="h-3.5 w-32 rounded-lg bg-white/5" />
-                    <div className="h-2.5 w-24 rounded-lg bg-white/3" />
+                    <div className="h-16 w-16 rounded-full border border-border bg-foreground/5" />
+                    <div className="h-3.5 w-32 rounded-lg bg-foreground/5" />
+                    <div className="h-2.5 w-24 rounded-lg bg-foreground/3" />
                 </div>
             </div>
 
@@ -70,8 +70,8 @@ export function AboutImage({ src, alt, className }: AboutImageProps) {
             />
 
             {/* Overlays / Gradients */}
-            <div className="absolute inset-0 z-20 hidden bg-linear-to-r from-transparent via-transparent to-slate-950/80 md:block" />
-            <div className="absolute inset-0 z-20 block bg-linear-to-b from-transparent via-transparent to-slate-950/80 md:hidden" />
+            <div className="absolute inset-0 z-20 hidden bg-linear-to-r from-transparent via-transparent to-background/80 md:block" />
+            <div className="absolute inset-0 z-20 block bg-linear-to-b from-transparent via-transparent to-background/80 md:hidden" />
         </div>
     );
 }

@@ -26,14 +26,23 @@ export function ValueCardContent({
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="overflow-hidden"
             >
-                <TypographyBody className="text-base leading-relaxed font-normal text-slate-100">
+                <TypographyBody className={isHovered ? "text-white" : "text-muted-foreground"}>
                     {description}
                 </TypographyBody>
             </motion.div>
 
             <div className="flex flex-wrap gap-2">
                 {badges.map((badge) => (
-                    <ValueBadge key={badge}>{badge}</ValueBadge>
+                    <span
+                        key={badge}
+                        className={`rounded-full border px-2.5 py-1 text-[10px] font-medium tracking-wider uppercase transition-colors ${
+                            isHovered
+                                ? "border-white/30 bg-white/10 text-white"
+                                : "border-border bg-muted/50 text-muted-foreground"
+                        }`}
+                    >
+                        {badge}
+                    </span>
                 ))}
             </div>
         </div>

@@ -21,7 +21,7 @@ export default function AboutPage() {
                 description={
                     <>
                         Je m&apos;appelle{" "}
-                        <span className="text-azure-blue-500 font-medium">
+                        <span className="text-primary-500 font-medium">
                             Hervé
                         </span>
                         , et je suis passionné par la création de sites et

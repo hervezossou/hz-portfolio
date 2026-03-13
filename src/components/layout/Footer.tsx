@@ -40,8 +40,8 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
     return (
         <footer
             className={cn(
-                "footer-container mt-auto border-t border-white/5 px-6 py-12 md:px-12",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                "footer-container mt-auto border-t border-border px-6 py-12 md:px-12",
+                variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
             <div className="mx-auto flex max-w-6xl flex-col gap-10">
@@ -58,7 +58,7 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-azure-blue-500/5 hover:border-azure-blue-400/30 rounded-2xl border border-white/5 p-3 text-slate-300 transition-all duration-300 hover:text-white hover:shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
+                                className="bg-primary-500/5 hover:border-primary-400/30 rounded-2xl border border-border/50 p-3 text-foreground transition-all duration-300 hover:text-foreground hover:shadow-[0_0_20px_-5px_var(--color-primary-500)]"
                                 aria-label={social.label}
                             >
                                 <HugeiconsIcon icon={social.icon} size={20} />
@@ -68,11 +68,11 @@ export const Footer = ({ variant = "primary" }: FooterProps) => {
                 </div>
 
                 {/* Divider Line */}
-                <div className="h-px w-full bg-linear-to-r from-transparent via-white/10 to-transparent" />
+                <div className="h-px w-full bg-linear-to-r from-transparent via-border to-transparent" />
 
                 {/* Bottom Section */}
                 <div className="text-center">
-                    <TypographyBody className="text-xs font-medium tracking-widest text-slate-300 uppercase">
+                    <TypographyBody className="font-medium tracking-widest text-foreground uppercase">
                         © {currentYear} HERVÉ ZOSSOU. FRONTEND DEVELOPER.
                     </TypographyBody>
                 </div>

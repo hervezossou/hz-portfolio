@@ -10,7 +10,7 @@ export function StackTag({ children, className }: StackTagProps) {
         <span
             className={cn(
                 "letter-spacing-[0.16em] w-max text-xs font-normal uppercase",
-                "rounded-full border border-slate-400 px-2.5 py-1 text-slate-300",
+                "rounded-full border border-border px-2.5 py-1 text-muted-foreground",
                 "transition-colors duration-350",
                 className
             )}

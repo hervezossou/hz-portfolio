@@ -32,10 +32,10 @@ export function ProjectCarousel({ projects }: ProjectCarouselProps) {
             {/* Section header + nav */}
             <div className="mb-8 flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                    <TypographyLabel className="text-xs font-medium tracking-[0.16em] text-slate-300 uppercase">
+                    <TypographyLabel className="text-xs font-medium tracking-[0.16em] text-muted-foreground uppercase">
                         Projets sélectionnés
                     </TypographyLabel>
-                    <span className="text-xs font-light text-slate-200">
+                    <span className="text-xs font-light text-foreground">
                         {String(current + 1).padStart(2, "0")} /{" "}
                         {String(total).padStart(2, "0")}
                     </span>

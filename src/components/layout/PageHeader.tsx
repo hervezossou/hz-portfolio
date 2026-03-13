@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
     TypographyH1,
     TypographyBody,
@@ -22,12 +22,24 @@ export const PageHeader = ({
     variant = "primary",
 }: PageHeaderProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
+    const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
         const canvas = canvasRef.current;
         if (!canvas) return;
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
+
+        const checkTheme = () => {
+            setIsDark(document.documentElement.classList.contains("dark"));
+        };
+
+        checkTheme();
+        const observer = new MutationObserver(checkTheme);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["class"]
+        });
 
         const resize = () => {
             const container = canvas.parentElement;
@@ -44,8 +56,11 @@ export const PageHeader = ({
             ctx.clearRect(0, 0, w, h);
 
             const tileSize = 48;
-            // Using a semi-transparent version of azure-blue-400 for the grid
-            ctx.strokeStyle = "rgba(116, 203, 251, 0.08)";
+            // Dark mode: blue-ish, Light mode: darker for visibility
+            const gridColor = isDark ? "rgba(116, 203, 251, 0.08)" : "rgba(30, 41, 59, 0.15)";
+            const dotColor = isDark ? "rgba(116, 203, 251, 0.12)" : "rgba(30, 41, 59, 0.25)";
+
+            ctx.strokeStyle = gridColor;
             ctx.lineWidth = 1;
 
             for (let x = 0; x <= w; x += tileSize) {
@@ -62,11 +77,11 @@ export const PageHeader = ({
             }
 
             // Dot at each intersection
-            ctx.fillStyle = "rgba(116, 203, 251, 0.12)";
+            ctx.fillStyle = dotColor;
             for (let x = 0; x <= w; x += tileSize) {
                 for (let y = 0; y <= h; y += tileSize) {
                     ctx.beginPath();
-                    ctx.arc(x, y, 1.5, 0, Math.PI * 2);
+                    ctx.arc(x, y, isDark ? 1.5 : 2, 0, Math.PI * 2);
                     ctx.fill();
                 }
             }
@@ -74,14 +89,17 @@ export const PageHeader = ({
 
         resize();
         window.addEventListener("resize", resize);
-        return () => window.removeEventListener("resize", resize);
-    }, []);
+        return () => {
+            window.removeEventListener("resize", resize);
+            observer.disconnect();
+        };
+    }, [isDark]);
 
     return (
         <div
             className={cn(
                 "relative flex min-h-[500px] flex-col items-center justify-center overflow-hidden px-6 py-28 text-center",
-                variant === "primary" ? "bg-slate-900" : "bg-slate-800"
+                variant === "primary" ? "bg-muted" : "bg-muted/80"
             )}
         >
             {/* Grid canvas */}
@@ -100,26 +118,29 @@ export const PageHeader = ({
             {/* Bottom-edge fade for seamless blending */}
             <div
                 aria-hidden="true"
-                className="to-azure-blue-950/90 pointer-events-none absolute right-0 bottom-0 left-0 h-[40%] bg-linear-to-b from-transparent"
+                className={cn(
+                    "pointer-events-none absolute right-0 bottom-0 left-0 h-[40%] bg-linear-to-b from-transparent",
+                    isDark ? "to-primary-950/90" : "to-background/90"
+                )}
             />
 
             {/* Content */}
             <div className="relative z-10 flex max-w-6xl flex-col items-center gap-6">
                 {/* Badge */}
-                <div className="border-azure-blue-400/30 bg-azure-blue-400/10 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
-                    <span className="bg-azure-blue-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_rgba(46,157,247,0.6)]" />
-                    <TypographyLabel className="text-azure-blue-400 text-[10px] font-medium tracking-widest uppercase">
+                <div className="border-primary-400/30 bg-primary-400/10 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-md">
+                    <span className="bg-primary-400 h-2 w-2 animate-pulse rounded-full shadow-[0_0_8px_var(--color-primary-500)]" />
+                    <TypographyLabel className="text-primary-400 text-[10px] font-medium tracking-widest uppercase">
                         {badge}
                     </TypographyLabel>
                 </div>
 
                 {/* Title */}
-                <TypographyH1 className="text-slate-50">{title}</TypographyH1>
+                <TypographyH1 className="text-foreground">{title}</TypographyH1>
 
                 {/* Description with subtle blue gradient if it's a string */}
-                <TypographyBody className="max-w-4xl text-balance text-slate-200">
+                <TypographyBody className="max-w-4xl text-balance text-secondary-foreground">
                     {typeof description === "string" ? (
-                        <span className="via-slate-200 bg-linear-to-br from-slate-400 to-slate-400 bg-clip-text">
+                        <span className="via-secondary-foreground bg-linear-to-br from-secondary-foreground to-secondary-foreground bg-clip-text">
                             {description}
                         </span>
                     ) : (

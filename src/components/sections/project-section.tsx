@@ -23,8 +23,8 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
     return (
         <div
             className={cn(
-                "selection:bg-azure-blue-500/30 relative min-h-screen overflow-x-hidden font-sans",
-                variant === "primary" ? "bg-slate-950" : "bg-slate-900"
+                "selection:bg-primary-500/30 relative min-h-screen overflow-x-hidden font-sans",
+                variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
             {/* Ambient blobs */}
@@ -41,7 +41,7 @@ export function ProjectSection({ variant = "primary" }: ProjectSectionProps) {
                     title={
                         <>
                             Donner vie à<br />
-                            <span className="text-azure-blue-500">
+                            <span className="text-primary-500">
                                 l&apos;exceptionnel.
                             </span>
                         </>

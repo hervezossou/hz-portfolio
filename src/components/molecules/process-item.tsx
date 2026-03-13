@@ -28,8 +28,8 @@ export function ProcessItem({
     return (
         <li
             className={cn(
-                "group border-t border-slate-800/40 transition-all duration-500 last:border-b",
-                isActive ? "border-slate-700/60" : "hover:border-slate-800"
+                "group border-t border-border/40 transition-all duration-500 last:border-b",
+                isActive ? "border-border/60" : "hover:border-border"
             )}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -45,7 +45,7 @@ export function ProcessItem({
                 <TypographyH3
                     className={cn(
                         "font-light transition-colors duration-300",
-                        isActive ? "text-white" : "text-slate-300"
+                        isActive ? "text-primary-500" : "text-foreground"
                     )}
                 >
                     {title}
@@ -73,7 +73,7 @@ export function ProcessItem({
                 className="overflow-hidden"
             >
                 <div className="max-w-3xl pb-8 pl-12 md:pl-[72px]">
-                    <TypographyBody className="text-slate-200">
+                    <TypographyBody className="text-secondary-foreground">
                         {description}
                     </TypographyBody>
                 </div>

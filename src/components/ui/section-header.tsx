@@ -24,11 +24,11 @@ export function SectionHeader({
                 transition={{ duration: 0.6 }}
                 className="flex flex-col gap-4"
             >
-                <TypographyH2 className="text-[clamp(44px,5.5vw,82px)] leading-[1.06] font-bold tracking-[-0.035em] text-white">
+                <TypographyH2 className="text-[clamp(44px,5.5vw,82px)] leading-[1.06] font-bold tracking-[-0.035em] text-foreground">
                     {title}
                 </TypographyH2>
                 {subtitle && (
-                    <TypographyBody className="max-w-4xl text-slate-200">
+                    <TypographyBody className="max-w-4xl text-secondary-foreground">
                         {subtitle}
                     </TypographyBody>
                 )}

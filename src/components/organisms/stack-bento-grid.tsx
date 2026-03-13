@@ -8,6 +8,7 @@ interface TechItem {
     bg: string;
     size?: "normal" | "large";
     svg: React.ReactNode;
+    isBrandColor?: boolean;
 }
 
 interface StackBentoGridProps {

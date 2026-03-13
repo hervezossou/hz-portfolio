@@ -42,7 +42,7 @@ export function ProjectCard({
         >
             <div
                 className={cn(
-                    "flex w-full overflow-hidden rounded-2xl border border-slate-700/30 bg-slate-900/60 shadow-2xl backdrop-blur-[36px] backdrop-saturate-160 transition-all duration-500",
+                    "flex w-full overflow-hidden rounded-2xl border border-border/50 bg-muted/50 shadow-xl backdrop-blur-[36px] backdrop-saturate-160 transition-all duration-500",
                     isWide
                         ? imgRight
                             ? "flex-row"
@@ -64,11 +64,11 @@ export function ProjectCard({
                         category={project.category}
                     />
 
-                    <TypographyH2 className="mt-2 mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-slate-100">
+                    <TypographyH2 className="mt-2 mb-6 text-[clamp(30px,3.2vw,50px)] leading-[1.08] tracking-[-0.03em] text-foreground">
                         {project.title}
                     </TypographyH2>
 
-                    <TypographyBody className="mb-2 max-w-xl leading-relaxed text-slate-200 text-justify">
+                    <TypographyBody className="mb-2 max-w-xl leading-relaxed text-secondary-foreground text-justify">
                         {project.description}
                     </TypographyBody>
 
@@ -83,7 +83,7 @@ export function ProjectCard({
                 <div
                     style={{ backgroundColor: project.bgColor }}
                     className={cn(
-                        "relative flex shrink-0 items-center justify-center overflow-hidden border-slate-700/20 p-10",
+                        "relative flex shrink-0 items-center justify-center overflow-hidden border-border/20 p-10",
                         isWide
                             ? imgRight
                                 ? "w-[42%] border-l"

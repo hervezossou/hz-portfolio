@@ -11,7 +11,7 @@ export function ValueBadge({ children, className }: ValueBadgeProps) {
     return (
         <span
             className={cn(
-                "rounded-full border border-slate-700/50 bg-slate-800/50 px-2.5 py-1 text-[10px] font-medium tracking-wider text-slate-400 uppercase transition-colors group-hover:border-white/20 group-hover:bg-white/10 group-hover:text-white",
+                "rounded-full border border-border bg-muted/50 px-2.5 py-1 text-[10px] font-medium tracking-wider text-muted-foreground uppercase transition-colors group-hover:border-foreground/20 group-hover:bg-foreground/10 group-hover:text-foreground",
                 className
             )}
         >
