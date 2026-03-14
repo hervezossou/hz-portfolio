@@ -19,7 +19,7 @@ export function ProjectActions({
     showCode = true,
 }: ProjectActionsProps) {
     return (
-        <div className="mt-8 flex w-full items-center gap-3.5">
+        <div className="mt-8 flex flex-col md:flex-row w-full items-center gap-3.5">
             <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} className="w-full">
                 <Button
                     variant="default"
@@ -39,7 +39,7 @@ export function ProjectActions({
                 <motion.div
                     whileHover={{ y: -1 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full hidden md:block"
+                    className="w-full md:block"
                 >
                     <Button
                         variant="outline"
