@@ -39,7 +39,7 @@ export function ProjectActions({
                 <motion.div
                     whileHover={{ y: -1 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full md:block"
+                    className="w-full"
                 >
                     <Button
                         variant="outline"
