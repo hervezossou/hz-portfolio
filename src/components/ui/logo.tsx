@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/components/lib/utils";
-import { TypographyH3 } from "./typography";
 
 interface LogoProps {
     className?: string;
@@ -13,17 +13,28 @@ export function Logo({ className }: LogoProps) {
         <Link
             href="/"
             className={cn(
-                "group font-sora flex items-center gap-2.5 text-xl font-bold tracking-tight transition-all duration-300",
+                "group font-sora flex items-center transition-all duration-300",
                 className
             )}
         >
-            <div className="from-primary-600 to-primary-400 shadow-primary-500/20 group-hover:shadow-primary-500/40 relative flex h-8 w-8 items-center justify-center rounded-md bg-linear-to-tr text-white shadow-lg transition-all group-hover:scale-105">
-                <span className="text-sm">H</span>
-            </div>
-            <div className="group-hover:text-primary-400 flex items-baseline text-foreground transition-colors">
-                <TypographyH3>herve</TypographyH3>
-                <span className="font-light text-muted-foreground">.dev</span>
-            </div>
+            {/* Light mode logo — hidden in dark mode */}
+            <Image
+                src="/brand/logo-light.png"
+                alt="Hervé Zossou logo"
+                width={220}
+                height={70}
+                className="h-18 w-auto object-contain transition-all group-hover:scale-105 dark:hidden"
+                priority
+            />
+            {/* Dark mode logo — hidden in light mode */}
+            <Image
+                src="/brand/logo-dark.png"
+                alt="Hervé Zossou logo"
+                width={220}
+                height={70}
+                className="hidden h-18 w-auto object-contain transition-all group-hover:scale-105 dark:block"
+                priority
+            />
         </Link>
     );
 }
