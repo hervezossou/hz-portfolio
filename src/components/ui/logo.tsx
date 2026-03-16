@@ -21,18 +21,18 @@ export function Logo({ className }: LogoProps) {
             <Image
                 src="/brand/logo-light.png"
                 alt="Hervé Zossou logo"
-                width={220}
-                height={70}
-                className="h-18 w-auto object-contain transition-all group-hover:scale-105 dark:hidden"
+                width={202}
+                height={80}
+                className="-ml-8 h-20 w-auto object-contain transition-all group-hover:scale-105 dark:hidden"
                 priority
             />
             {/* Dark mode logo — hidden in light mode */}
             <Image
                 src="/brand/logo-dark.png"
                 alt="Hervé Zossou logo"
-                width={220}
-                height={70}
-                className="hidden h-18 w-auto object-contain transition-all group-hover:scale-105 dark:block"
+                width={202}
+                height={80}
+                className="-ml-8 hidden h-20 w-auto object-contain transition-all group-hover:scale-105 dark:block"
                 priority
             />
         </Link>
