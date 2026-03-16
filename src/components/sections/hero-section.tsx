@@ -50,12 +50,12 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
                 >
                     <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-foreground">
                         Développeur Frontend <br />
-                        <span className="text-2xl leading-normal tracking-tight md:text-4xl font-rethink-sans text-primary-400 font-normal italic">
+                        <span className="text-2xl leading-none tracking-tight md:text-4xl font-rethink-sans text-primary-400 font-normal italic">
                             Je transforme vos idées en interfaces qui convertissent.
                         </span>
                     </TypographyH1>
 
-                    <TypographyBody className="mx-auto mb-12 max-w-3xl text-lg leading-relaxed font-light text-secondary-foreground md:text-xl lg:text-2xl">
+                    <TypographyBody className="mx-auto mb-12 max-w-3xl text-lg text-secondary-foreground md:text-xl lg:text-2xl">
                         Je conçois des produits digitaux où chaque détail compte,
                         de la première maquette au déploiement en production.
                     </TypographyBody>
