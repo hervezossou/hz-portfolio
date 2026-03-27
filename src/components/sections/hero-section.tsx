@@ -16,7 +16,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
     return (
         <section
             className={cn(
-                "selection:bg-primary-500/30 relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
+                "selection:bg-primary-500 selection:text-primary-foreground relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
@@ -24,7 +24,7 @@ export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
             <div className="bg-primary-500/5 pointer-events-none absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
             <div className="bg-primary-600/5 pointer-events-none absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
 
-            <div className="relative z-10 container mx-auto flex flex-col items-center px-6 text-center">
+            <div className="relative z-10 container mt-30 lg:mt-0 mx-auto flex flex-col items-center px-6 text-center">
                 {/* Floating Status Badge */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
