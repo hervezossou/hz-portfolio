@@ -1,3 +1,28 @@
+const DESCRIPTION_PARAGRAPHS = [
+    {
+        id: "philosophy",
+        content: (
+            <>
+                Je ne me contente pas de faire fonctionner les choses, je les fais
+                fonctionner <span className="text-primary-500">bien</span>. Depuis
+                plusieurs années, je conçois des interfaces web qui allient
+                esthétique, performance et accessibilité.
+            </>
+        ),
+    },
+    {
+        id: "differentiator",
+        content: (
+            <>
+                Ce qui me différencie ? Je pense{" "}
+                <span className="text-primary-500">produit</span> autant que code. Vos
+                utilisateurs, votre conversion, votre marque, j&apos;y pense avant
+                d&apos;écrire la première ligne.
+            </>
+        ),
+    },
+];
+
 export const ABOUT_DATA = {
     title: (
         <>
@@ -7,27 +32,14 @@ export const ABOUT_DATA = {
             qui ont du sens.
         </>
     ),
-    description: [
-        <>
-            Je ne me contente pas de faire fonctionner les choses, je les fais
-            fonctionner <span className="text-primary-500">bien</span>. Depuis
-            plusieurs années, je conçois des interfaces web qui allient
-            esthétique, performance et accessibilité.
-        </>,
-        <>
-            Ce qui me différencie ? Je pense{" "}
-            <span className="text-primary-500">produit</span> autant que code. Vos
-            utilisateurs, votre conversion, votre marque, j&apos;y pense avant
-            d&apos;écrire la première ligne.
-        </>,
-    ],
+    description: DESCRIPTION_PARAGRAPHS,
     stats: [
         { value: "4+", label: "Projets livrés" },
         { value: "98", label: "Score Lighthouse" },
         { value: "3+", label: "Ans d'expérience" },
     ],
     image: {
-        src: "/images/Profile_512x512.png",
+        src: "/images/about-picture.jpg",
         alt: "Hervé Zossou",
     },
 };

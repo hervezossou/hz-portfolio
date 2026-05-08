@@ -8,9 +8,14 @@ import { cn } from "@/components/lib/utils";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Mail01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
 
+interface DescriptionItem {
+    id: string;
+    content: React.ReactNode;
+}
+
 interface AboutCardProps {
     title: React.ReactNode;
-    description: React.ReactNode[];
+    description: DescriptionItem[];
     stats: { value: string; label: string }[];
     image: { src: string; alt: string };
     className?: string;
@@ -53,12 +58,12 @@ export function AboutCard({
 
                     {/* Description */}
                     <div className="mb-10 space-y-4">
-                        {description.map((paragraph, index) => (
+                        {description.map((paragraph) => (
                             <TypographyBody
-                                key={index}
+                                key={paragraph.id}
                                 className="text-secondary-foreground text-left md:text-justify"
                             >
-                                {paragraph}
+                                {paragraph.content}
                             </TypographyBody>
                         ))}
                     </div>
