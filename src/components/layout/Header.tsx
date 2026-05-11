@@ -45,7 +45,7 @@ export function Header() {
                         : "bg-transparent py-6"
                 )}
             >
-                <div className="mx-auto flex max-w-[1440px] items-center justify-between px-8">
+                <div className="mx-auto flex max-w-360 items-center justify-between px-8 lg:px-4">
                     <Logo />
 
                     {/* Desktop Navigation */}

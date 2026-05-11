@@ -21,13 +21,13 @@ function AvailabilityBadge() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="mb-8 flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm"
+      className="mb-8 flex items-center gap-2.5 rounded-full border border-foreground/10 bg-foreground/5 px-4 py-2 backdrop-blur-sm"
     >
       <span className="relative flex h-2 w-2">
         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
         <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
       </span>
-      <span className="text-xs font-medium tracking-widest text-white/70 uppercase">
+      <span className="text-xs font-medium tracking-widest text-foreground/70 uppercase">
         {HERO_BADGE.text}
       </span>
     </motion.div>
@@ -40,7 +40,7 @@ function HeroTitle() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-      className="mb-5 font-rethink-sans text-2xl font-bold leading-[1.08] tracking-tight text-white lg:text-4xl xl:text-5xl"
+      className="mb-5 font-rethink-sans text-2xl font-bold leading-[1.08] tracking-tight text-foreground lg:text-4xl xl:text-5xl"
     >
       {HERO_TITLE.prefix}
       <span className="italic text-primary-600">{HERO_TITLE.highlight}</span>
@@ -97,10 +97,10 @@ function HeroCTAs() {
         </Link>
       </Button>
 
-      <Button variant="outline" size="lg" className="min-w-55 text-foreground px-7 py-3.5 font-semibold backdrop-blur-sm transition-all duration-300 hover:border-white/40 hover:bg-white/10 hover:text-white">
+      <Button variant="outline" size="lg" className="min-w-55 cursor-pointer px-7 py-3.5 font-semibold backdrop-blur-sm transition-all duration-300">
         <Link
           href={HERO_CTA.secondary.href}
-          className="flex items-center gap-2.5"
+          className="flex items-center gap-2.5 transition-colors duration-300"
         >
           <HugeiconsIcon icon={Mail01Icon} size={16} strokeWidth={2} />
           {HERO_CTA.secondary.label}
@@ -116,7 +116,7 @@ function HeroStats() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.6 }}
-      className="mt-12 flex items-center gap-8 border-t border-white/8 pt-8"
+      className="mt-12 flex items-center gap-8 border-t border-foreground/8 pt-8"
     >
       {HERO_STATS.map((stat) => (
         <HeroStat key={stat.label} value={stat.value} label={stat.label} />
