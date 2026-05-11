@@ -16,7 +16,7 @@ export function AboutSection({ className, variant = "primary" }: AboutSectionPro
                 className
             )}
         >
-            <div className="mx-auto max-w-[1440px]">
+            <div className="mx-auto max-w-360">
                 <AboutCard {...ABOUT_DATA} />
             </div>
         </section>

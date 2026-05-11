@@ -7,7 +7,7 @@ import { ConversionSection } from "@/components/sections/conversion-section";
 export default function Home() {
     return (
         <main>
-            <HeroSection variant="primary" />
+            <HeroSection />
             <PositioningSection variant="secondary" />
             <div id="projets">
                 <ProjectSection variant="primary" />

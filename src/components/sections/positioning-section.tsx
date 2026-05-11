@@ -18,7 +18,7 @@ export function PositioningSection({
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
-            <div className="mx-auto max-w-[1440px] px-4 md:px-8">
+            <div className="mx-auto max-w-360 px-4 md:px-8">
                 <SectionHeader
                     title={
                         <>

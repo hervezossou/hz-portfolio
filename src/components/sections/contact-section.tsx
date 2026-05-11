@@ -61,7 +61,7 @@ export const ContactSection = ({ variant = "accent" }: ContactSectionProps) => {
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {/* Main Card (Large) */}
-                    <BentoCard className="flex min-h-[320px] flex-col justify-between border border-border bg-muted/50 md:col-span-2">
+                    <BentoCard className="flex min-h-80 flex-col justify-between border border-border bg-muted/50 md:col-span-2">
                         <div>
                             <TypographyH3 className="mb-4 leading-tight text-foreground">
                                 Construisons ensemble <br />

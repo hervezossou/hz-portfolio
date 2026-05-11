@@ -26,7 +26,7 @@ export function ConversionSection({
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
-            <div className="mx-auto flex max-w-[1440px] justify-center">
+            <div className="mx-auto flex max-w-360 justify-center">
                 {/* Card Wrapper with premium border gradient */}
                 <div className="group relative w-full">
                     {/* Subtle glow behind the card */}
@@ -71,7 +71,7 @@ export function ConversionSection({
                                 <Button
                                     asChild
                                     size="lg"
-                                    className="min-w-[220px]"
+                                    className="min-w-55"
                                 >
                                     <Link href="/contact">
                                         <HugeiconsIcon
@@ -88,7 +88,7 @@ export function ConversionSection({
                                     variant="outline"
                                     size="lg"
                                     aria-label="Voir toutes mes réalisations"
-                                    className="min-w-[220px] text-foreground"
+                                    className="min-w-55 text-foreground"
                                 >
                                     <Link href="/works">
                                         <TypographyBody>Toutes mes réalisations</TypographyBody>

@@ -20,7 +20,7 @@ export function StackBentoSection({
                 className
             )}
         >
-            <div className="mx-auto max-w-[1440px]">
+            <div className="mx-auto max-w-360">
                 <SectionHeader
                     title={
                         <>

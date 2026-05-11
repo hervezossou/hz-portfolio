@@ -1,107 +1,30 @@
 "use client";
 
 import { cn } from "@/components/lib/utils";
-import { motion } from "motion/react";
-import { Button } from "@/components/ui/button";
-import { TypographyH1, TypographyBody, TypographyCaption } from "@/components/ui/typography";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowDown01Icon, Mail01Icon } from "@hugeicons/core-free-icons";
-import Link from "next/link";
+import { HeroBackground } from "@/components/molecules/hero-background";
+import { HeroTextContent } from "@/components/molecules/hero-text-content";
+import { HeroImage } from "@/components/molecules/hero-image";
 
 interface HeroSectionProps {
-    variant?: "primary" | "secondary";
+  className?: string;
 }
 
-export const HeroSection = ({ variant = "primary" }: HeroSectionProps) => {
-    return (
-        <section
-            className={cn(
-                "selection:bg-primary-500 selection:text-primary-foreground relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden",
-                variant === "primary" ? "bg-background" : "bg-muted"
-            )}
-        >
-            {/* Background Accent Gradients */}
-            <div className="bg-primary-500/5 pointer-events-none absolute top-[-10%] left-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
-            <div className="bg-primary-600/5 pointer-events-none absolute right-[-10%] bottom-[-10%] h-[50%] w-[50%] animate-pulse rounded-full blur-[120px]" />
+export function HeroSection({ className }: HeroSectionProps) {
+  return (
+    <section
+      className={cn(
+        "relative min-h-screen overflow-hidden bg-background",
+        className
+      )}
+    >
+      <HeroBackground />
 
-            <div className="relative z-10 container mt-30 lg:mt-0 mx-auto flex flex-col items-center px-6 text-center">
-                {/* Floating Status Badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="my-8 flex items-center gap-3 rounded-full border border-border bg-muted/50 px-4 py-2 backdrop-blur-md"
-                >
-                    <span className="relative flex h-2 w-2">
-                        <span className="bg-primary-400 absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"></span>
-                        <span className="bg-primary-500 relative inline-flex h-2 w-2 rounded-full"></span>
-                    </span>
-                    <TypographyCaption className="text-xs font-medium tracking-wider text-foreground uppercase">
-                        ✦ Disponible en freelance & CDI
-                    </TypographyCaption>
-                </motion.div>
-
-                {/* Hero Content */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.1 }}
-                    className="max-w-4xl"
-                >
-                    <TypographyH1 className="mb-6 text-[clamp(40px,7vw,80px)] leading-[1.1] font-bold tracking-tight text-foreground">
-                        Développeur Frontend <br />
-                        <span className="text-2xl leading-none tracking-tight md:text-4xl font-rethink-sans text-primary-400 font-normal italic">
-                            Je transforme vos idées en interfaces qui convertissent.
-                        </span>
-                    </TypographyH1>
-
-                    <TypographyBody className="mx-auto mb-12 max-w-3xl text-lg text-secondary-foreground md:text-xl lg:text-2xl">
-                        Je conçois des produits digitaux où chaque détail compte,
-                        de la première maquette au déploiement en production.
-                    </TypographyBody>
-                </motion.div>
-
-                {/* CTAs */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="w-full mx-auto flex flex-col items-center justify-center gap-4 md:flex-row"
-                >
-                    <Button
-                        asChild
-                        variant="default"
-                        size="lg"
-                        aria-label="Voir les projets récents sur cette page"
-                        className="w-full md:w-xs shadow-primary-500/20 cursor-pointer gap-3 justify-center"
-                    >
-                        <Link href="#projets" scroll={true}>
-                            <span>Voir mes récents projets</span>
-                            <HugeiconsIcon
-                                icon={ArrowDown01Icon}
-                                size={24}
-                                strokeWidth={2}
-                            />
-                        </Link>
-                    </Button>
-
-                    <Button
-                        asChild
-                        variant="outline"
-                        size="lg"
-                        className="w-full md:w-xs text-foreground"
-                    >
-                        <Link href="mailto:hervezossou@outlook.com">
-                            <HugeiconsIcon
-                                icon={Mail01Icon}
-                                size={24}
-                                strokeWidth={2}
-                            />
-                            <span>Me contacter</span>
-                        </Link>
-                    </Button>
-                </motion.div>
-            </div>
-        </section>
-    );
-};
+      <div className="relative mx-auto flex min-h-screen max-w-360 items-center px-6 pt-40 pb-20 lg:pt-52 lg:pb-32">
+        <div className="grid w-full grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="lg:order-2"><HeroImage /></div>
+          <div className="lg:order-1"><HeroTextContent /></div>
+        </div>
+      </div>
+    </section>
+  );
+}

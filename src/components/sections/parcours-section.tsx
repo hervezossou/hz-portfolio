@@ -16,7 +16,7 @@ export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >
-            <div className="mx-auto max-w-[1440px]">
+            <div className="mx-auto max-w-360">
                 <SectionHeader
                     title={
                         <>
