@@ -86,7 +86,7 @@ function HeroCTAs() {
     >
       <Button
         asChild size="lg"
-        className="min-w-55 group flex items-center gap-2.5 px-7 py-3. 5 font-semibold text-white transition-all duration-300 hover:gap-4 hover:brightness-110"
+        className="min-w-55 group flex items-center gap-2.5 px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:gap-4 hover:brightness-110"
         variant="default"
       >
         <Link

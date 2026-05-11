@@ -12,8 +12,9 @@ function FloatingBadge() {
       transition={{ duration: 0.6, delay: 0.7 }}
       className="absolute -bottom-4 -left-4 flex items-center gap-3 rounded-2xl border border-white/10 bg-[#111213]/90 px-5 py-3.5 backdrop-blur-md md:left-20 lg:left-10 xl:left-40"
     >
-      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white">
+      <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white" aria-label="Layers container">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <title id="layers-icon-title">Layers</title>
           <path
             d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
             stroke="currentColor"
