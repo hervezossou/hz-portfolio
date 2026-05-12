@@ -46,7 +46,7 @@ export function ServiceCard({ service, index }: ServiceCardProps) {
         ))}
       </ul>
 
-      <div className="mt-auto border-t border-border/50 pt-5">
+      <div className="mt-auto border-t dark:border-white/15 border-black/20 pt-5">
         <Link
           href={service.cta.href}
           className="group/link inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-all duration-300 hover:gap-4"
