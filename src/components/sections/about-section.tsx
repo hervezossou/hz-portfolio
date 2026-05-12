@@ -11,7 +11,7 @@ export function AboutSection({ className, variant = "primary" }: AboutSectionPro
     return (
         <section
             className={cn(
-                "overflow-hidden px-4 py-16 md:px-8 md:py-24",
+                "overflow-hidden px-4 py-16 md:px-8 md:py-24 lg:px-12",
                 variant === "primary" ? "bg-background" : "bg-muted",
                 className
             )}

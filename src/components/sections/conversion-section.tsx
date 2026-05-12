@@ -22,7 +22,7 @@ export function ConversionSection({
     return (
         <section
             className={cn(
-                "relative overflow-hidden px-4 py-16 md:px-8 md:py-32",
+                "relative overflow-hidden px-4 py-16 md:px-8 md:py-32 lg:px-12",
                 variant === "primary" ? "bg-background" : "bg-muted"
             )}
         >

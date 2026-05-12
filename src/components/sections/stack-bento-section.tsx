@@ -15,7 +15,7 @@ export function StackBentoSection({
     return (
         <section
             className={cn(
-                "overflow-hidden px-4 md:px-8 py-16",
+                "overflow-hidden px-4 md:px-8 py-16 lg:px-12",
                 variant === "primary" ? "bg-background" : "bg-muted",
                 className
             )}

@@ -32,10 +32,10 @@ export const HERO_STATS = [
 ] as const;
 
 export const HERO_IMAGE = {
-    src: "/images/about-picture.jpg",
+    src: "/images/hero-profile.jpeg",
     alt: "Herv\u00E9 Zossou \u2014 D\u00E9veloppeur Frontend",
-    width: 480,
-    height: 520,
+    width: 800,
+    height: 1067,
 } as const;
 
 export const HERO_FLOATING_BADGE = {

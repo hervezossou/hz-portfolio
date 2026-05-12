@@ -37,7 +37,7 @@ export function AboutCard({
         >
             <div className="flex flex-col overflow-hidden rounded-[14px] bg-muted/50 backdrop-blur-sm xl:flex-row">
                 {/* Image Section */}
-                <div className="relative order-first h-[300px] w-full shrink-0 md:h-[800px] xl:h-auto xl:w-[45%]">
+                <div className="relative order-first h-75 w-full shrink-0 md:h-200 xl:h-auto xl:w-[45%]">
                     <AboutImage src={image.src} alt={image.alt} />
                 </div>
 

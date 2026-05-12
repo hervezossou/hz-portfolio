@@ -10,7 +10,7 @@ function FloatingBadge() {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.7 }}
-      className="absolute -bottom-8 -left-4 flex items-center gap-3 rounded-2xl border border-foreground/10 bg-background/90 px-5 py-3.5 backdrop-blur-md md:left-32 lg:-bottom-6 lg:left-10 xl:left-24"
+      className="absolute -bottom-8 -left-4 flex items-center gap-3 rounded-2xl border border-foreground/10 bg-background/90 px-5 py-3.5 backdrop-blur-md md:left-32 lg:-bottom-6 lg:left-10 xl:left-36"
     >
       <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-600 text-white" aria-label="Layers container">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
@@ -43,7 +43,7 @@ export function HeroImage() {
       <div className="absolute inset-0 rounded-3xl bg-primary-600/30 blur-[60px]" />
 
       <div
-        className="relative overflow-hidden rounded-3xl"
+        className="relative overflow-hidden rounded-2xl"
         style={{
           boxShadow: "0 32px 80px #0260FE28, 0 0 0 1px rgba(255,255,255,0.06)",
         }}
@@ -53,7 +53,7 @@ export function HeroImage() {
           alt={HERO_IMAGE.alt}
           width={HERO_IMAGE.width}
           height={HERO_IMAGE.height}
-          className="h-auto w-full max-w-sm object-cover lg:max-w-lg"
+          className="h-auto w-full max-w-sm object-cover lg:max-w-md"
           priority
         />
 
