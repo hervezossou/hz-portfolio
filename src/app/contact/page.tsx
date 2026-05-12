@@ -12,7 +12,7 @@ export default function ContactPage() {
     return (
         <div className="w-full">
             <PageHeader
-                variant="secondary"
+                variant="primary"
                 badge="CONTACT"
                 title="Travaillons ensemble"
                 description="Une idée ou un projet en tête ? Décrivez-moi votre vision, je vous réponds sous 24h."

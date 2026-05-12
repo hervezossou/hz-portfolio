@@ -18,7 +18,7 @@ export default function WorksPage() {
                 description="Découvrez mes projets récents, des solutions innovantes et des expériences utilisateur exceptionnelles."
                 variant="primary"
             />
-            <ProjectSection variant="secondary" />
+            <ProjectSection variant="primary" />
             <ConversionSection
                 title="Prêt à transformer votre idée en réalité ?"
                 description="Chaque projet commence par une conversation. Parlons de votre vision, de vos objectifs et de la manière dont nous pouvons collaborer pour créer quelque chose d'exceptionnel."

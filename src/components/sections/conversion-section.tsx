@@ -23,7 +23,7 @@ export function ConversionSection({
         <section
             className={cn(
                 "relative overflow-hidden px-4 py-16 md:px-8 md:py-32 lg:px-12",
-                variant === "primary" ? "bg-background" : "bg-muted"
+                variant === "primary" ? "bg-background" : "bg-muted/50"
             )}
         >
             <div className="mx-auto flex max-w-360 justify-center">

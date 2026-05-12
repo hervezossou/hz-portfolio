@@ -13,7 +13,7 @@ export function HeroSection({ className }: HeroSectionProps) {
   return (
     <section
       className={cn(
-        "relative min-h-screen overflow-hidden bg-background",
+        "relative min-h-screen overflow-hidden bg-muted/30",
         className
       )}
     >

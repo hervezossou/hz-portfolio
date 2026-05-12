@@ -13,7 +13,7 @@ export function ProcessSection({ variant = "primary" }: ProcessSectionProps) {
         <section
             className={cn(
                 "relative overflow-hidden py-24 md:py-32",
-                variant === "primary" ? "bg-background" : "bg-muted"
+                variant === "primary" ? "bg-background" : "bg-muted/50"
             )}
         >
             <div className="mx-auto max-w-360 px-4 md:px-8 lg:px-12">
