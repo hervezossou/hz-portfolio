@@ -85,8 +85,9 @@ function HeroCTAs() {
       className="flex flex-col lg:flex-row items-center gap-4"
     >
       <Button
-        asChild size="lg"
-        className="min-w-55 group flex items-center gap-2.5 px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:gap-4 hover:brightness-110"
+        asChild
+        size="lg"
+        className="w-85 lg:w-70 group flex items-center gap-2.5 px-7 py-3.5 font-semibold transition-all duration-300 hover:gap-4 hover:brightness-110"
         variant="default"
       >
         <Link
@@ -97,7 +98,11 @@ function HeroCTAs() {
         </Link>
       </Button>
 
-      <Button variant="outline" size="lg" className="min-w-55 cursor-pointer px-7 py-3.5 font-semibold backdrop-blur-sm transition-all duration-300">
+      <Button
+        variant="outline"
+        size="lg"
+        className="w-85 lg:w-70 cursor-pointer px-7 py-3.5 font-semibold backdrop-blur-sm transition-all duration-300"
+      >
         <Link
           href={HERO_CTA.secondary.href}
           className="flex items-center gap-2.5 transition-colors duration-300"

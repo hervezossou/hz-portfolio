@@ -13,7 +13,7 @@ export function ParcoursSection({ variant = "primary" }: ParcoursSectionProps) {
         <section
             className={cn(
                 "overflow-hidden px-4 py-8 md:px-8 md:py-16 lg:px-12",
-                variant === "primary" ? "bg-background" : "bg-muted"
+                variant === "primary" ? "bg-background" : "bg-muted/50"
             )}
         >
             <div className="mx-auto max-w-360">

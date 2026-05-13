@@ -3,7 +3,9 @@ import { Metadata } from "next";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PageWrapper } from "@/components/layout/PageWrapper";
 import { AboutSection } from "@/components/sections/about-section";
+import { TrustStrip }  from "@/components/shared/trust-strip";
 import { ParcoursSection } from "@/components/sections/parcours-section";
+import { TestimonialsSection } from "@/components/shared/testimonials/testimonials-section";
 import { ConversionSection } from "@/components/sections/conversion-section";
 import { StackBentoSection } from "@/components/sections/stack-bento-section";
 
@@ -31,10 +33,12 @@ export default function AboutPage() {
                 variant="primary"
             />
             <AboutSection variant="secondary" />
+            <TrustStrip />
             <StackBentoSection variant="primary" />
             <ParcoursSection variant="secondary" />
+            <TestimonialsSection variant="primary" />
             <ConversionSection
-                variant="primary"
+                variant="secondary"
                 title="Envie de collaborer sur un projet ?"
                 description="Discutons de ce que je peux apporter à votre équipe ou votre projet."
             />

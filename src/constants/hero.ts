@@ -1,5 +1,5 @@
 export const HERO_BADGE = {
-    text: "Développeur Frontend \u00B7 Travail à distance",
+    text: "Développeur Frontend \u00B7 Freelance",
 } as const;
 
 export const HERO_TITLE = {
