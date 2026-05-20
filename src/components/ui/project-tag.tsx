@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface ProjectTagProps {
     children: React.ReactNode;

@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 
 import { PageHeader } from "@/components/layout/PageHeader";
-import { PageWrapper } from "@/components/layout/PageWrapper";
 import { AboutSection } from "@/components/sections/about-section";
 import { TrustStrip }  from "@/components/shared/trust-strip";
 import { ParcoursSection } from "@/components/sections/parcours-section";
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
     return (
-        <PageWrapper>
+        <>
             <PageHeader
                 badge="À PROPOS"
                 title="La personne derrière le code."
@@ -42,6 +41,6 @@ export default function AboutPage() {
                 title="Envie de collaborer sur un projet ?"
                 description="Discutons de ce que je peux apporter à votre équipe ou votre projet."
             />
-        </PageWrapper>
+        </>
     );
 }

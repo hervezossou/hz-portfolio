@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { HeroBackground } from "@/components/molecules/hero-background";
 import { HeroTextContent } from "@/components/molecules/hero-text-content";
 import { HeroImage } from "@/components/molecules/hero-image";

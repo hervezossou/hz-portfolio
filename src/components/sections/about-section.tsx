@@ -1,5 +1,5 @@
 import { AboutCard } from "@/components/organisms/about-card";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { ABOUT_DATA } from "@/constants/about";
 
 interface AboutSectionProps {

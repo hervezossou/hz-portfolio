@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { Testimonial } from "./testimonials.types";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;

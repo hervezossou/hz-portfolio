@@ -6,7 +6,7 @@ import { ProjectHeader } from "@/components/molecules/project-header";
 import { ProjectIllustration } from "@/components/ui/project-illustration";
 import { ProjectActions } from "@/components/molecules/project-actions";
 import { TypographyH2, TypographyBody } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface ProjectCardProps {
     project: Project;

@@ -1,5 +1,5 @@
 import { StackCard } from "@/components/molecules/stack-card";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface TechItem {
     name: string;

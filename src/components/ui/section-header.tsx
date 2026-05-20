@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { TypographyH2, TypographyBody } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface SectionHeaderProps {
     title: React.ReactNode;

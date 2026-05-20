@@ -6,7 +6,7 @@ import {
     TypographyBody,
     TypographyLabel,
 } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface PageHeaderProps {
     badge?: React.ReactNode;

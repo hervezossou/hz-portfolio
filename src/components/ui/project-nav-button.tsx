@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowLeft01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";

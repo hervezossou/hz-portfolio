@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 
 import { PageHeader } from "@/components/layout/PageHeader";
-import { PageWrapper } from "@/components/layout/PageWrapper";
 import { ServicesSection } from "@/components/home/services/ServicesSection";
 import { TestimonialsSection } from "@/components/shared/testimonials/testimonials-section";
 import { ConversionSection } from "@/components/sections/conversion-section";
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
     return (
-        <PageWrapper>
+        <>
             <PageHeader
                 badge="SERVICES"
                 title="Des interfaces qui font la différence."
@@ -58,6 +57,6 @@ export default function ServicesPage() {
                 description="Chaque projet commence par une conversation. Parlons de votre vision, de vos objectifs et de la manière dont nous pouvons collaborer pour créer quelque chose d'exceptionnel."
                 variant="primary"
             />
-        </PageWrapper>
+        </>
     );
 }

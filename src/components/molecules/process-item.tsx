@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { ProcessNumber } from "@/components/ui/process-number";
 import { TypographyBody, TypographyH3 } from "@/components/ui/typography";
 import { ValueBadge } from "@/components/ui/value-badge";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface ProcessItemProps {
     number: string;

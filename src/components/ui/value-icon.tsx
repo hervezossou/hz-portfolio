@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { HugeiconsIcon } from "@hugeicons/react";
 import type { HugeIcon } from "@/types/hugeicons";
 

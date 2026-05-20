@@ -1,4 +1,4 @@
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { TypographyH3, TypographyLabel } from "./typography";
 
 interface AboutStatProps {

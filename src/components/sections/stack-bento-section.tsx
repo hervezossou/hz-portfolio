@@ -1,6 +1,6 @@
 import { SectionHeader } from "@/components/ui/section-header";
 import { StackBentoGrid } from "@/components/organisms/stack-bento-grid";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { STACK_DATA } from "@/constants/stack";
 
 interface StackBentoSectionProps {

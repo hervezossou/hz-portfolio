@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { TypographyBody } from "./typography";
 

@@ -10,7 +10,7 @@ import { TypographyBody } from "@/components/ui/typography";
 import Link from "next/link";
 import { Logo } from "@/components/ui/logo";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface FooterProps {
     variant?: "primary" | "secondary";

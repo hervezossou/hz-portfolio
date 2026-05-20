@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface StackIconProps {
     children: React.ReactNode;

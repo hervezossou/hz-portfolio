@@ -4,7 +4,7 @@ import { AvailabilityStatus } from "@/components/ui/availability-status";
 import { TypographyH3, TypographyBody } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Mail01Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
 

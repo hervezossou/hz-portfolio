@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface BentoCardProps {
     children: React.ReactNode;

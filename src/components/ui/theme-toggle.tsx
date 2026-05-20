@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import { useSyncExternalStore } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Sun01Icon, Moon01Icon } from "@hugeicons/core-free-icons";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 function useMounted() {
     return useSyncExternalStore(

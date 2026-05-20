@@ -1,6 +1,6 @@
 import { ParcoursIcon } from "@/components/ui/parcours-icon";
 import { TypographyBody, TypographyLabel } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import type { IconSvgElement } from "@hugeicons/react";
 
 interface ParcoursItemProps {

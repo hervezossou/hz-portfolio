@@ -13,14 +13,14 @@ import {
     WhatsappBusinessIcon,
     NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { BentoCard } from "@/components/ui/bento-card";
 import {
     TypographyH3,
     TypographyBody,
     TypographyLabel,
 } from "@/components/ui/typography";
-import { copyToClipboard, openInNewTab } from "@/components/lib/utils";
+import { copyToClipboard, openInNewTab } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "../ui/button";
 

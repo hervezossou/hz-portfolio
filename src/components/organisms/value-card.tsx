@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { ValueIcon } from "@/components/ui/value-icon";
 import { ValueCardContent } from "@/components/molecules/value-card-content";
 import { TypographyH3 } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import type { HugeIcon } from "@/types/hugeicons";
 
 interface ValueCardProps {

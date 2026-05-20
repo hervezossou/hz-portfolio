@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { SectionHeader } from "@/components/ui/section-header";
 import { ProcessList } from "@/components/organisms/process-list";
 

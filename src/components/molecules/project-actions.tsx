@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { LinkSquare02Icon, LinkCircle02Icon } from "@hugeicons/core-free-icons";
 import { TypographyBody } from "@/components/ui/typography";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface ProjectActionsProps {
     onViewProject?: () => void;

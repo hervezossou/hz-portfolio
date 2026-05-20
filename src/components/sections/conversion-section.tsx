@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyBody } from "@/components/ui/typography";
 import { AvailabilityStatus } from "@/components/ui/availability-status";

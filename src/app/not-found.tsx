@@ -5,7 +5,6 @@ import {
     TypographyBody,
     TypographyLabel,
 } from "@/components/ui/typography";
-import { PageWrapper } from "@/components/layout/PageWrapper";
 import { ConversionSection } from "@/components/sections/conversion-section";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
@@ -16,7 +15,7 @@ import {
 
 export default function NotFound() {
     return (
-        <PageWrapper className="bg-muted">
+        <div className="bg-muted">
             {/* Hero 404 */}
             <section className="relative flex min-h-[70vh] flex-1 flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-20">
                 {/* Large Background Number */}
@@ -83,6 +82,6 @@ export default function NotFound() {
                 description="Chaque projet commence par une conversation. Parlons de votre vision, de vos objectifs et de la manière dont nous pouvons collaborer pour créer quelque chose d'exceptionnel."
                 variant="primary"
             />
-        </PageWrapper>
+        </div>
     );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { ProjectCarousel } from "@/components/organisms/project-carousel";

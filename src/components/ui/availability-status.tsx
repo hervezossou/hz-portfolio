@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { TypographyLabel } from "@/components/ui/typography";
 
 interface AvailabilityStatusProps {

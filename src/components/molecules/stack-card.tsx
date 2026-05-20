@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { StackTag } from "@/components/ui/stack-tag";
 import { StackIcon } from "@/components/ui/stack-icon";
 

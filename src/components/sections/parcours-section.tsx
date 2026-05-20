@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/ui/section-header";
 import { ParcoursCard } from "@/components/organisms/parcours-card";
 import { Briefcase01Icon, Mortarboard01Icon } from "@hugeicons/core-free-icons";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { EXPERIENCES, EDUCATIONS } from "@/constants/parcours";
 
 interface ParcoursSectionProps {

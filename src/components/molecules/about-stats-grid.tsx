@@ -1,5 +1,5 @@
 import { AboutStat } from "@/components/ui/about-stat";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 
 interface StatItem {
     value: string;
